@@ -3,13 +3,16 @@
 
   var homeTpl = Handlebars.compile($("#home-tpl").html());
   var employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
+  var employeeTpl = Handlebars.compile($("#employee-tpl").html());
 
   /* ---------------------------------- Local Variables ---------------------------------- */
   var adapter = new MemoryAdapter();
   adapter.initialize().done(function () {
-    $('body').html(new HomeView(adapter, homeTpl, employeeLiTpl).render().el);
+    route();
     console.log("Data adapter initialized");
   });
+
+  var detailsURL = /^#employees\/(\d{1,})/;
 
   /* --------------------------------- Event Registration -------------------------------- */
 
@@ -28,5 +31,22 @@
       };
     }
   }, false);
+
+  $(window).on('hashchange', route);
+
+  /* --------------------------------- Local Functions ----------------------------------- */
+  function route() {
+    var hash = window.location.hash;
+    if (!hash) {
+      $('body').html(new HomeView(adapter, homeTpl, employeeLiTpl).render().el);
+      return;
+    }
+    var match = hash.match(detailsURL);
+    if (match) {
+      adapter.findById(Number(match[1])).done(function(employee) {
+        $('body').html(new EmployeeView(adapter, employeeTpl, employee).render().el);
+      });
+    }
+  }
 
 }());
