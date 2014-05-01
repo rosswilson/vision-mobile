@@ -89,6 +89,7 @@
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/assets/topcoat/img/spinner2x.png \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/adapters \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/app.js \
+/Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/home_view.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/adapters/jsonp-adapter.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/adapters/localstorage-adapter.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/adapters/memory-adapter.js \
