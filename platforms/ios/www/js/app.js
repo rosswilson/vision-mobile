@@ -7,8 +7,8 @@
   /* ---------------------------------- Local Variables ---------------------------------- */
   var adapter = new MemoryAdapter();
   adapter.initialize().done(function () {
+    $('body').html(new HomeView(adapter, homeTpl, employeeLiTpl).render().el);
     console.log("Data adapter initialized");
-    renderHomeView();
   });
 
   /* --------------------------------- Event Registration -------------------------------- */
@@ -28,18 +28,5 @@
       };
     }
   }, false);
-
-
-  /* ---------------------------------- Local Functions ---------------------------------- */
-  function findByName() {
-    adapter.findByName($('.search-key').val()).done(function (employees) {
-        $('.employee-list').html(employeeLiTpl(employees));
-    });
-  }
-
-  function renderHomeView() {
-    $('body').html(homeTpl());
-    $('.search-key').on('keyup', findByName);
-  }
 
 }());
