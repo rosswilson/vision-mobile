@@ -34,4 +34,10 @@
     <access origin="*" />
     <preference name="AllowInlineMediaPlayback" value="true" />
     <preference name="DisallowOverscroll" value="true" />
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
+    <feature name="Console">
+        <param name="ios-package" value="CDVLogger" />
+    </feature>
 </widget>
