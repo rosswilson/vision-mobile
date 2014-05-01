@@ -14,7 +14,8 @@
 
   <script id="whats-on-tpl" type="text/x-handlebars-template">
     <header class="bar bar-nav">
-      <h1>Vision Dashboard</h1>
+      <h1>Dashboard</h1>
+      <img src="http://148.88.32.64/cache/202x62-1/icons/vision_logo.png" />
     </header>
 
     <nav class="bar bar-tab">
@@ -44,14 +45,15 @@
   <script id="whats-on-tpl-item" type="text/x-handlebars-template">
     {{#.}}
     <li class="table-view-cell group">
-      <div class="media-object">
+      <div class="left">
         <img src="http://148.88.32.64/cache/170x100-2/programmes{{ image }}" style="width: 85px; height: 50px;" />
       </div>
-      <div class="media-body">
+      <div class="right">
         <p>{{ programme_name }}</p>
         <p class="small">{{ synopsis }}</p>
+        <p class="metadata">{{ channel_name }} &middot; {{ duration }} minutes</p>
+        <span class="glyphicons chevron-right"></span>
       </div>
-      <span class="glyphicons chevron-right"></span>
     </li>
     {{/.}}
   </script>

@@ -88,3 +88,46 @@ Terminating in response to SpringBoard's termination.
 2014-05-01 11:23:19.506 Vision[90423:70b] [CDVTimer][TotalPluginStartup] 20.866036ms
 2014-05-01 11:23:19.677 Vision[90423:70b] Resetting plugins due to page load.
 2014-05-01 11:23:20.182 Vision[90423:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/9D25E8E1-98A6-4482-96F1-1115077F45F5/Vision.app/www/index.html
+2014-05-01 17:56:51.920 Vision[95314:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-01 17:56:51.967 Vision[95314:70b] Unlimited access to network resources
+2014-05-01 17:56:52.246 Vision[95314:70b] [CDVTimer][splashscreen] 65.899014ms
+2014-05-01 17:56:52.247 Vision[95314:70b] [CDVTimer][TotalPluginStartup] 66.438973ms
+2014-05-01 17:56:52.466 Vision[95314:70b] Resetting plugins due to page load.
+2014-05-01 17:56:53.311 Vision[95314:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/9D25E8E1-98A6-4482-96F1-1115077F45F5/Vision.app/www/index.html
+2014-05-01 17:58:25.923 Vision[95523:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-01 17:58:25.932 Vision[95523:70b] Unlimited access to network resources
+2014-05-01 17:58:25.967 Vision[95523:70b] [CDVTimer][splashscreen] 10.060966ms
+2014-05-01 17:58:25.967 Vision[95523:70b] [CDVTimer][TotalPluginStartup] 10.747015ms
+2014-05-01 17:58:26.026 Vision[95523:70b] Resetting plugins due to page load.
+2014-05-01 17:58:26.292 Vision[95523:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/9D25E8E1-98A6-4482-96F1-1115077F45F5/Vision.app/www/index.html
+2014-05-01 17:59:38.232 Vision[95725:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-01 17:59:38.242 Vision[95725:70b] Unlimited access to network resources
+2014-05-01 17:59:38.287 Vision[95725:70b] [CDVTimer][splashscreen] 9.939015ms
+2014-05-01 17:59:38.288 Vision[95725:70b] [CDVTimer][TotalPluginStartup] 10.948002ms
+2014-05-01 17:59:38.378 Vision[95725:70b] Resetting plugins due to page load.
+2014-05-01 17:59:41.213 Vision[95725:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/9D25E8E1-98A6-4482-96F1-1115077F45F5/Vision.app/www/index.html
+2014-05-01 17:59:58.729 Vision[95947:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-01 17:59:58.738 Vision[95947:70b] Unlimited access to network resources
+2014-05-01 17:59:58.771 Vision[95947:70b] [CDVTimer][splashscreen] 10.513008ms
+2014-05-01 17:59:58.772 Vision[95947:70b] [CDVTimer][TotalPluginStartup] 11.066020ms
+2014-05-01 17:59:58.997 Vision[95947:70b] Resetting plugins due to page load.
+2014-05-01 17:59:59.624 Vision[95947:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/9D25E8E1-98A6-4482-96F1-1115077F45F5/Vision.app/www/index.html
+2014-05-01 18:03:12.272 Vision[96438:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-01 18:03:12.280 Vision[96438:70b] Unlimited access to network resources
+2014-05-01 18:03:12.318 Vision[96438:70b] [CDVTimer][splashscreen] 10.580957ms
+2014-05-01 18:03:12.319 Vision[96438:70b] [CDVTimer][TotalPluginStartup] 11.527002ms
+2014-05-01 18:03:12.535 Vision[96438:70b] Resetting plugins due to page load.
+2014-05-01 18:03:13.189 Vision[96438:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4D08FAFE-FF70-4D03-B34C-C8D1CC4F2E36/Vision.app/www/index.html
+2014-05-01 18:06:45.073 Vision[96699:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-01 18:06:45.082 Vision[96699:70b] Unlimited access to network resources
+2014-05-01 18:06:45.118 Vision[96699:70b] [CDVTimer][splashscreen] 11.435986ms
+2014-05-01 18:06:45.118 Vision[96699:70b] [CDVTimer][TotalPluginStartup] 11.990964ms
+2014-05-01 18:06:45.186 Vision[96699:70b] Resetting plugins due to page load.
+2014-05-01 18:06:46.356 Vision[96699:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4D08FAFE-FF70-4D03-B34C-C8D1CC4F2E36/Vision.app/www/index.html
+2014-05-01 18:09:34.571 Vision[96926:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-01 18:09:34.581 Vision[96926:70b] Unlimited access to network resources
+2014-05-01 18:09:34.616 Vision[96926:70b] [CDVTimer][splashscreen] 11.940002ms
+2014-05-01 18:09:34.616 Vision[96926:70b] [CDVTimer][TotalPluginStartup] 12.502015ms
+2014-05-01 18:09:34.688 Vision[96926:70b] Resetting plugins due to page load.
+2014-05-01 18:09:34.928 Vision[96926:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4D08FAFE-FF70-4D03-B34C-C8D1CC4F2E36/Vision.app/www/index.html
+Terminating in response to SpringBoard's termination.

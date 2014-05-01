@@ -44,17 +44,20 @@ body {
 }
 
 .bar h1 {
-  position: absolute;
+  line-height: 1em;
+  margin-right: 10px;
+  margin-top: 16px;
+  float: right;
   display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0 -10px;
   font-size: 17px;
   font-weight: 500;
-  line-height: 44px;
   color: #757575;
-  text-align: center;
-  white-space: nowrap;
+}
+
+.bar img {
+  height: 31px;
+  width: 101px;
+  padding-top: 7px;
 }
 
 .bar-tab {
@@ -102,7 +105,7 @@ a {
 }
 
 li.table-view-cell {
-  padding: 11px 54px 11px 15px;
+  padding: 11px 50px 11px 15px;
   border-bottom: 1px solid #ddd;
   position: relative;
 }
@@ -110,15 +113,15 @@ li.table-view-cell {
 li.table-view-cell .small {
   font-size: 14px;
   color: #777;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
-li.table-view-cell .media-object {
+li.table-view-cell .left {
   float: left;
   margin-right: 15px;
 }
 
-li.table-view-cell .media-body {
+li.table-view-cell .right {
   overflow: hidden;
 }
 
@@ -131,8 +134,14 @@ li.table-view-cell .glyphicons:before {
 
 li.table-view-cell .glyphicons {
   position: absolute;
-  right: 44px;
+  right: 40px;
   top: 50%;
+}
+
+li.table-view-cell .metadata {
+  font-size: 13px;
+  color: #444;
+  margin-top: 6px;
 }
 
 .group:after {
