@@ -12,6 +12,12 @@
                             "xml": "false",
                             "count": 1
                         }
+                    ],
+                    "AudioToolbox.framework": [
+                        {
+                            "xml": "true",
+                            "count": 1
+                        }
                     ]
                 }
             },
@@ -29,6 +35,10 @@
                         {
                             "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -43,6 +53,9 @@
             "PACKAGE_NAME": "uk.ac.lancs.vision"
         },
         "org.apache.cordova.console": {
+            "PACKAGE_NAME": "uk.ac.lancs.vision"
+        },
+        "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "uk.ac.lancs.vision"
         }
     },

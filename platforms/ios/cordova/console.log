@@ -48,3 +48,24 @@ Terminating in response to SpringBoard's termination.
 2014-05-01 10:52:29.084 Vision[88746:70b] [CDVTimer][TotalPluginStartup] 31.876028ms
 2014-05-01 10:52:29.221 Vision[88746:70b] Resetting plugins due to page load.
 2014-05-01 10:52:29.305 Vision[88746:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/9D25E8E1-98A6-4482-96F1-1115077F45F5/Vision.app/www/index.html
+2014-05-01 10:54:06.331 Vision[89008:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-01 10:54:06.341 Vision[89008:70b] Unlimited access to network resources
+2014-05-01 10:54:06.405 Vision[89008:70b] [CDVTimer][splashscreen] 12.628019ms
+2014-05-01 10:54:06.405 Vision[89008:70b] [CDVTimer][TotalPluginStartup] 13.171971ms
+2014-05-01 10:54:06.564 Vision[89008:70b] Resetting plugins due to page load.
+2014-05-01 10:54:06.819 Vision[89008:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/9D25E8E1-98A6-4482-96F1-1115077F45F5/Vision.app/www/index.html
+2014-05-01 10:55:52.942 Vision[89204:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-01 10:55:52.950 Vision[89204:70b] Unlimited access to network resources
+2014-05-01 10:55:52.984 Vision[89204:70b] [CDVTimer][splashscreen] 11.262000ms
+2014-05-01 10:55:52.985 Vision[89204:70b] [CDVTimer][TotalPluginStartup] 11.816025ms
+2014-05-01 10:55:53.045 Vision[89204:70b] Resetting plugins due to page load.
+2014-05-01 10:55:53.116 Vision[89204:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/9D25E8E1-98A6-4482-96F1-1115077F45F5/Vision.app/www/index.html
+2014-05-01 10:56:27.152 Vision[89204:70b] THREAD WARNING: ['Notification'] took '21.823730' ms. Plugin should use a background thread.
+2014-05-01 10:56:29.672 Vision[89204:70b] THREAD WARNING: ['Notification'] took '10.787842' ms. Plugin should use a background thread.
+2014-05-01 10:56:36.312 Vision[89204:70b] THREAD WARNING: ['Notification'] took '10.981201' ms. Plugin should use a background thread.
+2014-05-01 10:57:00.969 Vision[89410:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-01 10:57:00.978 Vision[89410:70b] Unlimited access to network resources
+2014-05-01 10:57:01.012 Vision[89410:70b] [CDVTimer][splashscreen] 10.296047ms
+2014-05-01 10:57:01.012 Vision[89410:70b] [CDVTimer][TotalPluginStartup] 10.864019ms
+2014-05-01 10:57:01.186 Vision[89410:70b] Resetting plugins due to page load.
+2014-05-01 10:57:01.302 Vision[89410:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/9D25E8E1-98A6-4482-96F1-1115077F45F5/Vision.app/www/index.html
