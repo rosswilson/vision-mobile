@@ -1,4 +1,7 @@
-var HomeView = function (adapter, template, listItemTemplate) {
+var HomeView = function (adapter) {
+
+  var template = Handlebars.compile($("#home-tpl").html());
+  var listItemTemplate = Handlebars.compile($("#employee-li-tpl").html());
 
   this.render = function() {
     this.el.html(template());

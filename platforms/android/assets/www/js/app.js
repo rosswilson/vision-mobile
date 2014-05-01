@@ -1,8 +1,7 @@
 // We use an "Immediate Function" to initialize the application to avoid leaving anything behind in the global scope
 (function () {
 
-  var homeTpl = Handlebars.compile($("#home-tpl").html());
-  var employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
+  // Render the handlebar templates
   var employeeTpl = Handlebars.compile($("#employee-tpl").html());
 
   /* ---------------------------------- Local Variables ---------------------------------- */
@@ -41,7 +40,8 @@
   function route() {
     var hash = window.location.hash;
     if (!hash) {
-      slider.slidePage(new HomeView(adapter, homeTpl, employeeLiTpl).render().el);
+      // slider.slidePage(new HomeView(adapter).render().el);
+      slider.slidePage(new WhatsOnView().render().el);
       return;
     }
     var match = hash.match(detailsURL);
