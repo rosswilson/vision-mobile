@@ -7,13 +7,10 @@
   var adapter = new MemoryAdapter();
   adapter.initialize().done(function () {
     console.log("Data adapter initialized");
+    renderHomeView();
   });
 
   /* --------------------------------- Event Registration -------------------------------- */
-  $('.search-key').on('keyup', findByName);
-  $('.help-btn').on('click', function() {
-    alert("Some help here...")
-  });
 
   // Setup custom alert dialog
   document.addEventListener('deviceready', function () {
@@ -41,6 +38,14 @@
         $('.employee-list').append('<li><a href="#employees/' + e.id + '">' + e.firstName + ' ' + e.lastName + '</a></li>');
       }
     });
+  }
+
+  function renderHomeView() {
+    var html = "<h1>Directory</h1>" +
+    "<input class='search-key' type='search' placeholder='Enter name'/>" +
+    "<ul class='employee-list'></ul>";
+    $('body').html(html);
+    $('.search-key').on('keyup', findByName);
   }
 
 }());
