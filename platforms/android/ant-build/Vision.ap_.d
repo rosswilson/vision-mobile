@@ -31,6 +31,7 @@
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/assets/fonts/glyphicons-regular.ttf \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/assets/fonts/glyphicons-regular.woff \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/app.js \
+/Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/dashboard.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/data_sources \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/sources \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/views \
@@ -40,11 +41,16 @@
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/views/employee_view.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/views/home_view.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/views/whats_on_view.js \
+/Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/angular \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/fastclick.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/handlebars.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/iscroll.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/jquery.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/pageslider.js \
+/Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/angular/angular-animate.min.js \
+/Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/angular/angular-resource.min.js \
+/Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/angular/angular-route.min.js \
+/Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/angular/angular.min.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/plugins/org.apache.cordova.device \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/plugins/org.apache.cordova.dialogs \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen \

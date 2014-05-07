@@ -29,20 +29,15 @@ body {
   left: 0;
   z-index: 10;
   height: 44px;
-  padding-right: 10px;
-  padding-left: 10px;
   background-color: rgba(247,247,247,.88);
   border-bottom: 1px solid #ddd;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 .bar h1 {
   line-height: 1em;
-  margin-right: 10px;
-  margin-top: 16px;
-  float: right;
-  display: block;
+  right: 15px;
+  top: 14px;
+  position: absolute;
   font-size: 17px;
   font-weight: 500;
   color: #757575;
@@ -51,7 +46,9 @@ body {
 .bar img {
   height: 31px;
   width: 101px;
-  padding-top: 7px;
+  top: 7px;
+  left: 15px;
+  position: absolute;
 }
 
 .bar-tab {
