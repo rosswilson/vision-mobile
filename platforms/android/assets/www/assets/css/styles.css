@@ -37,12 +37,6 @@ body {
   backface-visibility: hidden;
 }
 
-.bar-nav {
-  border-bottom: 0;
-  -webkit-box-shadow: 0 0 1px rgba(0,0,0,.85);
-  box-shadow: 0 0 1px rgba(0,0,0,.85);
-}
-
 .bar h1 {
   line-height: 1em;
   margin-right: 10px;
