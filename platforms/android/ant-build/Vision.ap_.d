@@ -33,6 +33,9 @@
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/images/vision_logo.png \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/app.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/dashboard.js \
+/Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/favourites.js \
+/Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/history.js \
+/Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/js/search.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/angular \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/fastclick.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/handlebars.js \

@@ -1,6 +1,8 @@
 angular.module('vision')
 
-.controller('DashboardCtrl', function ($scope, CurrentlyAiring) {
+.controller('DashboardCtrl', function ($scope, CurrentlyAiring, SetTitle) {
+  SetTitle("Dashboard");
+
   var promise = CurrentlyAiring.get();
 
   promise.then(function(programmes) {
