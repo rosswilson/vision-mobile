@@ -63,7 +63,7 @@ body {
 }
 
 .bar-tab .tab-item {
-  font-size: 11px;
+  font-size: 13px;
   display: table-cell;
   height: 60px;
   color: #757575;
@@ -72,21 +72,26 @@ body {
 }
 
 .bar-tab .tab-item .icon {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 21px;
   padding-left: 0;
   margin-bottom: 7px;
   margin-top: 2px;
 }
 
 .bar-tab .tab-item .icon:before {
-  font-size: 18px;
+  font-size: 20px;
   color: #757575;
+  margin: 0;
 }
 
 .bar-tab .tab-item .tab-label {
   display: block;
   line-height: 1em;
+}
+
+.bar-tab .tab-item.active, .bar-tab .tab-item.active .icon:before {
+  color: #428bca;
 }
 
 a {
