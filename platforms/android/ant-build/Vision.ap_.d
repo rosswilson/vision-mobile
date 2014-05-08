@@ -23,6 +23,8 @@
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/plugins \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/css/glyphicons.css \
+/Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/css/lists.css \
+/Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/css/nav-bars.css \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/css/pageslider.css \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/css/reset.css \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/css/styles.css \
@@ -41,6 +43,7 @@
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/handlebars.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/iscroll.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/jquery.js \
+/Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/modernizr.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/pageslider.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/angular/angular-animate.min.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/angular/angular-resource.min.js \

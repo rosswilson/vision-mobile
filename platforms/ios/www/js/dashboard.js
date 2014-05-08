@@ -10,6 +10,10 @@ angular.module('vision')
   }, function(reason) {
     console.log(reason);
   });
+
+  $scope.alert = function(message) {
+    alert(message);
+  }
 })
 
 .service('CurrentlyAiring', function ($http, $q, $cacheFactory) {
