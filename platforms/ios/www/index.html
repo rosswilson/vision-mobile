@@ -1,167 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="vision">
 <head>
   <meta charset="utf-8">
   <title>Vision Mobile Application</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
-  <link href="assets/css/reset.css" rel="stylesheet">
-  <link href="assets/css/glyphicons.css" rel="stylesheet">
-  <link href="assets/css/pageslider.css" rel="stylesheet">
-  <link href="assets/css/styles.css" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/glyphicons.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/pageslider.css" rel="stylesheet">
 </head>
 <body>
 
-  <script id="whats-on-tpl" type="text/x-handlebars-template">
-    <header class="bar bar-nav">
-      <h1>Dashboard</h1>
-      <img src="http://148.88.32.64/cache/202x62-1/icons/vision_logo.png" />
-    </header>
+  <header class="bar bar-nav">
+    <h1 ng-bind="title">{{ title ? title : "Vision Mobile" }}</h1>
+    <img src="images/vision_logo.png" />
+  </header>
 
-    <nav class="bar bar-tab">
-      <a class="tab-item active" href="#">
-        <span class="glyphicons home icon"></span>
-        <span class="tab-label">Dashboard</span>
-      </a>
-      <a class="tab-item" href="#">
-        <span class="glyphicons clock icon"></span>
-        <span class="tab-label">History</span>
-      </a>
-      <a class="tab-item" href="#">
-        <span class="glyphicons bookmark icon"></span>
-        <span class="tab-label">Favorites</span>
-      </a>
-      <a class="tab-item" href="#">
-        <span class="glyphicons search icon"></span>
-        <span class="tab-label">Search</span>
-      </a>
-    </nav>
+  <nav class="bar bar-tab">
+    <a class="tab-item" href="#/" ng-class="{ active: title == 'Dashboard' }">
+      <span class="glyphicons home icon"></span>
+      <span class="tab-label">Dashboard</span>
+    </a>
+    <a class="tab-item" href="#/history" ng-class="{ active: title == 'History' }">
+      <span class="glyphicons clock icon"></span>
+      <span class="tab-label">History</span>
+    </a>
+    <a class="tab-item" href="#/favourites" ng-class="{ active: title == 'Favourites' }">
+      <span class="glyphicons bookmark icon"></span>
+      <span class="tab-label">Favourites</span>
+    </a>
+    <a class="tab-item" href="#/search" ng-class="{ active: title == 'Search' }">
+      <span class="glyphicons search icon"></span>
+      <span class="tab-label">Search</span>
+    </a>
+  </nav>
 
-    <div class="content" id="wrapper">
-      <ul class="table-view channel-list"></ul>
-    </div>
+  <div class="content" ng-view>
+    <!-- This gets replaced by Angular -->
+  </div>
+
+  <script type="text/ng-template" id="dashboard.html">
+    <ul class="table-view channel-list">
+      <li class="table-view-cell group" ng-repeat="programme in programmes">
+        <div class="left">
+          <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
+        </div>
+        <div class="right">
+          <p>{{ programme.programme_name }}</p>
+          <p class="small">{{ programme.synopsis }}</p>
+          <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }} minutes</p>
+          <span class="glyphicons chevron-right"></span>
+        </div>
+      </li>
+    </ul>
   </script>
 
-  <script id="whats-on-tpl-item" type="text/x-handlebars-template">
-    {{#.}}
-    <li class="table-view-cell group">
-      <div class="left">
-        <img src="http://148.88.32.64/cache/170x100-2/programmes{{ image }}" style="width: 85px; height: 50px;" />
-      </div>
-      <div class="right">
-        <p>{{ programme_name }}</p>
-        <p class="small">{{ synopsis }}</p>
-        <p class="metadata">{{ channel_name }} &middot; {{ duration }} minutes</p>
-        <span class="glyphicons chevron-right"></span>
-      </div>
-    </li>
-    {{/.}}
+  <script type="text/ng-template" id="history.html">
+    <p>History view</p>
   </script>
 
-  <script id="home-tpl" type="text/x-handlebars-template">
-    <div class="topcoat-navigation-bar">
-      <div class="topcoat-navigation-bar__item center full">
-        <h1 class="topcoat-navigation-bar__title">Employee Directory</h1>
-      </div>
-    </div>
-    <div class="search-bar">
-      <input type="search" placeholder="search" class="topcoat-search-input search-key">
-    </div>
-    <div class="topcoat-list__container scroller">
-      <ul class="topcoat-list list employee-list"></ul>
-    </div>
+  <script type="text/ng-template" id="favourites.html">
+    <p>Favourites view</p>
   </script>
 
-  <script id="employee-li-tpl" type="text/x-handlebars-template">
-    {{#.}}
-    <li class="topcoat-list__item">
-      <a href="#employees/{{id}}">
-        <img src="assets/pics/{{pic}}">
-        <p>{{firstName}} {{lastName}}</p>
-        <p>{{title}}</p>
-        <span class="chevron"></span>
-        <span class="count">{{reports}}</span>
-      </a>
-    </li>
-    {{/.}}
-  </script>
-
-  <script id="employee-tpl" type="text/x-handlebars-template">
-    <div class="topcoat-navigation-bar">
-      <div class="topcoat-navigation-bar__item left quarter">
-        <a class="topcoat-icon-button--quiet back-button" href="#">
-          <span class="topcoat-icon topcoat-icon--back"></span>
-        </a>
-      </div>
-      <div class="topcoat-navigation-bar__item center half">
-        <h1 class="topcoat-navigation-bar__title">Employee</h1>
-      </div>
-    </div>
-    <div class='details'>
-      <img src="assets/pics/{{pic}}" class="employee-image">
-      <h1>{{firstName}} {{lastName}}</h1>
-      <h2>{{title}}</h2>
-      <h2>{{city}}</h2>
-      <div class="topcoat-list__container scroller">
-        <ul class="topcoat-list list actions">
-          {{#if managerId}}
-            <li class="topcoat-list__item">
-              <a href="#employees/{{managerId}}">
-                <p>View Manager</p>
-                <p>{{managerName}}</p>
-                <div class="action-icon icon-manager"/>
-              </a>
-            </li>
-          {{/if}}
-          <li class="topcoat-list__item">
-            <a href="tel:{{officePhone}}">
-              <p>Call Office</p>
-              <p>{{officePhone}}</p>
-              <div class="action-icon icon-call"/></a>
-          </li>
-          <li class="topcoat-list__item">
-            <a href="tel:{{cellPhone}}">
-              <p>Call Cell</p>
-              <p>{{cellPhone}}</p>
-              <div class="action-icon icon-call"/></a>
-          </li>
-          <li class="topcoat-list__item">
-            <a href="sms:{{cellPhone}}">
-              <p>SMS</p>
-              <p>{{cellPhone}}</p>
-              <div class="action-icon icon-sms"/></a>
-          </li>
-          <li class="topcoat-list__item">
-            <a href="mailto:{{email}}">
-              <p>Email</p>
-              <p>{{email}}</p>
-              <div class="action-icon icon-mail"/>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <script type="text/ng-template" id="search.html">
+    <p>Search view</p>
   </script>
 
   <!-- Load cordova framework script -->
   <script src="cordova.js"></script>
 
   <!-- Load libs -->
-  <script src="lib/handlebars.js"></script>
   <script src="lib/jquery.js"></script>
-  <script src="lib/pageslider.js"></script>
   <script src="lib/fastclick.js"></script>
-
-  <!-- Load application data sources -->
-  <script src="js/data_sources/memory-adapter.js"></script>
-  <script src="js/data_sources/epg_source.js"></script>
-
-  <!-- Load application views -->
-  <script src="js/views/home_view.js"></script>
-  <script src="js/views/employee_view.js"></script>
-  <script src="js/views/whats_on_view.js"></script>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular/angular-animate.min.js"></script>
+  <script src="lib/angular/angular-resource.min.js"></script>
+  <script src="lib/angular/angular-route.min.js"></script>
 
   <!-- Finally load application  -->
   <script src="js/app.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/favourites.js"></script>
+  <script src="js/history.js"></script>
+  <script src="js/search.js"></script>
 </body>
 </html>
