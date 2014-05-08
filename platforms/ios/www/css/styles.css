@@ -1,7 +1,18 @@
+* {
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+}
+
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 17px;
   line-height: 21px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .bar-tab ~ .content {
@@ -29,20 +40,15 @@ body {
   left: 0;
   z-index: 10;
   height: 44px;
-  padding-right: 10px;
-  padding-left: 10px;
   background-color: rgba(247,247,247,.88);
   border-bottom: 1px solid #ddd;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 .bar h1 {
   line-height: 1em;
-  margin-right: 10px;
-  margin-top: 16px;
-  float: right;
-  display: block;
+  right: 15px;
+  top: 14px;
+  position: absolute;
   font-size: 17px;
   font-weight: 500;
   color: #757575;
@@ -51,7 +57,9 @@ body {
 .bar img {
   height: 31px;
   width: 101px;
-  padding-top: 7px;
+  top: 7px;
+  left: 15px;
+  position: absolute;
 }
 
 .bar-tab {
@@ -66,7 +74,7 @@ body {
 }
 
 .bar-tab .tab-item {
-  font-size: 11px;
+  font-size: 13px;
   display: table-cell;
   height: 60px;
   color: #757575;
@@ -75,21 +83,26 @@ body {
 }
 
 .bar-tab .tab-item .icon {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 21px;
   padding-left: 0;
   margin-bottom: 7px;
   margin-top: 2px;
 }
 
 .bar-tab .tab-item .icon:before {
-  font-size: 18px;
+  font-size: 20px;
   color: #757575;
+  margin: 0;
 }
 
 .bar-tab .tab-item .tab-label {
   display: block;
   line-height: 1em;
+}
+
+.bar-tab .tab-item.active, .bar-tab .tab-item.active .icon:before {
+  color: #428bca;
 }
 
 a {

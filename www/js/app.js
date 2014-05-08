@@ -1,5 +1,9 @@
 // Declare the app level module which loads all it's dependencies
-angular.module('vision', ['ngRoute', 'ngResource'])
+angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
+
+.run(function() {
+  FastClick.attach(document.body);
+})
 
 .config(function($routeProvider) {
   $routeProvider.

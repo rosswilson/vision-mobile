@@ -1,0 +1,39 @@
+li.table-view-cell {
+  padding: 11px 50px 11px 15px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+li.table-view-cell .small {
+  font-size: 14px;
+  color: #777;
+  margin-top: 4px;
+}
+
+li.table-view-cell .left {
+  float: left;
+  margin-right: 15px;
+}
+
+li.table-view-cell .right {
+  overflow: hidden;
+}
+
+li.table-view-cell .glyphicons:before {
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #bbb;
+}
+
+li.table-view-cell .glyphicons {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+}
+
+li.table-view-cell .metadata {
+  font-size: 13px;
+  color: #444;
+  margin-top: 6px;
+}

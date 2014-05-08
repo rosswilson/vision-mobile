@@ -12,8 +12,9 @@ angular.module('vision')
   });
 })
 
-.service('CurrentlyAiring', function ($http, $q) {
+.service('CurrentlyAiring', function ($http, $q, $cacheFactory) {
   var _url = 'http://vision.lancs.ac.uk/JSON_CACHE/currently_airing.json';
+  var cache = $cacheFactory('currently_airing');
 
   return {
     get: function() {
@@ -27,7 +28,7 @@ angular.module('vision')
         deferred.reject("Error getting currently airing JSON cache file");
       };
 
-      $http.get(_url).success(success).error(failure);
+      $http.get(_url, { cache: true }).success(success).error(failure);
 
       return deferred.promise;
     }
