@@ -43,6 +43,7 @@
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/handlebars.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/iscroll.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/jquery.js \
+/Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/modernizr.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/pageslider.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/angular/angular-animate.min.js \
 /Users/rosswilson/Desktop/vision-mobile/platforms/android/assets/www/lib/angular/angular-resource.min.js \

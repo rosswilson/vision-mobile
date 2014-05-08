@@ -70,6 +70,10 @@
   color: #428bca;
 }
 
+.bar-tab .tab-item:hover, .bar-tab .tab-item:hover .icon:before {
+  color: #428bca;
+}
+
 .bar-tab ~ .content {
   padding-bottom: 60px;
 }
