@@ -17,7 +17,7 @@ li.table-view-cell {
 
   /*position: relative;*/
 
-  /*min-width: 300px;*/
+  min-width: 300px;
 
   -webkit-flex: 300px;
   -webkit-box-flex: 1;

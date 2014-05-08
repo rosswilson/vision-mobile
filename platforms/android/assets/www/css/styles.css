@@ -1,25 +1,22 @@
 * {
-  -webkit-user-select: none; /* Chrome/Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+ */
-
-  /* Rules below not implemented in browsers yet */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 17px;
   line-height: 21px;
-}
-
-.bar-tab ~ .content {
-  padding-bottom: 60px;
-}
-
-.bar-nav ~ .content {
-  padding-top: 44px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .content {
@@ -33,121 +30,10 @@ body {
   background-color: #fff;
 }
 
-.bar {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 10;
-  height: 44px;
-  background-color: rgba(247,247,247,.88);
-  border-bottom: 1px solid #ddd;
-}
-
-.bar h1 {
-  line-height: 1em;
-  right: 15px;
-  top: 14px;
-  position: absolute;
-  font-size: 17px;
-  font-weight: 500;
-  color: #757575;
-}
-
-.bar img {
-  height: 31px;
-  width: 101px;
-  top: 7px;
-  left: 15px;
-  position: absolute;
-}
-
-.bar-tab {
-  bottom: 0;
-  display: table;
-  width: 100%;
-  height: 50px;
-  padding: 0;
-  table-layout: fixed;
-  border-top: 1px solid #ddd;
-  border-bottom: 0;
-}
-
-.bar-tab .tab-item {
-  font-size: 13px;
-  display: table-cell;
-  height: 60px;
-  color: #757575;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.bar-tab .tab-item .icon {
-  width: 20px;
-  height: 21px;
-  padding-left: 0;
-  margin-bottom: 7px;
-  margin-top: 2px;
-}
-
-.bar-tab .tab-item .icon:before {
-  font-size: 20px;
-  color: #757575;
-  margin: 0;
-}
-
-.bar-tab .tab-item .tab-label {
-  display: block;
-  line-height: 1em;
-}
-
-.bar-tab .tab-item.active, .bar-tab .tab-item.active .icon:before {
-  color: #428bca;
-}
-
 a {
   color: #428bca;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
-}
-
-li.table-view-cell {
-  padding: 11px 50px 11px 15px;
-  border-bottom: 1px solid #ddd;
-  position: relative;
-}
-
-li.table-view-cell .small {
-  font-size: 14px;
-  color: #777;
-  margin-top: 4px;
-}
-
-li.table-view-cell .left {
-  float: left;
-  margin-right: 15px;
-}
-
-li.table-view-cell .right {
-  overflow: hidden;
-}
-
-li.table-view-cell .glyphicons:before {
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color: #bbb;
-}
-
-li.table-view-cell .glyphicons {
-  position: absolute;
-  right: 40px;
-  top: 50%;
-}
-
-li.table-view-cell .metadata {
-  font-size: 13px;
-  color: #444;
-  margin-top: 6px;
 }
 
 .group:after {
