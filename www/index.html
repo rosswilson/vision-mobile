@@ -23,13 +23,17 @@
   </header>
 
   <nav class="bar bar-tab">
-    <a class="tab-item" href="#/" ng-class="{ active: title == 'Dashboard' }">
-      <span class="glyphicons home icon"></span>
-      <span class="tab-label">Dashboard</span>
+    <a class="tab-item" href="#/guide" ng-class="{ active: title == 'Programme Guide' }">
+      <span class="glyphicons calendar icon"></span>
+      <span class="tab-label">Guide</span>
     </a>
     <a class="tab-item" href="#/history" ng-class="{ active: title == 'History' }">
       <span class="glyphicons clock icon"></span>
       <span class="tab-label">History</span>
+    </a>
+    <a class="tab-item" href="#/" ng-class="{ active: title == 'Dashboard' }">
+      <span class="glyphicons home icon"></span>
+      <span class="tab-label">Dashboard</span>
     </a>
     <a class="tab-item" href="#/favourites" ng-class="{ active: title == 'Favourites' }">
       <span class="glyphicons bookmark icon"></span>
@@ -107,6 +111,10 @@
     <p>Search view</p>
   </script>
 
+  <script type="text/ng-template" id="guide.html">
+    <p>Guide view</p>
+  </script>
+
   <script type="text/ng-template" id="playback.html">
     <div ng-hide="programme">
       <p>Waiting for programme to load</p>
@@ -145,5 +153,6 @@
   <script src="js/history.js"></script>
   <script src="js/search.js"></script>
   <script src="js/playback.js"></script>
+  <script src="js/guide.js"></script>
 </body>
 </html>
