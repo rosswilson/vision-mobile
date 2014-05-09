@@ -4,35 +4,32 @@ angular.module('vision')
 // http://10.42.32.183:1935/vod/mp4:937745aafa7c912ded00a3df8f10ada72c014133.mp4/playlist.m3u8
 
 .controller('PlaybackCtrl', function ($scope, SetTitle, $routeParams, ProgrammeService) {
-  SetTitle("Watch Programme");
-
   $scope.programme_id = $routeParams['programme_id'];
   $scope.live_channel = $routeParams['live_channel'];
 
-  var video_url = function() {
-    if ($scope.live_channel) {
-      return "http://10.42.67.123:1935/live/mp4:" + $scope.live_channel + "/playlist.m3u8";
-    } else {
-      return $scope.programme.vod_url;
-    }
-  }
-
-  var promise = ProgrammeService.get($scope.programme_id);
-  promise.then(function(data) {
-    // Store the programme in the scope
+  var success = function(data) {
     $scope.programme = data;
-
-    console.log(data);
 
     // Page title will be programme name
     SetTitle(data.programme_name);
 
+    if ($scope.live_channel) {
+      var video_url = ProgrammeService.get_live_url($scope.live_channel);
+    } else {
+      var video_url = ProgrammeService.get_vod_url($scope.programme);
+    }
+
     // Init the video player, set it's src, load, then play
     var player = document.getElementById('video-player');
-    player.setAttribute("src", video_url());
-  }, function(error) {
+    player.setAttribute("src", video_url);
+    player.setAttribute("poster", ProgrammeService.get_poster_url($scope.programme, 360, 240));
+  };
+
+  var error = function(error) {
     console.log(error);
-  });
+  };
+
+  var promise = ProgrammeService.get($scope.programme_id).then(success, error);
 })
 
 .service('ProgrammeService', function ($http, $q, $cacheFactory, QueryStringBuilder) {
@@ -63,15 +60,15 @@ angular.module('vision')
       $http.get(url, { cache: true }).success(success).error(failure);
 
       return deferred.promise;
+    },
+    get_live_url: function(channel) {
+      return "http://10.42.67.123:1935/live/mp4:" + channel + "/playlist.m3u8";
+    },
+    get_vod_url: function(programme) {
+      return programme.vod_url;
+    },
+    get_poster_url: function(programme, width, height) {
+      return "http://148.88.32.64/cache/" + width + "x" + height + "/programmes" + programme.image;
     }
-  }
-})
-
-.factory('QueryStringBuilder', function() {
-  return function(data) {
-   var ret = [];
-   for (var d in data)
-      ret.push(encodeURIComponent(d) + "=" + encodeURIComponent(data[d]));
-   return ret.join("&");
   }
 });

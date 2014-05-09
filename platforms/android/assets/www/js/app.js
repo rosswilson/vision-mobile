@@ -36,4 +36,13 @@ angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
   return function(name) {
     $rootScope.title = name;
   };
+})
+
+.factory('QueryStringBuilder', function() {
+  return function(data) {
+   var ret = [];
+   for (var d in data)
+      ret.push(encodeURIComponent(d) + "=" + encodeURIComponent(data[d]));
+   return ret.join("&");
+  }
 });

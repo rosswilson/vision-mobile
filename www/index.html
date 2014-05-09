@@ -18,7 +18,7 @@
 <body>
 
   <header class="bar bar-nav">
-    <h1 id="page-title" ng-bind="title">{{ title ? title : "Vision Mobile" }}</h1>
+    <h1 id="page-title">{{ title ? title : "Vision Mobile" }}</h1>
     <img src="images/vision_logo.png" />
   </header>
 
@@ -74,29 +74,29 @@
     <p><a href="rtsp://10.42.32.183:1935/live/bbcone.stream">RTSP port 1935 Link</a></p>
     <p><a href="rtsp://10.42.32.183/live/bbcone.stream">RTSP port 80 Link</a></p>
 
-    <!-- http://148.88.32.70/3b9617324658f7628c47c52ec35a8198c14aaf38.mp4 -->
-    <!-- http://10.42.32.183:1935/vod/mp4:937745aafa7c912ded00a3df8f10ada72c014133.mp4/playlist.m3u8 -->
-
-    <video id="video" src="http://148.88.227.225/1c5254c9fe480422aab1d7bb797098a1f54ec2a1.mp4" autobuffer height="240" width="360" poster="http://148.88.32.64/cache/360x240/programmes/BBCONE/NORTHWESTTONIGHT"></video>
-
-    <script>
-      var video = document.getElementById('video');
-      video.addEventListener('click',function(){
-        video.play();
-      },false);
-    </script>
-
-    <!-- <video src="http://148.88.227.225/1c5254c9fe480422aab1d7bb797098a1f54ec2a1.mp4" controls autoplay autobuffer height="240" width="360">
-      <p>Sorry, your device is not capable of playing our videos</p>
+    <video src="http://10.42.32.183:1935/live/bbcone.stream/playlist.m3u8" height="240" width="360" onclick="this.play();">
     </video>
 
-    <video src="http://148.88.227.225/output.mp4" controls autoplay autobuffer height="240" width="360">
-      <p>Sorry, your device is not capable of playing our videos</p>
+    <video src="http://10.42.32.183:1935/live/mp4:bbcone.stream/playlist.m3u8" height="240" width="360" onclick="this.play();">
     </video>
 
-    <video src="http://148.88.227.225/android.mp4" controls autoplay autobuffer height="240" width="360">
-      <p>Sorry, your device is not capable of playing our videos</p>
-    </video> -->
+    <video src="http://10.42.32.183:1935/live/bbcone.stream/manifest.f4m" height="240" width="360" onclick="this.play();">
+    </video>
+
+    <video src="http://10.42.32.183:1935/live/mp4:bbcone.stream/manifest.f4v" height="240" width="360" onclick="this.play();">
+    </video>
+
+    <video src="rtmp://10.42.32.183:1935/live/bbcone.stream" height="240" width="360" onclick="this.play();">
+    </video>
+
+    <video src="rtmp://10.42.32.183:1935/live/mp4:bbcone.stream" height="240" width="360" onclick="this.play();">
+    </video>
+
+    <video src="rtsp://10.42.32.183:1935/live/bbcone.stream" height="240" width="360" onclick="this.play();">
+    </video>
+
+    <video src="rtsp://10.42.32.183:1935/live/mp4:bbcone.stream" height="240" width="360" onclick="this.play();">
+    </video>
   </script>
 
   <script type="text/ng-template" id="favourites.html">
@@ -115,8 +115,7 @@
     <div ng-show="programme">
       <h2>{{ programme.p_name }} <small ng-show="programme.sub_title">{{ programme.sub_title }}</small></h2>
 
-      <video id="video-player" src="" height="240" width="360" onclick="this.play();"
-        poster="http://148.88.32.64/cache/360x240/programmes{{ programme.image }}">
+      <video id="video-player" src="" height="240" width="360" onclick="this.play();" poster="">
         <p>Sorry, your device is not capable of playing our videos</p>
       </video>
 
