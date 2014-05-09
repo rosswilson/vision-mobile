@@ -23,7 +23,6 @@ angular.module('vision')
     var player = document.getElementById('video-player');
     player.setAttribute("src", video_url);
     player.setAttribute("poster", ProgrammeService.get_poster_url($scope.programme, 360, 240));
-    $scope.debug = "Loaded video";
   };
 
   var error = function(error) {

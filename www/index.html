@@ -68,11 +68,9 @@
   </script>
 
   <script type="text/ng-template" id="history.html">
-    <p><a href="#/programmes/3b9617324658f7628c47c52ec35a8198c14aaf38">Jamie 15 Minute Meals Player page</a></p>
-    
     <ul id="channel-list" class="flex-container">
       <li class="table-view-cell group" ng-repeat="programme in history">
-        <a href="#/programmes/{{ programme.programme_id }}?live_channel={{ programme.wowza_code }}">
+        <a href="#/programmes/{{ programme.programme_id }}">
           <div class="left">
             <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
           </div>
@@ -112,7 +110,6 @@
       </video>
 
       <p>{{ programme.p_synopsis }}</p>
-      <p ng-show="debug">{{ debug }}</p>
       <img src="http://148.88.32.64/cache/170x100-2/programmes{{programme.channel_image}}" style="width: 85px; height: 50px;" />
       <p>{{ programme.channel_name }}</p>
       <p>Duration: {{ programme.duration_minutes }} minutes</p>
