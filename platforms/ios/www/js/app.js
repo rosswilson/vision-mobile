@@ -24,8 +24,8 @@ angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
     controller: 'SearchCtrl'
   }).
   when('/programmes/:programme_id', {
-    templateUrl: 'partials/programme-detail.html',
-    controller: 'ProgrammeDetailCtrl'
+    templateUrl: 'playback.html',
+    controller: 'PlaybackCtrl'
   }).
   otherwise({
     redirectTo: '/dashboard'

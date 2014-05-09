@@ -48,7 +48,7 @@
   <script type="text/ng-template" id="dashboard.html">
     <ul id="channel-list" class="flex-container">
       <li class="table-view-cell group" ng-repeat="programme in programmes">
-        <a ng-click="alert(programme.programme_name)">
+        <a href="#/programmes/{{ programme.programme_id }}?live_channel={{ programme.wowza_code }}">
           <div class="left">
             <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
           </div>
@@ -65,6 +65,38 @@
 
   <script type="text/ng-template" id="history.html">
     <p>History view</p>
+    <p><a href="#/programmes/3b9617324658f7628c47c52ec35a8198c14aaf38">Jamie 15 Minute Meals Player page</a></p>
+    <p><a href="http://10.42.32.183:1935/live/bbcone.stream/playlist.m3u8">HLS Link</a></p>
+    <p><a href="http://10.42.32.183:1935/live/bbcone.stream/manifest.f4m">F4M Link</a></p>
+    <p><a href="http://10.42.32.183:1935/live/bbcone.stream/manifest.f4v">F4V Link</a></p>
+    <p><a href="rtmp://10.42.32.183:1935/live/bbcone.stream">RTMP port 1935 Link</a></p>
+    <p><a href="rtmp://10.42.32.183/live/bbcone.stream">RTMP port 80 Link</a></p>
+    <p><a href="rtsp://10.42.32.183:1935/live/bbcone.stream">RTSP port 1935 Link</a></p>
+    <p><a href="rtsp://10.42.32.183/live/bbcone.stream">RTSP port 80 Link</a></p>
+
+    <!-- http://148.88.32.70/3b9617324658f7628c47c52ec35a8198c14aaf38.mp4 -->
+    <!-- http://10.42.32.183:1935/vod/mp4:937745aafa7c912ded00a3df8f10ada72c014133.mp4/playlist.m3u8 -->
+
+    <video id="video" src="http://148.88.227.225/1c5254c9fe480422aab1d7bb797098a1f54ec2a1.mp4" autobuffer height="240" width="360" poster="http://148.88.32.64/cache/360x240/programmes/BBCONE/NORTHWESTTONIGHT"></video>
+
+    <script>
+      var video = document.getElementById('video');
+      video.addEventListener('click',function(){
+        video.play();
+      },false);
+    </script>
+
+    <!-- <video src="http://148.88.227.225/1c5254c9fe480422aab1d7bb797098a1f54ec2a1.mp4" controls autoplay autobuffer height="240" width="360">
+      <p>Sorry, your device is not capable of playing our videos</p>
+    </video>
+
+    <video src="http://148.88.227.225/output.mp4" controls autoplay autobuffer height="240" width="360">
+      <p>Sorry, your device is not capable of playing our videos</p>
+    </video>
+
+    <video src="http://148.88.227.225/android.mp4" controls autoplay autobuffer height="240" width="360">
+      <p>Sorry, your device is not capable of playing our videos</p>
+    </video> -->
   </script>
 
   <script type="text/ng-template" id="favourites.html">
@@ -73,6 +105,26 @@
 
   <script type="text/ng-template" id="search.html">
     <p>Search view</p>
+  </script>
+
+  <script type="text/ng-template" id="playback.html">
+    <div ng-hide="programme">
+      <p>Waiting for programme to load</p>
+    </div>
+
+    <div ng-show="programme">
+      <h2>{{ programme.p_name }} <small ng-show="programme.sub_title">{{ programme.sub_title }}</small></h2>
+
+      <video src="" height="240" width="360" onclick="this.play();" poster="http://148.88.32.64/cache/360x240/programmes{{ programme.image }}" id="video-player">
+        <p>Sorry, your device is not capable of playing our videos</p>
+      </video>
+
+      <p>{{ programme.p_synopsis }}</p>
+      <img src="http://148.88.32.64/cache/170x100-2/programmes{{programme.channel_image}}" style="width: 85px; height: 50px;" />
+      <p>{{ programme.channel_name }}</p>
+      <p>Duration: {{ programme.duration_minutes }} minutes</p>
+      <p>Genre: {{ programme.genre }}</p>
+    </div>
   </script>
 
   <!-- Load cordova framework script -->
@@ -92,5 +144,6 @@
   <script src="js/favourites.js"></script>
   <script src="js/history.js"></script>
   <script src="js/search.js"></script>
+  <script src="js/playback.js"></script>
 </body>
 </html>
