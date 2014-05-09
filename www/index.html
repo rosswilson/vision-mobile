@@ -18,18 +18,22 @@
 <body>
 
   <header class="bar bar-nav">
-    <h1 id="page-title" ng-bind="title">{{ title ? title : "Vision Mobile" }}</h1>
+    <h1 id="page-title">{{ title ? title : "Vision Mobile" }}</h1>
     <img src="images/vision_logo.png" />
   </header>
 
   <nav class="bar bar-tab">
-    <a class="tab-item" href="#/" ng-class="{ active: title == 'Dashboard' }">
-      <span class="glyphicons home icon"></span>
-      <span class="tab-label">Dashboard</span>
+    <a class="tab-item" href="#/guide" ng-class="{ active: title == 'Programme Guide' }">
+      <span class="glyphicons calendar icon"></span>
+      <span class="tab-label">Guide</span>
     </a>
     <a class="tab-item" href="#/history" ng-class="{ active: title == 'History' }">
       <span class="glyphicons clock icon"></span>
       <span class="tab-label">History</span>
+    </a>
+    <a class="tab-item" href="#/" ng-class="{ active: title == 'Dashboard' }">
+      <span class="glyphicons home icon"></span>
+      <span class="tab-label">Dashboard</span>
     </a>
     <a class="tab-item" href="#/favourites" ng-class="{ active: title == 'Favourites' }">
       <span class="glyphicons bookmark icon"></span>
@@ -48,7 +52,7 @@
   <script type="text/ng-template" id="dashboard.html">
     <ul id="channel-list" class="flex-container">
       <li class="table-view-cell group" ng-repeat="programme in programmes">
-        <a ng-click="alert(programme.programme_name)">
+        <a href="#/programmes/{{ programme.programme_id }}?live_channel={{ programme.wowza_code }}">
           <div class="left">
             <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
           </div>
@@ -64,7 +68,21 @@
   </script>
 
   <script type="text/ng-template" id="history.html">
-    <p>History view</p>
+    <ul id="channel-list" class="flex-container">
+      <li class="table-view-cell group" ng-repeat="programme in history">
+        <a href="#/programmes/{{ programme.programme_id }}">
+          <div class="left">
+            <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
+          </div>
+          <div class="right">
+            <p>{{ programme.programme_name }}</p>
+            <p class="small">{{ programme.synopsis }}</p>
+            <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }} minutes</p>
+            <span class="glyphicons chevron-right"></span>
+          </div>
+        </a>
+      </li>
+    </ul>
   </script>
 
   <script type="text/ng-template" id="favourites.html">
@@ -73,6 +91,30 @@
 
   <script type="text/ng-template" id="search.html">
     <p>Search view</p>
+  </script>
+
+  <script type="text/ng-template" id="guide.html">
+    <p>Guide view</p>
+  </script>
+
+  <script type="text/ng-template" id="playback.html">
+    <div ng-hide="programme">
+      <p>Waiting for programme to load</p>
+    </div>
+
+    <div ng-show="programme">
+      <h2>{{ programme.p_name }} <small ng-show="programme.sub_title">{{ programme.sub_title }}</small></h2>
+
+      <video id="video-player" src="" height="240" width="360" onclick="this.play();" poster="">
+        <p>Sorry, your device is not capable of playing our videos</p>
+      </video>
+
+      <p>{{ programme.p_synopsis }}</p>
+      <img src="http://148.88.32.64/cache/170x100-2/programmes{{programme.channel_image}}" style="width: 85px; height: 50px;" />
+      <p>{{ programme.channel_name }}</p>
+      <p>Duration: {{ programme.duration_minutes }} minutes</p>
+      <p>Genre: {{ programme.genre }}</p>
+    </div>
   </script>
 
   <!-- Load cordova framework script -->
@@ -92,5 +134,7 @@
   <script src="js/favourites.js"></script>
   <script src="js/history.js"></script>
   <script src="js/search.js"></script>
+  <script src="js/playback.js"></script>
+  <script src="js/guide.js"></script>
 </body>
 </html>

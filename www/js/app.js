@@ -23,9 +23,13 @@ angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
     templateUrl: 'search.html',
     controller: 'SearchCtrl'
   }).
+  when('/guide', {
+    templateUrl: 'guide.html',
+    controller: 'GuideCtrl'
+  }).
   when('/programmes/:programme_id', {
-    templateUrl: 'partials/programme-detail.html',
-    controller: 'ProgrammeDetailCtrl'
+    templateUrl: 'playback.html',
+    controller: 'PlaybackCtrl'
   }).
   otherwise({
     redirectTo: '/dashboard'
@@ -36,4 +40,13 @@ angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
   return function(name) {
     $rootScope.title = name;
   };
+})
+
+.factory('QueryStringBuilder', function() {
+  return function(data) {
+   var ret = [];
+   for (var d in data)
+      ret.push(encodeURIComponent(d) + "=" + encodeURIComponent(data[d]));
+   return ret.join("&");
+  }
 });
