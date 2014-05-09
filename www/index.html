@@ -68,39 +68,23 @@
   </script>
 
   <script type="text/ng-template" id="history.html">
-    <p>History view</p>
     <p><a href="#/programmes/3b9617324658f7628c47c52ec35a8198c14aaf38">Jamie 15 Minute Meals Player page</a></p>
-    <p><a href="http://10.42.32.183:1935/live/bbcone.stream/playlist.m3u8">HLS Link</a></p>
-    <p><a href="http://10.42.32.183:1935/live/bbcone.stream/manifest.f4m">F4M Link</a></p>
-    <p><a href="http://10.42.32.183:1935/live/bbcone.stream/manifest.f4v">F4V Link</a></p>
-    <p><a href="rtmp://10.42.32.183:1935/live/bbcone.stream">RTMP port 1935 Link</a></p>
-    <p><a href="rtmp://10.42.32.183/live/bbcone.stream">RTMP port 80 Link</a></p>
-    <p><a href="rtsp://10.42.32.183:1935/live/bbcone.stream">RTSP port 1935 Link</a></p>
-    <p><a href="rtsp://10.42.32.183/live/bbcone.stream">RTSP port 80 Link</a></p>
-
-    <video src="http://10.42.32.183:1935/live/bbcone.stream/playlist.m3u8" height="240" width="360" onclick="this.play();">
-    </video>
-
-    <video src="http://10.42.32.183:1935/live/mp4:bbcone.stream/playlist.m3u8" height="240" width="360" onclick="this.play();">
-    </video>
-
-    <video src="http://10.42.32.183:1935/live/bbcone.stream/manifest.f4m" height="240" width="360" onclick="this.play();">
-    </video>
-
-    <video src="http://10.42.32.183:1935/live/mp4:bbcone.stream/manifest.f4v" height="240" width="360" onclick="this.play();">
-    </video>
-
-    <video src="rtmp://10.42.32.183:1935/live/bbcone.stream" height="240" width="360" onclick="this.play();">
-    </video>
-
-    <video src="rtmp://10.42.32.183:1935/live/mp4:bbcone.stream" height="240" width="360" onclick="this.play();">
-    </video>
-
-    <video src="rtsp://10.42.32.183:1935/live/bbcone.stream" height="240" width="360" onclick="this.play();">
-    </video>
-
-    <video src="rtsp://10.42.32.183:1935/live/mp4:bbcone.stream" height="240" width="360" onclick="this.play();">
-    </video>
+    
+    <ul id="channel-list" class="flex-container">
+      <li class="table-view-cell group" ng-repeat="programme in history">
+        <a href="#/programmes/{{ programme.programme_id }}?live_channel={{ programme.wowza_code }}">
+          <div class="left">
+            <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
+          </div>
+          <div class="right">
+            <p>{{ programme.programme_name }}</p>
+            <p class="small">{{ programme.synopsis }}</p>
+            <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }} minutes</p>
+            <span class="glyphicons chevron-right"></span>
+          </div>
+        </a>
+      </li>
+    </ul>
   </script>
 
   <script type="text/ng-template" id="favourites.html">
@@ -128,6 +112,7 @@
       </video>
 
       <p>{{ programme.p_synopsis }}</p>
+      <p ng-show="debug">{{ debug }}</p>
       <img src="http://148.88.32.64/cache/170x100-2/programmes{{programme.channel_image}}" style="width: 85px; height: 50px;" />
       <p>{{ programme.channel_name }}</p>
       <p>Duration: {{ programme.duration_minutes }} minutes</p>

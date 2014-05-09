@@ -11,7 +11,7 @@ angular.module('vision')
     $scope.programme = data;
 
     // Page title will be programme name
-    SetTitle(data.programme_name);
+    SetTitle($scope.programme.p_name);
 
     if ($scope.live_channel) {
       var video_url = ProgrammeService.get_live_url($scope.live_channel);
@@ -23,6 +23,7 @@ angular.module('vision')
     var player = document.getElementById('video-player');
     player.setAttribute("src", video_url);
     player.setAttribute("poster", ProgrammeService.get_poster_url($scope.programme, 360, 240));
+    $scope.debug = "Loaded video";
   };
 
   var error = function(error) {
@@ -32,9 +33,8 @@ angular.module('vision')
   var promise = ProgrammeService.get($scope.programme_id).then(success, error);
 })
 
-.service('ProgrammeService', function ($http, $q, $cacheFactory, QueryStringBuilder) {
+.service('ProgrammeService', function ($http, $q, QueryStringBuilder) {
   var _url = 'http://vision.lancs.ac.uk:9110/modules/videometa/get_video_meta';
-  var cache = $cacheFactory('programmes');
 
   return {
     get: function(programme_id) {
