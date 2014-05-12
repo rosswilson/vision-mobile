@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="uk.ac.lancs.vision" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Vision</name>
+    <description>
+        A cross platform mobile app for Lancaster University's IPTV platform, Vision.
+    </description>
+    <author email="r.a.wilson@lancs.ac.uk" href="http://vision.lancs.ac.uk">
+        Ross Wilson
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="AllowInlineMediaPlayback" value="true"/>
+    <preference name="DisallowOverscroll" value="true"/>
+</widget>

@@ -32,6 +32,9 @@
     <feature name="Notification">
         <param name="ios-package" value="CDVNotification" />
     </feature>
+    <feature name="ScanditSDK">
+        <param name="ios-package" value="ScanditSDK" />
+    </feature>
     <name>Vision</name>
     <description>
         A cross platform mobile app for Lancaster University's IPTV platform, Vision.
@@ -43,7 +46,4 @@
     <access origin="*" />
     <preference name="AllowInlineMediaPlayback" value="true" />
     <preference name="DisallowOverscroll" value="true" />
-    <feature name="ScanditSDK">
-        <param name="ios-package" value="ScanditSDK" />
-    </feature>
 </widget>

@@ -131,3 +131,23 @@ Terminating in response to SpringBoard's termination.
 2014-05-01 18:09:34.688 Vision[96926:70b] Resetting plugins due to page load.
 2014-05-01 18:09:34.928 Vision[96926:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4D08FAFE-FF70-4D03-B34C-C8D1CC4F2E36/Vision.app/www/index.html
 Terminating in response to SpringBoard's termination.
+2014-05-12 11:03:03.884 Vision[5768:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-12 11:03:03.912 Vision[5768:70b] Unlimited access to network resources
+2014-05-12 11:03:04.144 Vision[5768:70b] [CDVTimer][splashscreen] 63.448012ms
+2014-05-12 11:03:04.145 Vision[5768:70b] [CDVTimer][TotalPluginStartup] 63.970029ms
+2014-05-12 11:03:04.293 Vision[5768:70b] Resetting plugins due to page load.
+2014-05-12 11:03:05.427 Vision[5768:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4D08FAFE-FF70-4D03-B34C-C8D1CC4F2E36/Vision.app/www/index.html#/dashboard
+2014-05-12 11:03:37.736 Vision[5905:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-12 11:03:37.744 Vision[5905:70b] Unlimited access to network resources
+2014-05-12 11:03:37.777 Vision[5905:70b] [CDVTimer][splashscreen] 9.838998ms
+2014-05-12 11:03:37.778 Vision[5905:70b] [CDVTimer][TotalPluginStartup] 10.379970ms
+2014-05-12 11:03:37.837 Vision[5905:70b] Resetting plugins due to page load.
+2014-05-12 11:03:38.334 Vision[5905:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4D08FAFE-FF70-4D03-B34C-C8D1CC4F2E36/Vision.app/www/index.html#/dashboard
+2014-05-12 11:03:47.428 Vision[5905:70b] THREAD WARNING: ['ScanditSDK'] took '276.513916' ms. Plugin should use a background thread.
+2014-05-12 11:22:27.871 Vision[6570:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-12 11:22:27.880 Vision[6570:70b] Unlimited access to network resources
+2014-05-12 11:22:27.913 Vision[6570:70b] [CDVTimer][splashscreen] 9.954989ms
+2014-05-12 11:22:27.913 Vision[6570:70b] [CDVTimer][TotalPluginStartup] 10.504007ms
+2014-05-12 11:22:28.115 Vision[6570:70b] Resetting plugins due to page load.
+2014-05-12 11:22:29.462 Vision[6570:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4D08FAFE-FF70-4D03-B34C-C8D1CC4F2E36/Vision.app/www/index.html#/dashboard
+2014-05-12 11:23:21.917 Vision[6570:70b] THREAD WARNING: ['ScanditSDK'] took '269.302734' ms. Plugin should use a background thread.
