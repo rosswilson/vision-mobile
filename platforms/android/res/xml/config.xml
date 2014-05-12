@@ -24,4 +24,7 @@
     <access origin="*" />
     <preference name="AllowInlineMediaPlayback" value="true" />
     <preference name="DisallowOverscroll" value="true" />
+    <feature name="ScanditSDK">
+        <param name="android-package" value="com.mirasense.scanditsdk.plugin.ScanditSDK" />
+    </feature>
 </widget>

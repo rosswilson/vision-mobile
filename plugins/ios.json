@@ -10,12 +10,70 @@
                     "CoreGraphics.framework": [
                         {
                             "xml": "false",
-                            "count": 1
+                            "count": 2
                         }
                     ],
                     "AudioToolbox.framework": [
                         {
                             "xml": "true",
+                            "count": 1
+                        },
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "AVFoundation.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "CoreLocation.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "CoreMedia.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "CoreVideo.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "QuartzCore.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "libiconv.dylib": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "libz.dylib": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "libc++.dylib": [
+                        {
+                            "xml": "false",
                             "count": 1
                         }
                     ]
@@ -40,6 +98,12 @@
                             "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
                             "count": 1
                         }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"ScanditSDK\"><param name=\"ios-package\" value=\"ScanditSDK\" /></feature>",
+                            "count": 1
+                        }
                     ]
                 }
             }
@@ -56,6 +120,9 @@
             "PACKAGE_NAME": "uk.ac.lancs.vision"
         },
         "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "uk.ac.lancs.vision"
+        },
+        "com.mirasense.scanditsdk.plugin": {
             "PACKAGE_NAME": "uk.ac.lancs.vision"
         }
     },

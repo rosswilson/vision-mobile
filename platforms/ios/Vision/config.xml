@@ -43,4 +43,7 @@
     <access origin="*" />
     <preference name="AllowInlineMediaPlayback" value="true" />
     <preference name="DisallowOverscroll" value="true" />
+    <feature name="ScanditSDK">
+        <param name="ios-package" value="ScanditSDK" />
+    </feature>
 </widget>
