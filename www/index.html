@@ -22,7 +22,7 @@
     <img src="images/vision_logo.png" />
   </header>
 
-  <nav class="bar bar-tab" ng-show="logged_in">
+  <nav class="bar bar-tab" ng-show="logged_in" ng-class="{ visible: logged_in }">
     <a class="tab-item" href="#/guide" ng-class="{ active: title == 'Programme Guide' }">
       <span class="glyphicons calendar icon"></span>
       <span class="tab-label">Guide</span>
@@ -120,23 +120,35 @@
   </script>
 
   <script type="text/ng-template" id="login.html">
-    <p>Login to Vision Mobile</p>
-    <p>{{ pin_code ? pin_code : 'Type your PIN code' }}</p>
+    <div class="login_wrapper">
+      <h2>Welcome</h2>
+      <p>Visit Vision on your computer to get a PIN code to use this mobile app.</p>
 
-    <!-- Build the numerical keypad -->
-    <button type="button" ng-click="append('0')">0</button>
-    <button type="button" ng-click="append('1')">1</button>
-    <button type="button" ng-click="append('2')">2</button>
-    <button type="button" ng-click="append('3')">3</button>
-    <button type="button" ng-click="append('4')">4</button>
-    <button type="button" ng-click="append('5')">5</button>
-    <button type="button" ng-click="append('6')">6</button>
-    <button type="button" ng-click="append('7')">7</button>
-    <button type="button" ng-click="append('8')">8</button>
-    <button type="button" ng-click="append('9')">9</button>
+      <div id="pin_preview">
+        <p class="code" ng-show="pin_code != ''">{{ pin_code }}</p>
+        <p class="placeholder" ng-show="pin_code == '' && !error_message">Enter PIN with the buttons below</p>
+        <p class="placeholder error" ng-show="error_message" ng-hide="pin_code != ''">{{ error_message }}</p>
+      </div>
 
-    <button type="submit" ng-click="login()">Login</button>
-    <p ng-show="error_message">{{ error_message }}</p>
+      <!-- Build the numerical keypad -->
+      <div id="keypad" class="group">
+        <button type="button" ng-click="append('1')">1</button>
+        <button type="button" ng-click="append('2')">2</button>
+        <button type="button" ng-click="append('3')">3</button>
+        <button type="button" ng-click="append('4')">4</button>
+        <button type="button" ng-click="append('5')">5</button>
+        <button type="button" ng-click="append('6')">6</button>
+        <button type="button" ng-click="append('7')">7</button>
+        <button type="button" ng-click="append('8')">8</button>
+        <button type="button" ng-click="append('9')">9</button>
+        <button type="button" ng-click="append('0')">0</button>
+      </div>
+
+      <div class="group">
+        <button type="submit" ng-click="login()" id="login_btn">Login</button>
+        <button type="submit" ng-click="clear()" id="clear_btn">Clear</button>
+      </div>
+    </div>
   </script>
 
   <!-- Load cordova framework script -->

@@ -17,7 +17,7 @@ angular.module('vision')
     };
 
     var error = function(error) {
-      $scope.error_message = "Invalid PIN code";
+      $scope.error_message = "Invalid PIN code, please retry";
       $scope.pin_code = '';
     };
 
@@ -25,7 +25,16 @@ angular.module('vision')
   }
 
   $scope.append = function(char) {
-    $scope.pin_code += char;
+    if($scope.pin_code.length == 5) {
+      $scope.pin_code = char;
+    } else {
+      $scope.pin_code += char;
+    }
+  }
+
+  $scope.clear = function() {
+    $scope.pin_code = '';
+    $scope.error_message = null;
   }
 })
 

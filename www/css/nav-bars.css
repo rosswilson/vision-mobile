@@ -74,10 +74,11 @@
   color: #428bca;
 }
 
-.bar-tab ~ .content {
-  padding-bottom: 60px;
-}
-
 .bar-nav ~ .content {
   padding-top: 44px;
+}
+
+/* Dont add .content padding if not visible */
+.bar-tab.visible ~ .content {
+  padding-bottom: 60px;
 }
