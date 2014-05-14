@@ -22,7 +22,7 @@
     <img src="images/vision_logo.png" />
   </header>
 
-  <nav class="bar bar-tab">
+  <nav class="bar bar-tab" ng-show="logged_in">
     <a class="tab-item" href="#/guide" ng-class="{ active: title == 'Programme Guide' }">
       <span class="glyphicons calendar icon"></span>
       <span class="tab-label">Guide</span>
@@ -50,6 +50,7 @@
   </div>
 
   <script type="text/ng-template" id="dashboard.html">
+    <p>Welcome to Vision</p>
     <ul id="channel-list" class="flex-container">
       <li class="table-view-cell group" ng-repeat="programme in programmes">
         <a href="#/programmes/{{ programme.programme_id }}?live_channel={{ programme.wowza_code }}">
@@ -65,6 +66,7 @@
         </a>
       </li>
     </ul>
+    <a ng-click="logout()">Logout</a>
   </script>
 
   <script type="text/ng-template" id="history.html">
@@ -117,6 +119,26 @@
     </div>
   </script>
 
+  <script type="text/ng-template" id="login.html">
+    <p>Login to Vision Mobile</p>
+    <p>{{ pin_code ? pin_code : 'Type your PIN code' }}</p>
+
+    <!-- Build the numerical keypad -->
+    <button type="button" ng-click="append('0')">0</button>
+    <button type="button" ng-click="append('1')">1</button>
+    <button type="button" ng-click="append('2')">2</button>
+    <button type="button" ng-click="append('3')">3</button>
+    <button type="button" ng-click="append('4')">4</button>
+    <button type="button" ng-click="append('5')">5</button>
+    <button type="button" ng-click="append('6')">6</button>
+    <button type="button" ng-click="append('7')">7</button>
+    <button type="button" ng-click="append('8')">8</button>
+    <button type="button" ng-click="append('9')">9</button>
+
+    <button type="submit" ng-click="login()">Login</button>
+    <p ng-show="error_message">{{ error_message }}</p>
+  </script>
+
   <!-- Load cordova framework script -->
   <script src="cordova.js"></script>
 
@@ -136,5 +158,6 @@
   <script src="js/search.js"></script>
   <script src="js/playback.js"></script>
   <script src="js/guide.js"></script>
+  <script src="js/login.js"></script>
 </body>
 </html>

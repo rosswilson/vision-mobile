@@ -1,6 +1,6 @@
 angular.module('vision')
 
-.controller('DashboardCtrl', function ($scope, CurrentlyAiring, SetTitle) {
+.controller('DashboardCtrl', function ($scope, CurrentlyAiring, SetTitle, AuthService, $location) {
   SetTitle("Dashboard");
 
   var promise = CurrentlyAiring.get();
@@ -11,8 +11,9 @@ angular.module('vision')
     console.log(reason);
   });
 
-  $scope.alert = function(message) {
-    alert(message);
+  $scope.logout = function() {
+    AuthService.logout();
+    $location.path('/login');
   }
 })
 

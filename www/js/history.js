@@ -1,6 +1,6 @@
 angular.module('vision')
 
-.controller('HistoryCtrl', function ($scope, SetTitle, HistoryService) {
+.controller('HistoryCtrl', function ($scope, SetTitle, HistoryService, AuthService) {
   SetTitle("History");
 
   var success = function(data) {
@@ -11,7 +11,7 @@ angular.module('vision')
     console.log(error);
   };
 
-  HistoryService.get(202).then(success, error);
+  HistoryService.get(AuthService.user_id()).then(success, error);
 })
 
 .service('HistoryService', function ($http, $q, QueryStringBuilder) {

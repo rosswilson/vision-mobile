@@ -1,8 +1,18 @@
 // Declare the app level module which loads all it's dependencies
 angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
 
-.run(function() {
+.run(function($rootScope, AuthService) {
   FastClick.attach(document.body);
+
+  $rootScope.logged_in = AuthService.is_logged_in();
+
+  $rootScope.$on('LOGGED_IN', function() {
+    $rootScope.logged_in = true;
+  });
+
+  $rootScope.$on('LOGGED_OUT', function() {
+    $rootScope.logged_in = false;
+  });
 })
 
 .config(function($routeProvider) {
@@ -31,8 +41,12 @@ angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
     templateUrl: 'playback.html',
     controller: 'PlaybackCtrl'
   }).
+  when('/login', {
+    templateUrl: 'login.html',
+    controller: 'LoginCtrl'
+  }).
   otherwise({
-    redirectTo: '/dashboard'
+    redirectTo: '/login'
   });
 })
 
