@@ -142,22 +142,46 @@
   </script>
 
   <script type="text/ng-template" id="playback.html">
-    <div ng-hide="programme">
-      <p>Waiting for programme to load</p>
-    </div>
+    <div class="content_padding" id="playback">
+      <div ng-hide="programme">
+        <h2>Waiting for programme to load</h2>
+        <img src="images/ajax-loader.gif" class="spinner" ng-hide="programme" />
+      </div>
 
-    <div ng-show="programme">
-      <h2>{{ programme.p_name }} <small ng-show="programme.sub_title">{{ programme.sub_title }}</small></h2>
+      <div ng-show="programme" class="group">
+        <h2>{{ programme.p_name }} <small ng-show="programme.sub_title">{{ programme.sub_title }}</small></h2>
+        <article>
+          <div id="video_wrapper">
+            <video id="video-player" src="" width="100%" onclick="this.play();" controls poster="">
+              <p>Sorry, your device is not capable of playing our videos</p>
+            </video>
+          </div>
+        </article>
+        <aside>
+          <dl>
+            <dt ng-show="programme.episode">Episode</dt>
+            <dd ng-show="programme.episode">{{ programme.episode }}</dd>
 
-      <video id="video-player" src="" height="240" width="360" onclick="this.play();" poster="">
-        <p>Sorry, your device is not capable of playing our videos</p>
-      </video>
+            <dt>Synopsis</dt>
+            <dd>{{ programme.synopsis ? programme.synopsis : programme.p_synopsis }}</dd>
 
-      <p>{{ programme.p_synopsis }}</p>
-      <img src="http://148.88.32.64/cache/170x100-2/programmes{{programme.channel_image}}" style="width: 85px; height: 50px;" />
-      <p>{{ programme.channel_name }}</p>
-      <p>Duration: {{ programme.duration_minutes }} minutes</p>
-      <p>Genre: {{ programme.genre }}</p>
+            <dt>Date</dt>
+            <dd>{{ programme.p_start }}</dd>
+
+            <dt>Channel</dt>
+            <dd><img src="http://148.88.32.64/cache/170x100-2/programmes{{programme.channel_image}}" style="width: 85px; height: 50px;" /></dd>
+
+            <dt ng-show="programme.director">Director</dt>
+            <dd ng-show="programme.director">{{ programme.director }}</dd>
+
+            <dt ng-show="programme.genre">Genre</dt>
+            <dd ng-show="programme.genre">{{ programme.genre }}</dd>
+
+            <dt>Duration</dt>
+            <dd>{{ programme.duration }} minutes</dd>
+          </dl>
+        </aside>
+      </div>
     </div>
   </script>
 

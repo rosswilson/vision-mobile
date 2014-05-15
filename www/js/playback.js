@@ -7,11 +7,12 @@ angular.module('vision')
   $scope.programme_id = $routeParams['programme_id'];
   $scope.live_channel = $routeParams['live_channel'];
 
+  SetTitle("Playback");
+
   var success = function(data) {
     $scope.programme = data;
 
-    // Page title will be programme name
-    SetTitle($scope.programme.p_name);
+    console.log(data);
 
     if ($scope.live_channel) {
       var video_url = ProgrammeService.get_live_url($scope.live_channel);
@@ -22,7 +23,7 @@ angular.module('vision')
     // Init the video player, set it's src, load, then play
     var player = document.getElementById('video-player');
     player.setAttribute("src", video_url);
-    player.setAttribute("poster", ProgrammeService.get_poster_url($scope.programme, 360, 240));
+    player.setAttribute("poster", ProgrammeService.get_poster_url($scope.programme, 720, 480));
   };
 
   var error = function(error) {

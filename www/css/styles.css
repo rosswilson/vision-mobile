@@ -19,8 +19,8 @@ html, body {
 
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 17px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -78,6 +78,12 @@ h2 {
 
 h2:first-child {
   margin-top: 0;
+}
+
+h2 small {
+  font-size: 80%;
+  color: #777;
+  padding-left: 5px;
 }
 
 .login_wrapper h2 {
@@ -202,4 +208,17 @@ button:focus, .btn:focus {
   width: 32px;
   height: 32px;
   margin: 0 auto;
+}
+
+dt {
+  float: left;
+  font-weight: bold;
+  clear: left;
+  padding-bottom: 20px;
+}
+
+dd {
+  overflow: hidden;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }

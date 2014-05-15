@@ -1,5 +1,11 @@
 .content_padding {
-  padding: 20px;
+  padding: 15px;
+}
+
+@media (min-width: 550px) {
+  .content_padding {
+    padding: 20px;
+  }
 }
 
 .sub_nav {
@@ -13,4 +19,36 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   margin-left: 10px;
+}
+
+#playback #video_wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#playback video {
+  max-width: 100%;
+	height: auto;
+}
+
+#playback dd {
+  font-size: 15px;
+}
+
+#playback dt {
+  width: 70px;
+}
+
+@media (min-width: 1024px) {
+  #playback article {
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+  }
+
+  #playback aside {
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+  }
 }
