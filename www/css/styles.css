@@ -1,10 +1,10 @@
-/** {
+* {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-}*/
+}
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -33,6 +33,14 @@ body {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   background-color: #fff;
+}
+
+.blue_gradient {
+  background-color: #012D59;
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #46A1FC, #012D59);
+  background: radial-gradient(circle, #46A1FC, #012D59);
 }
 
 .flex_vertical_center {
@@ -78,7 +86,7 @@ h2 {
 
 @media (min-width: 550px) {
   .login_wrapper {
-    margin: 50px auto;
+    margin: 0 auto;
     border-radius: 10px;
     border: 1px solid #eee;
     max-width: 450px;
