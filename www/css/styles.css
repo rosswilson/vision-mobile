@@ -190,3 +190,16 @@ button:focus, .btn:focus {
   width: 47.5%;
   margin-right: 0;
 }
+
+#footer {
+  color: #888;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 14px;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+}

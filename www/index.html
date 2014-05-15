@@ -54,6 +54,7 @@
     <div class="content_padding">
       <h2>Recommendations</h2>
       <ul id="channel-list" class="flex-container">
+        <img src="images/ajax-loader.gif" class="spinner" ng-hide="recommendations" />
         <li class="table-view-cell group" ng-repeat="programme in recommendations">
           <a href="#/programmes/{{ programme.programme_id }}">
             <div class="left">
@@ -69,7 +70,25 @@
         </li>
       </ul>
 
-      <h2>Live Channels</h2>
+      <h2>Trending</h2>
+      <ul id="channel-list" class="flex-container">
+        <img src="images/ajax-loader.gif" class="spinner" ng-hide="trending" />
+        <li class="table-view-cell group" ng-repeat="programme in trending">
+          <a href="#/programmes/{{ programme.programme_id }}">
+            <div class="left">
+              <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
+            </div>
+            <div class="right">
+              <p>{{ programme.programme_name }}</p>
+              <p class="small">{{ programme.synopsis | cut:true:130:' ...' }}</p>
+              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }} minutes</p>
+              <span class="glyphicons chevron-right"></span>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <!--<h2>Live Channels</h2>
       <ul id="channel-list" class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in programmes">
           <a href="#/programmes/{{ programme.programme_id }}?live_channel={{ programme.wowza_code }}">
@@ -84,8 +103,11 @@
             </div>
           </a>
         </li>
-      </ul>
-      <a ng-click="logout()">Logout</a>
+      </ul>-->
+
+      <p id="footer">
+        Developed by Ross Wilson &middot; <a ng-click="logout()">Logout</a>
+      </p>
     </div>
   </script>
 

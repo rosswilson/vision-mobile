@@ -34,7 +34,7 @@ angular.module('vision')
       };
 
       var url = _url + '?' + QueryStringBuilder(params);
-      $http.get(url, { cache: true }).success(success).error(failure);
+      $http.get(url, { cache: false }).success(success).error(failure);
 
       return deferred.promise;
     }
