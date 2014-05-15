@@ -9,14 +9,23 @@
   flex-flow: row wrap;
 }
 
+/* Don't want to limit this to .flexbox compatible devices only */
+.flex-container {
+  /* To align the table-view-cell divs to the edge since they have a 5pm margin */
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
 li.table-view-cell {
-  padding: 11px 15px;
-  border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
+  padding: 13px 16px;
+  border: 1px solid #eee;
 
   -webkit-flex: 1 0 300px;
   -webkit-box-flex: 1 0 300px;
   flex: 1 0 300px;
+
+  border-radius: 3px;
+  margin: 5px;
 }
 
 a:hover, a:active, a:focus {

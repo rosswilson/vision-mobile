@@ -58,9 +58,30 @@ angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
 
 .factory('QueryStringBuilder', function() {
   return function(data) {
-   var ret = [];
-   for (var d in data)
+    var ret = [];
+    for (var d in data) {
       ret.push(encodeURIComponent(d) + "=" + encodeURIComponent(data[d]));
-   return ret.join("&");
+    }
+    return ret.join("&");
   }
+})
+
+.filter('cut', function () {
+  return function (value, wordwise, max, tail) {
+    if (!value) return '';
+
+    max = parseInt(max, 10);
+    if (!max) return value;
+    if (value.length <= max) return value;
+
+    value = value.substr(0, max);
+    if (wordwise) {
+      var lastspace = value.lastIndexOf(' ');
+      if (lastspace != -1) {
+        value = value.substr(0, lastspace);
+      }
+    }
+
+    return value + (tail || ' …');
+  };
 });
