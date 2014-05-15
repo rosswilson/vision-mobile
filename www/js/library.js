@@ -5,13 +5,14 @@ angular.module('vision')
 
   WatchLaterService.get(AuthService.user_id()).then(function(watch_later) {
     $scope.watch_later = watch_later;
+    console.log(watch_later);
   }, function(reason) {
     console.log(reason);
   });
 
 })
 
-.service('WatchLaterService', function ($http, $q, QueryStringBuilder) {
+.service('WatchLaterService', function ($http, $q, QueryStringBuilder, DurationCalculator) {
   var _url = 'http://10.42.32.127:9110/modules/library/get_paused_content';
 
   return {
@@ -23,6 +24,9 @@ angular.module('vision')
       }
 
       var success = function (data, status, headers, config) {
+        $.each(data['data'], function(key, value) {
+          value['duration_mins'] = DurationCalculator.from_hh_mm_ss(value['duration']);
+        });
         deferred.resolve(data['data']);
       };
 

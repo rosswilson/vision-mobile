@@ -66,7 +66,7 @@
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="small">{{ programme.synopsis | cut:true:130:' ...' }}</p>
+              <p class="small">{{ programme.synopsis | cut:true:130 }}</p>
               <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }} minutes</p>
               <span class="glyphicons chevron-right"></span>
             </div>
@@ -84,7 +84,7 @@
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="small">{{ programme.synopsis | cut:true:130:' ...' }}</p>
+              <p class="small">{{ programme.synopsis | cut:true:130 }}</p>
               <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }} minutes</p>
               <span class="glyphicons chevron-right"></span>
             </div>
@@ -110,7 +110,7 @@
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="small">{{ programme.synopsis }}</p>
+              <p class="small">{{ programme.synopsis | cut:true:130 }}</p>
               <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }} minutes</p>
               <span class="glyphicons chevron-right"></span>
             </div>
@@ -132,8 +132,8 @@
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="small">{{ programme.synopsis }}</p>
-              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }} minutes</p>
+              <p class="small">{{ programme.synopsis | cut:true:200 }}</p>
+              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes</p>
               <span class="glyphicons chevron-right"></span>
             </div>
           </a>
@@ -160,7 +160,7 @@
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="small">{{ programme.synopsis }}</p>
+              <p class="small">{{ programme.synopsis | cut:true:130 }}</p>
               <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }} minutes</p>
               <span class="glyphicons chevron-right"></span>
             </div>
