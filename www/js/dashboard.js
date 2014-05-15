@@ -21,30 +21,7 @@ angular.module('vision')
   });
 })
 
-.service('CurrentlyAiring', function ($http, $q, $cacheFactory) {
-  var _url = 'http://vision.lancs.ac.uk/JSON_CACHE/currently_airing.json';
-  var cache = $cacheFactory('currently_airing');
-
-  return {
-    get: function() {
-      var deferred = $q.defer();
-
-      var success = function (data, status, headers, config) {
-        deferred.resolve(data);
-      };
-
-      var failure = function (data, status, headers, config) {
-        deferred.reject("Error getting currently airing JSON cache file");
-      };
-
-      $http.get(_url, { cache: false }).success(success).error(failure);
-
-      return deferred.promise;
-    }
-  }
-})
-
-.service('RecommendationsEngine', function($http, $q, QueryStringBuilder) {
+.service('RecommendationsEngine', function($http, $q, QueryStringBuilder, DurationCalculator) {
   var _url = "http://10.42.32.75:9110/recommender/get_recommendations";
 
   return {
@@ -66,6 +43,7 @@ angular.module('vision')
           }
         });
 
+        DurationCalculator.set_for_array(temp);
         deferred.resolve(temp);
       }
 
@@ -81,7 +59,7 @@ angular.module('vision')
   }
 })
 
-.service('TrendingEngine', function($http, $q, QueryStringBuilder) {
+.service('TrendingEngine', function($http, $q, QueryStringBuilder, DurationCalculator) {
   var _url = "http://10.42.32.199:2000/trending";
 
   return {
@@ -101,6 +79,7 @@ angular.module('vision')
           }
         });
 
+        DurationCalculator.set_for_array(temp);
         deferred.resolve(temp);
       }
 

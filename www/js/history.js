@@ -14,7 +14,7 @@ angular.module('vision')
   HistoryService.get(AuthService.user_id()).then(success, error);
 })
 
-.service('HistoryService', function ($http, $q, QueryStringBuilder) {
+.service('HistoryService', function ($http, $q, QueryStringBuilder, DurationCalculator) {
   var _url = 'http://10.42.32.75:9110/analysis/viewing_history';
 
   return {
@@ -26,6 +26,7 @@ angular.module('vision')
       }
 
       var success = function (data, status, headers, config) {
+        DurationCalculator.set_for_array(data);
         deferred.resolve(data);
       };
 

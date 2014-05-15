@@ -24,10 +24,9 @@ angular.module('vision')
       }
 
       var success = function (data, status, headers, config) {
-        $.each(data['data'], function(key, value) {
-          value['duration_mins'] = DurationCalculator.from_hh_mm_ss(value['duration']);
-        });
-        deferred.resolve(data['data']);
+        var data = data['data'];
+        DurationCalculator.set_for_array(data);
+        deferred.resolve(data);
       };
 
       var failure = function (data, status, headers, config) {
