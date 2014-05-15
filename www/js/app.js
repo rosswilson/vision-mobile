@@ -21,9 +21,9 @@ angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
     templateUrl: 'dashboard.html',
     controller: 'DashboardCtrl'
   }).
-  when('/favourites', {
-    templateUrl: 'favourites.html',
-    controller: 'FavouritesCtrl'
+  when('/library', {
+    templateUrl: 'library.html',
+    controller: 'LibraryCtrl'
   }).
   when('/history', {
     templateUrl: 'history.html',

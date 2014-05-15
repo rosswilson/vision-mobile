@@ -40,9 +40,9 @@
       <span class="glyphicons home icon"></span>
       <span class="tab-label">Dashboard</span>
     </a>
-    <a class="tab-item" href="#/favourites" ng-class="{ active: title == 'Favourites' }">
+    <a class="tab-item" href="#/library" ng-class="{ active: title == 'My Library' }">
       <span class="glyphicons bookmark icon"></span>
-      <span class="tab-label">Favourites</span>
+      <span class="tab-label">Library</span>
     </a>
     <a class="tab-item" href="#/search" ng-class="{ active: title == 'Search' }">
       <span class="glyphicons search icon"></span>
@@ -99,29 +99,53 @@
   </script>
 
   <script type="text/ng-template" id="history.html">
-    <ul id="channel-list" class="flex-container">
-      <li class="table-view-cell group" ng-repeat="programme in history">
-        <a href="#/programmes/{{ programme.programme_id }}">
-          <div class="left">
-            <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
-          </div>
-          <div class="right">
-            <p>{{ programme.programme_name }}</p>
-            <p class="small">{{ programme.synopsis }}</p>
-            <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }} minutes</p>
-            <span class="glyphicons chevron-right"></span>
-          </div>
-        </a>
-      </li>
-    </ul>
+    <div class="content_padding">
+      <h2>Your Viewing History</h2>
+      <ul id="channel-list" class="flex-container">
+        <img src="images/ajax-loader.gif" class="spinner" ng-hide="history" />
+        <li class="table-view-cell group" ng-repeat="programme in history">
+          <a href="#/programmes/{{ programme.programme_id }}">
+            <div class="left">
+              <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
+            </div>
+            <div class="right">
+              <p>{{ programme.programme_name }}</p>
+              <p class="small">{{ programme.synopsis }}</p>
+              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }} minutes</p>
+              <span class="glyphicons chevron-right"></span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
   </script>
 
-  <script type="text/ng-template" id="favourites.html">
-    <p>Favourites view</p>
+  <script type="text/ng-template" id="library.html">
+    <div class="content_padding">
+      <h2>Watch Later</h2>
+      <ul id="channel-list" class="flex-container">
+        <img src="images/ajax-loader.gif" class="spinner" ng-hide="watch_later" />
+        <li class="table-view-cell group" ng-repeat="programme in watch_later">
+          <a href="#/programmes/{{ programme.programme_id }}?position={{ programme.position }}">
+            <div class="left">
+              <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
+            </div>
+            <div class="right">
+              <p>{{ programme.programme_name }}</p>
+              <p class="small">{{ programme.synopsis }}</p>
+              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }} minutes</p>
+              <span class="glyphicons chevron-right"></span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
   </script>
 
   <script type="text/ng-template" id="search.html">
-    <p>Search view</p>
+    <div class="content_padding">
+      <h2>Search</h2>
+    </div>
   </script>
 
   <script type="text/ng-template" id="guide.html">
@@ -239,7 +263,7 @@
   <!-- Finally load application  -->
   <script src="js/app.js"></script>
   <script src="js/dashboard.js"></script>
-  <script src="js/favourites.js"></script>
+  <script src="js/library.js"></script>
   <script src="js/history.js"></script>
   <script src="js/search.js"></script>
   <script src="js/playback.js"></script>
