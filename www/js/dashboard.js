@@ -1,13 +1,7 @@
 angular.module('vision')
 
-.controller('DashboardCtrl', function ($scope, CurrentlyAiring, SetTitle, AuthService, $location, RecommendationsEngine, TrendingEngine) {
+.controller('DashboardCtrl', function ($scope, SetTitle, AuthService, $location, RecommendationsEngine, TrendingEngine) {
   SetTitle("Dashboard");
-
-  CurrentlyAiring.get().then(function(programmes) {
-    $scope.programmes = programmes;
-  }, function(reason) {
-    console.log(reason);
-  });
 
   $scope.logout = function() {
     AuthService.logout();

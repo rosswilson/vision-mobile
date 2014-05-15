@@ -92,24 +92,6 @@
         </li>
       </ul>
 
-      <h2>Live Channels</h2>
-      <ul id="channel-list" class="flex-container">
-        <img src="images/ajax-loader.gif" class="spinner" ng-hide="programmes" />
-        <li class="table-view-cell group" ng-repeat="programme in programmes">
-          <a href="#/programmes/{{ programme.programme_id }}?live_channel={{ programme.wowza_code }}">
-            <div class="left">
-              <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
-            </div>
-            <div class="right">
-              <p>{{ programme.programme_name }}</p>
-              <p class="small">{{ programme.synopsis }}</p>
-              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }} minutes</p>
-              <span class="glyphicons chevron-right"></span>
-            </div>
-          </a>
-        </li>
-      </ul>
-
       <p id="footer">
         Developed by Ross Wilson &middot; <a ng-click="logout()">Logout</a>
       </p>
