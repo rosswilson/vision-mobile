@@ -12,18 +12,25 @@ angular.module('vision')
   var success = function(data) {
     $scope.programme = data;
 
-    console.log(data);
-
     if ($scope.live_channel) {
       var video_url = ProgrammeService.get_live_url($scope.live_channel);
     } else {
       var video_url = ProgrammeService.get_vod_url($scope.programme);
     }
 
-    // Init the video player, set it's src, load, then play
+    // Set the video player poster image
     var player = document.getElementById('video-player');
-    player.setAttribute("src", video_url);
-    player.setAttribute("poster", ProgrammeService.get_poster_url($scope.programme, 720, 480));
+    player.setAttribute("poster", ProgrammeService.get_poster_url($scope.programme, 720, 405));
+
+    var player = new MediaElementPlayer('#video-player', {
+      type: ['video/mp4'],
+      success: function (mediaElement, domObject) {
+        mediaElement.setSrc(video_url);
+        mediaElement.load();
+        // mediaElement.play();
+      }
+    });
+
   };
 
   var error = function(error) {

@@ -26,11 +26,6 @@
   margin-bottom: 20px;
 }
 
-#playback video {
-  max-width: 100%;
-	height: auto;
-}
-
 #playback dd {
   font-size: 15px;
 }
