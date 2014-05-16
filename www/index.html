@@ -101,20 +101,23 @@
   <script type="text/ng-template" id="history.html">
     <div class="content_padding">
       <h2>Your Viewing History</h2>
-      <ul id="channel-list" class="flex-container">
+      <ul id="history" class="vertical-list">
         <img src="images/ajax-loader.gif" class="spinner" ng-hide="history" />
         <li class="table-view-cell group" ng-repeat="programme in history">
-          <a href="#/programmes/{{ programme.programme_id }}">
+          <a ng-href="#/programmes/{{ programme.programme_id }}">
             <div class="left">
               <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="small">{{ programme.synopsis | cut:true:130 }}</p>
+              <p class="small">{{ programme.synopsis }}</p>
               <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes</p>
-              <span class="glyphicons chevron-right"></span>
             </div>
           </a>
+          <div class="buttons group">
+            <a class="btn" ng-href="#/programmes/{{ programme.programme_id }}?start_at={{ programme.last_known_position }}">Resume {{ programme.percentage_watched }}% watched</a>
+            <a class="btn" ng-href="#/programmes/{{ programme.programme_id }}">Play From Beginning</a>
+          </div>
         </li>
       </ul>
     </div>
@@ -254,6 +257,7 @@
   <!-- Load libs -->
   <script src="lib/jquery.js"></script>
   <script src="lib/fastclick.js"></script>
+  <script src="lib/sha1.js"></script>
   <script src="lib/mediaelement/mediaelement-and-player.min.js"></script>
   <script src="lib/angular/angular.min.js"></script>
   <script src="lib/angular/angular-animate.min.js"></script>

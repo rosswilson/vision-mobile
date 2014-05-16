@@ -135,13 +135,14 @@ h2 small {
   color: #f00;
 }
 
-.btn, .login_wrapper button {
+.btn, button {
   -webkit-appearance: none;
   border: 1px solid #ddd;
   cursor: pointer;
   border-radius: 4px;
   background-color: #fff;
   -webkit-user-select: none;
+  text-align: center;
 }
 
 button:active, button.active, .btn:active, .btn.active {
@@ -208,6 +209,7 @@ button:focus, .btn:focus {
   width: 32px;
   height: 32px;
   margin: 0 auto;
+  display: block;
 }
 
 dt {
@@ -221,4 +223,24 @@ dd {
   overflow: hidden;
   padding-left: 20px;
   padding-bottom: 20px;
+}
+
+#history a.btn {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  float: left;
+  width: 49%;
+  margin-top: 20px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+}
+
+#history a.btn:nth-child(1) {
+  margin-right: 1%;
+}
+
+#history a.btn:nth-child(2) {
+  margin-left: 1%;
 }

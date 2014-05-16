@@ -1,33 +1,72 @@
 angular.module('vision')
 
-// Wowza server with access to data.lancs:
-// http://10.42.32.183:1935/vod/mp4:937745aafa7c912ded00a3df8f10ada72c014133.mp4/playlist.m3u8
+.controller('PlaybackCtrl', function ($scope, SetTitle, $routeParams, ProgrammeService, PlayerStatsService) {
+  SetTitle("Playback");
 
-.controller('PlaybackCtrl', function ($scope, SetTitle, $routeParams, ProgrammeService) {
+  // Programme ID to retrieve programme name, synopsis ect
   $scope.programme_id = $routeParams['programme_id'];
+
+  // Live channel id e.g. bbcone.stream
   $scope.live_channel = $routeParams['live_channel'];
 
-  SetTitle("Playback");
+  // Seconds into the VOD to start playhead
+  $scope.start_at = $routeParams['start_at'] ? $routeParams['start_at'] : 0;
+
+  $scope.last_segment_start = $scope.start_at;
+  $scope.last_segment_end = $scope.start_at;
 
   var success = function(data) {
     $scope.programme = data;
 
+    // If a live channel was passed, use it's stream URL, else use VOD url
     if ($scope.live_channel) {
       var video_url = ProgrammeService.get_live_url($scope.live_channel);
     } else {
       var video_url = ProgrammeService.get_vod_url($scope.programme);
     }
 
-    // Set the video player poster image
-    var player = document.getElementById('video-player');
-    player.setAttribute("poster", ProgrammeService.get_poster_url($scope.programme, 720, 405));
+    PlayerStatsService.new_instance($scope.programme_id, video_url);
+
+    // Set the video player poster image if not resuming (since we'll immediately start playing)
+    if($scope.start_at == 0) {
+      var player = document.getElementById('video-player');
+      player.setAttribute("poster", ProgrammeService.get_poster_url($scope.programme, 720, 405));
+    }
 
     var player = new MediaElementPlayer('#video-player', {
       type: ['video/mp4'],
       success: function (mediaElement, domObject) {
         mediaElement.setSrc(video_url);
         mediaElement.load();
-        // mediaElement.play();
+
+        // If resuming, once player has media metadata, we can shift the playhead position
+        if($scope.start_at != 0) {
+          mediaElement.addEventListener("canplay", function() {
+            if($scope.start_at) {
+              mediaElement.setCurrentTime($scope.start_at);
+              $scope.start_at = null;
+            }
+            mediaElement.play();
+          });
+        }
+
+        mediaElement.addEventListener('timeupdate', function() {
+          var currentSeconds = Math.floor(mediaElement.currentTime);
+
+          // Proceed if not already updated segment and it's been 3 seconds since we last did
+          if(currentSeconds != $scope.last_segment_end && currentSeconds != 0 && currentSeconds % 3 == 0) {
+
+            // Check if skipped more than *5* seconds (not 3) incase timings are slightly inaccurate
+            if(currentSeconds < $scope.last_segment_end || currentSeconds > $scope.last_segment_end + 5) {
+              $scope.last_segment_start = currentSeconds;
+              // console.log("Logging skipped segment " + $scope.last_segment_start + ":" + currentSeconds);
+            }
+
+            PlayerStatsService.log_segment($scope.last_segment_start, $scope.last_segment_end);
+
+            $scope.last_segment_end = currentSeconds;
+          }
+        });
       }
     });
 
@@ -76,6 +115,57 @@ angular.module('vision')
     },
     get_poster_url: function(programme, width, height) {
       return "http://148.88.32.64/cache/" + width + "x" + height + "/programmes" + programme.image;
+    }
+  }
+})
+
+.service("PlayerStatsService", function(AuthService) {
+  var _heartbeat_id = null;
+
+  return {
+    new_instance: function(programme_id, file_url) {
+      _heartbeat_id = CryptoJS.SHA1("mobile" + Math.random() + programme_id).toString();
+      console.log("Logging player instance, heartbeat ID: %s", _heartbeat_id);
+
+      $.ajax({
+        url: "http://10.42.32.75:9110/capture/player_instance",
+        type: "get",
+        data: {
+          api: "53e659a15aff4a402de2d51b98703fa1ade5b8c5",
+          heartbeat_id: _heartbeat_id,
+          user_id: AuthService.user_id(),
+          programme_id: programme_id,
+          file_id: file_url
+        }
+      });
+
+      // Log a Vision Mobile specific playback log
+      $.ajax({
+        url: "http://10.42.32.75:9110/capture/log",
+        type: "get",
+        data: {
+          api: "53e659a15aff4a402de2d51b98703fa1ade5b8c5",
+          log_type: "MOBILE_PLAYBACK",
+          user_id: AuthService.user_id(),
+          attributes: JSON.stringify({
+            programme_id: programme_id,
+            file_id: file_url
+          })
+        }
+      });
+    },
+    log_segment: function(start, end) {
+      $.ajax({
+        url: "http://10.42.32.75:9110/capture/heartbeat",
+        type: "get",
+        data: {
+          api: "53e659a15aff4a402de2d51b98703fa1ade5b8c5",
+          heartbeat_id: _heartbeat_id,
+          user_id: AuthService.user_id(),
+          start: start,
+          end: end
+        }
+      });
     }
   }
 });

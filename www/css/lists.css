@@ -10,7 +10,7 @@
 }
 
 /* Don't want to limit this to .flexbox compatible devices only */
-.flex-container {
+.flex-container, .vertical-list {
   /* To align the table-view-cell divs to the edge since they have a 5pm margin */
   margin-left: -5px;
   margin-right: -5px;
@@ -19,13 +19,16 @@
 li.table-view-cell {
   padding: 13px 16px;
   border: 1px solid #eee;
+  border-radius: 3px;
+  margin: 5px 5px 20px 5px;
+}
+
+.flexbox .flex-container li.table-view-cell {
+  margin: 5px;
 
   -webkit-flex: 1 0 300px;
   -webkit-box-flex: 1 0 300px;
   flex: 1 0 300px;
-
-  border-radius: 3px;
-  margin: 5px;
 }
 
 a:hover, a:active, a:focus {
@@ -49,8 +52,12 @@ li.table-view-cell .right {
 }
 
 /* Disable glypicon if flexbox is supported */
-.flexbox li.table-view-cell .glyphicons {
+li.table-view-cell .glyphicons {
   display: none;
+}
+
+.no-flexbox li.table-view-cell .glyphicons {
+  display: block;
 }
 
 .no-flexbox li.table-view-cell {
