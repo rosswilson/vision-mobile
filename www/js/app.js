@@ -95,8 +95,13 @@ service("DurationCalculator", function() {
       }
       var parts = time.split(':');
       var hours_to_mins = parseInt(parts[0]) * 60;
-      var seconds_to_mins = parseInt(parts[2]) / 60;
-      return Math.ceil(hours_to_mins + parseInt(parts[1]) + seconds_to_mins);
+
+      if(parts[2]) {
+        var seconds_to_mins = parseInt(parts[2]) / 60;
+        return Math.ceil(hours_to_mins + parseInt(parts[1]) + seconds_to_mins);
+      } else {
+        return Math.ceil(hours_to_mins + parseInt(parts[1]));
+      }
     },
     set_for_array: function(array) {
       var self = this;

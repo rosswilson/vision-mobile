@@ -15,7 +15,6 @@
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/nav-bars.css" rel="stylesheet">
   <link href="css/lists.css" rel="stylesheet">
-  <link href="css/layout.css" rel="stylesheet">
 
   <!-- In the <head> as it needs to load before the page DOM is built -->
   <script src="lib/modernizr.js"></script>
@@ -182,7 +181,7 @@
         <img src="images/ajax-loader.gif" class="spinner" ng-hide="programmes != null" />
 
         <li class="table-view-cell group" ng-repeat="programme in programmes">
-          <a href="#/programmes/{{ programme.programme_id }}?live_channel={{ programme.wowza_code }}">
+          <a href="#/programmes/{{ programme.programme_id }}">
             <div class="left">
               <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
             </div>
@@ -210,14 +209,14 @@
       </div>
 
       <div ng-show="programme" class="group">
-        <h2>{{ programme.p_name }} <small ng-show="programme.sub_title">Episode {{ programme.sub_title }}</small></h2>
+        <h2>{{ programme.programme_name }} <small ng-show="programme.sub_title">Episode {{ programme.sub_title }}</small></h2>
         <article>
           <div id="video_wrapper">
             <video id="video-player" src="" width="100%" height="100%" controls="controls">
               <p>Sorry, your device is not capable of playing our videos</p>
             </video>
           </div>
-          <button id="watch-later" ng-click="watch_later()" ng-hide="live_channel">
+          <button id="watch-later" ng-click="watch_later()">
             <span class="glyphicons plus icon"></span> Add to my Watch Later list
           </button>
         </article>
@@ -227,13 +226,13 @@
             <dd ng-show="programme.episode">{{ programme.episode }}</dd>
 
             <dt>Synopsis</dt>
-            <dd>{{ programme.synopsis ? programme.synopsis : programme.p_synopsis }}</dd>
+            <dd>{{ programme.synopsis }}</dd>
 
             <dt>Date</dt>
-            <dd>{{ programme.p_start }}</dd>
+            <dd>{{ programme.broadcast }}</dd>
 
-            <dt>Channel</dt>
-            <dd><img src="http://148.88.32.64/cache/170x100-2/programmes{{programme.channel_image}}" style="width: 85px; height: 50px;" /></dd>
+            <dt ng-show="programme.channel_name">Channel</dt>
+            <dd ng-show="programme.channel_name">{{ programme.channel_name }}</dd>
 
             <dt ng-show="programme.director">Director</dt>
             <dd ng-show="programme.director">{{ programme.director }}</dd>
@@ -242,7 +241,7 @@
             <dd ng-show="programme.genre">{{ programme.genre }}</dd>
 
             <dt>Duration</dt>
-            <dd>{{ programme.duration }} minutes</dd>
+            <dd>{{ programme.duration }}</dd>
           </dl>
         </aside>
       </div>
@@ -250,8 +249,8 @@
   </script>
 
   <script type="text/ng-template" id="login.html">
-    <div class="flex_vertical_center blue_gradient">
-      <div class="login_wrapper">
+    <div id="login_wrapper" class="blue_gradient">
+      <div class="inner">
         <h2>Welcome</h2>
         <p>Visit Vision on your computer to get a PIN code to use this mobile app.</p>
 
@@ -262,7 +261,7 @@
         </div>
 
         <!-- Build the numerical keypad -->
-        <div id="keypad" class="group">
+        <div class="keypad group">
           <button type="button" ng-click="append('1')">1</button>
           <button type="button" ng-click="append('2')">2</button>
           <button type="button" ng-click="append('3')">3</button>

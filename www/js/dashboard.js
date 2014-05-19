@@ -37,17 +37,8 @@ angular.module('vision')
       }
 
       var success = function(data, status, headers, config) {
-        var temp = [];
-
-        $.each(data, function(key, value) {
-          // Only allow VOD COMPLETE programmes through
-          if(value['vod_status'] === 'COMPLETE') {
-            temp.push(value);
-          }
-        });
-
-        DurationCalculator.set_for_array(temp);
-        deferred.resolve(temp);
+        DurationCalculator.set_for_array(data);
+        deferred.resolve(data);
       }
 
       var failure = function(data, status, headers, config) {
@@ -73,17 +64,8 @@ angular.module('vision')
       }
 
       var success = function(data, status, headers, config) {
-        var temp = [];
-
-        $.each(data, function(key, value) {
-          // Only allow VOD COMPLETE programmes through
-          if(value['vod_status'] === 'COMPLETE') {
-            temp.push(value);
-          }
-        });
-
-        DurationCalculator.set_for_array(temp);
-        deferred.resolve(temp);
+        DurationCalculator.set_for_array(data);
+        deferred.resolve(data);
       }
 
       var failure = function(data, status, headers, config) {
