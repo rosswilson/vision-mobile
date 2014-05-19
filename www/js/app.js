@@ -33,9 +33,9 @@ angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
     templateUrl: 'search.html',
     controller: 'SearchCtrl'
   }).
-  when('/guide', {
-    templateUrl: 'guide.html',
-    controller: 'GuideCtrl'
+  when('/live', {
+    templateUrl: 'live.html',
+    controller: 'LiveCtrl'
   }).
   when('/programmes/:programme_id', {
     templateUrl: 'playback.html',

@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html ng-app="vision">
+
 <head>
   <meta charset="utf-8">
   <title>Vision Mobile Application</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
+  <!-- CSS libs -->
   <link href="css/reset.css" rel="stylesheet">
-
   <link href="lib/mediaelement/mediaelementplayer.min.css" rel="stylesheet">
-  <link href="lib/mediaelement/mejs-skins.css" rel="stylesheet">
 
+  <!-- Custom CSS -->
   <link href="css/glyphicons.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/nav-bars.css" rel="stylesheet">
   <link href="css/lists.css" rel="stylesheet">
-  <link href="css/pageslider.css" rel="stylesheet">
   <link href="css/layout.css" rel="stylesheet">
 
   <!-- In the <head> as it needs to load before the page DOM is built -->
   <script src="lib/modernizr.js"></script>
 </head>
-<body>
 
+<body ng-cloak>
   <header class="bar bar-nav">
     <h1 id="page-title">{{ title ? title : "Vision Mobile" }}</h1>
     <img src="images/vision_logo.png" />
   </header>
 
   <nav class="bar bar-tab" ng-show="logged_in" ng-class="{ visible: logged_in }">
-    <a class="tab-item" href="#/guide" ng-class="{ active: title == 'Programme Guide' }">
+    <a class="tab-item" href="#/live" ng-class="{ active: title == 'Live Channels' }">
       <span class="glyphicons calendar icon"></span>
-      <span class="tab-label">Guide</span>
+      <span class="tab-label">Live</span>
     </a>
     <a class="tab-item" href="#/history" ng-class="{ active: title == 'History' }">
       <span class="glyphicons clock icon"></span>
@@ -151,9 +151,10 @@
     </div>
   </script>
 
-  <script type="text/ng-template" id="guide.html">
+  <script type="text/ng-template" id="live.html">
     <div class="content_padding">
       <h2>Live Channels</h2>
+      <p>With your Apple device you can watch live telivision or listen to live radio from around 50 channels</p> 
       <ul id="channel-list" class="flex-container">
         <img src="images/ajax-loader.gif" class="spinner" ng-hide="programmes" />
         <li class="table-view-cell group" ng-repeat="programme in programmes">
@@ -271,7 +272,7 @@
   <script src="js/history.js"></script>
   <script src="js/search.js"></script>
   <script src="js/playback.js"></script>
-  <script src="js/guide.js"></script>
+  <script src="js/live.js"></script>
   <script src="js/login.js"></script>
 
   <script>

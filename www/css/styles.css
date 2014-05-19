@@ -24,6 +24,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 .content {
   position: absolute;
   top: 0;
@@ -36,6 +40,7 @@ body {
 }
 
 .blue_gradient {
+  overflow: hidden;
   background-color: #012D59;
 
   /* Safari 5.1+, Chrome 10+ */

@@ -1,7 +1,7 @@
 angular.module('vision')
 
-.controller('GuideCtrl', function ($scope, SetTitle, CurrentlyAiring) {
-  SetTitle("Programme Guide");
+.controller('LiveCtrl', function ($scope, SetTitle, CurrentlyAiring) {
+  SetTitle("Live Channels");
 
   CurrentlyAiring.get().then(function(programmes) {
     $scope.programmes = programmes;
