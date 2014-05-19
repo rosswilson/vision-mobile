@@ -56,7 +56,7 @@
   <script type="text/ng-template" id="dashboard.html">
     <div class="content_padding">
       <h2>Recommendations</h2>
-      <ul id="channel-list" class="flex-container">
+      <ul class="flex-container">
         <img src="images/ajax-loader.gif" class="spinner" ng-hide="recommendations != null" />
 
         <li class="table-view-cell group" ng-repeat="programme in recommendations">
@@ -79,7 +79,7 @@
       </ul>
 
       <h2>Trending</h2>
-      <ul id="channel-list" class="flex-container">
+      <ul class="flex-container">
         <img src="images/ajax-loader.gif" class="spinner" ng-hide="trending != null" />
 
         <li class="table-view-cell group" ng-repeat="programme in trending">
@@ -125,9 +125,12 @@
               <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes</p>
             </div>
           </a>
-          <div class="buttons group">
+          <div class="buttons group" ng-hide="programme.live">
             <a class="btn" ng-href="#/programmes/{{ programme.programme_id }}?start_at={{ programme.last_known_position }}">Resume {{ programme.percentage_watched }}% watched</a>
             <a class="btn" ng-href="#/programmes/{{ programme.programme_id }}">Play From Beginning</a>
+          </div>
+          <div class="buttons group" ng-show="programme.live">
+            <a class="btn watch_live" ng-href="#/programmes/{{ programme.programme_id }}">Watch Live</a>
           </div>
         </li>
 
@@ -211,10 +214,18 @@
       <div ng-show="programme" class="group">
         <h2>{{ programme.programme_name }} <small ng-show="programme.sub_title">Episode {{ programme.sub_title }}</small></h2>
         <article>
-          <div id="video_wrapper">
+          <div id="video_wrapper" ng-show="programme.watch_live || programme.watch_catchup">
             <video id="video-player" src="" width="100%" height="100%" controls="controls">
               <p>Sorry, your device is not capable of playing our videos</p>
             </video>
+          </div>
+          <div class="message" ng-show="programme.available_soon">
+            <p>This programme is currently being recorded and processed.</p>
+            <p>It'll be available here soon.</p>
+          </div>
+          <div class="message" ng-show="programme.waiting_to_be_recorded">
+            <p>This programme has not been broadcast yet.</p>
+            <p>Come back here later to watch it live or on demand</p>
           </div>
           <button id="watch-later" ng-click="watch_later()">
             <span class="glyphicons plus icon"></span> Add to my Watch Later list

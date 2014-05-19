@@ -14,55 +14,57 @@ angular.module('vision')
   var success = function(programme) {
     $scope.programme = programme;
 
-    PlayerStatsService.new_instance(programme.programme_id, programme.playback_url);
+    if(programme.watch_live || programme.watch_catchup) {
+      PlayerStatsService.new_instance(programme.programme_id, programme.playback_url);
 
-    // Set the video player poster image if not resuming (since we'll immediately start playing)
-    var player = document.getElementById('video-player');
-    player.setAttribute("poster", ProgrammeService.get_poster_url($scope.programme, 720, 405));
+      // Set the video player poster image if not resuming (since we'll immediately start playing)
+      var player = document.getElementById('video-player');
+      player.setAttribute("poster", ProgrammeService.get_poster_url($scope.programme, 720, 405));
 
-    player = new MediaElementPlayer('#video-player', {
-      type: ['video/mp4'],
-      success: function (mediaElement, domObject) {
-        var resume_playback = function() {
-          mediaElement.setCurrentTime($scope.start_at);
-          mediaElement.play();
-          mediaElement.removeEventListener("canplay", resume_playback);
-        };
+      player = new MediaElementPlayer('#video-player', {
+        type: ['video/mp4'],
+        success: function (mediaElement, domObject) {
+          var resume_playback = function() {
+            mediaElement.setCurrentTime($scope.start_at);
+            mediaElement.play();
+            mediaElement.removeEventListener("canplay", resume_playback);
+          };
 
-        // If resuming, once player has media metadata, we can shift the playhead position
-        if($scope.start_at) {
-          mediaElement.addEventListener("canplay", resume_playback);
-        }
-
-        var calculate_segment = function() {
-          var currentSeconds = Math.floor(mediaElement.currentTime);
-
-          // Proceed if not already updated segment and it's been 3 seconds since we last did
-          if(currentSeconds != $scope.last_segment_end && currentSeconds != 0 && currentSeconds % 3 == 0) {
-
-            // Check if skipped more than *5* seconds (not 3) incase timings are slightly inaccurate
-            if(currentSeconds < $scope.last_segment_end || currentSeconds > $scope.last_segment_end + 5) {
-              $scope.last_segment_start = currentSeconds;
-              // console.log("Logging skipped segment " + $scope.last_segment_start + ":" + currentSeconds);
-            }
-
-            PlayerStatsService.log_segment($scope.last_segment_start, $scope.last_segment_end);
-            $scope.last_segment_end = currentSeconds;
+          // If resuming, once player has media metadata, we can shift the playhead position
+          if($scope.start_at) {
+            mediaElement.addEventListener("canplay", resume_playback);
           }
+
+          var calculate_segment = function() {
+            var currentSeconds = Math.floor(mediaElement.currentTime);
+
+            // Proceed if not already updated segment and it's been 3 seconds since we last did
+            if(currentSeconds != $scope.last_segment_end && currentSeconds != 0 && currentSeconds % 3 == 0) {
+
+              // Check if skipped more than *5* seconds (not 3) incase timings are slightly inaccurate
+              if(currentSeconds < $scope.last_segment_end || currentSeconds > $scope.last_segment_end + 5) {
+                $scope.last_segment_start = currentSeconds;
+                // console.log("Logging skipped segment " + $scope.last_segment_start + ":" + currentSeconds);
+              }
+
+              PlayerStatsService.log_segment($scope.last_segment_start, $scope.last_segment_end);
+              $scope.last_segment_end = currentSeconds;
+            }
+          }
+
+          mediaElement.addEventListener('timeupdate', function() {
+            calculate_segment();
+          });
+
+          mediaElement.addEventListener('seeked', function() {
+            calculate_segment();
+          });
+
+          mediaElement.setSrc(programme.playback_url);
+          mediaElement.load();
         }
-
-        mediaElement.addEventListener('timeupdate', function() {
-          calculate_segment();
-        });
-
-        mediaElement.addEventListener('seeked', function() {
-          calculate_segment();
-        });
-
-        mediaElement.setSrc(programme.playback_url);
-        mediaElement.load();
-      }
-    });
+      });
+    }
   };
 
   var error = function(error) {
@@ -73,7 +75,12 @@ angular.module('vision')
 
   $scope.watch_later = function() {
     var player = document.getElementById('video-player');
-    var current_time = Math.floor(player.currentTime);
+    var current_time = 0;
+
+    if(player) {
+      var current_time = Math.floor(player.currentTime);
+    }
+
     WatchLaterService.store($scope.programme_id, current_time, $scope.programme.watch_live);
   };
 })

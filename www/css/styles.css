@@ -262,6 +262,14 @@ dd {
   margin-left: 1%;
 }
 
+#history a.btn.watch_live {
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #008000;
+  width: 100%;
+  border-color: #017001;
+}
+
 #watch-later {
   padding: 14px;
   font-size: 13px;
