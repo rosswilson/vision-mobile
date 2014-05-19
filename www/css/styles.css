@@ -75,6 +75,12 @@ p {
   line-height: 1.5em;
 }
 
+p.lead {
+  color: #444;
+  margin: 1em 0;
+  font-size: 95%;
+}
+
 h2 {
   font-weight: 500;
   font-size: 20px;

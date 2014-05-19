@@ -3,6 +3,9 @@ angular.module('vision')
 .controller('DashboardCtrl', function ($scope, SetTitle, AuthService, $location, RecommendationsEngine, TrendingEngine) {
   SetTitle("Dashboard");
 
+  $scope.recommendations = null;
+  $scope.trending = null;
+
   $scope.logout = function() {
     AuthService.logout();
     $location.path('/login');

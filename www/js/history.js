@@ -3,15 +3,13 @@ angular.module('vision')
 .controller('HistoryCtrl', function ($scope, SetTitle, HistoryService, AuthService) {
   SetTitle("History");
 
-  var success = function(data) {
+  $scope.history = null;
+
+  HistoryService.get(AuthService.user_id()).then(function(data) {
     $scope.history = data;
-  };
-
-  var error = function(error) {
+  }, function(error) {
     console.log(error);
-  };
-
-  HistoryService.get(AuthService.user_id()).then(success, error);
+  });
 })
 
 .service('HistoryService', function ($http, $q, QueryStringBuilder, DurationCalculator) {

@@ -3,6 +3,8 @@ angular.module('vision')
 .controller('LiveCtrl', function ($scope, SetTitle, CurrentlyAiring) {
   SetTitle("Live Channels");
 
+  $scope.programmes = null;
+
   CurrentlyAiring.get().then(function(programmes) {
     $scope.programmes = programmes;
   }, function(reason) {

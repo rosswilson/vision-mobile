@@ -3,9 +3,10 @@ angular.module('vision')
 .controller('LibraryCtrl', function ($scope, SetTitle, WatchLaterService, AuthService) {
   SetTitle("My Library");
 
+  $scope.watch_later = null;
+
   WatchLaterService.get(AuthService.user_id()).then(function(watch_later) {
     $scope.watch_later = watch_later;
-    console.log(watch_later);
   }, function(reason) {
     console.log(reason);
   });
@@ -13,7 +14,7 @@ angular.module('vision')
 })
 
 .service('WatchLaterService', function ($http, $q, QueryStringBuilder, DurationCalculator) {
-  var _url = 'http://10.42.32.127:9110/modules/library/get_paused_content';
+  var _url = 'http://vision.lancs.ac.uk:9110/modules/library/get_paused_content';
 
   return {
     get: function(user_id) {
