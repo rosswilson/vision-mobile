@@ -147,7 +147,7 @@
         <img src="images/ajax-loader.gif" class="spinner" ng-hide="watch_later != null" />
 
         <li class="table-view-cell group" ng-repeat="programme in watch_later">
-          <a href="#/programmes/{{ programme.programme_id }}?position={{ programme.position }}">
+          <a href="#/programmes/{{ programme.programme_id }}?start_at={{ programme.position }}">
             <div class="left">
               <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
             </div>
@@ -217,6 +217,9 @@
               <p>Sorry, your device is not capable of playing our videos</p>
             </video>
           </div>
+          <button id="watch-later" ng-click="watch_later()">
+            <span class="glyphicons plus icon"></span> Add to my Watch Later list
+          </button>
         </article>
         <aside>
           <dl>

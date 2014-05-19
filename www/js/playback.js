@@ -1,6 +1,8 @@
 angular.module('vision')
 
-.controller('PlaybackCtrl', function ($scope, SetTitle, $routeParams, ProgrammeService, PlayerStatsService) {
+.controller('PlaybackCtrl', function ($scope, SetTitle, $routeParams, ProgrammeService, PlayerStatsService, WatchLaterService) {
+  var self = this;
+
   SetTitle("Playback");
 
   // Programme ID to retrieve programme name, synopsis ect
@@ -28,12 +30,10 @@ angular.module('vision')
     PlayerStatsService.new_instance($scope.programme_id, video_url);
 
     // Set the video player poster image if not resuming (since we'll immediately start playing)
-    if($scope.start_at == 0) {
-      var player = document.getElementById('video-player');
-      player.setAttribute("poster", ProgrammeService.get_poster_url($scope.programme, 720, 405));
-    }
+    var player = document.getElementById('video-player');
+    player.setAttribute("poster", ProgrammeService.get_poster_url($scope.programme, 720, 405));
 
-    var player = new MediaElementPlayer('#video-player', {
+    player = new MediaElementPlayer('#video-player', {
       type: ['video/mp4'],
       success: function (mediaElement, domObject) {
         mediaElement.setSrc(video_url);
@@ -50,7 +50,7 @@ angular.module('vision')
           });
         }
 
-        mediaElement.addEventListener('timeupdate', function() {
+        var calculate_segment = function() {
           var currentSeconds = Math.floor(mediaElement.currentTime);
 
           // Proceed if not already updated segment and it's been 3 seconds since we last did
@@ -63,13 +63,19 @@ angular.module('vision')
             }
 
             PlayerStatsService.log_segment($scope.last_segment_start, $scope.last_segment_end);
-
             $scope.last_segment_end = currentSeconds;
           }
+        }
+
+        mediaElement.addEventListener('timeupdate', function() {
+          calculate_segment();
+        });
+
+        mediaElement.addEventListener('seeked', function() {
+          calculate_segment();
         });
       }
     });
-
   };
 
   var error = function(error) {
@@ -77,6 +83,13 @@ angular.module('vision')
   };
 
   var promise = ProgrammeService.get($scope.programme_id).then(success, error);
+
+  $scope.watch_later = function() {
+    var player = document.getElementById('video-player');
+    var current_time = Math.floor(player.currentTime);
+    var is_live = $scope.live_channel ? true : false;
+    WatchLaterService.store($scope.programme_id, current_time, is_live);
+  };
 })
 
 .service('ProgrammeService', function ($http, $q, QueryStringBuilder) {
@@ -92,6 +105,7 @@ angular.module('vision')
 
       var success = function (data, status, headers, config) {
         if(data['num_res']) {
+          console.log(data);
           var programme = data['data'][0];
           programme['vod_url'] = 'http://148.88.32.70/' + programme_id + '.mp4';
           deferred.resolve(programme);

@@ -255,3 +255,29 @@ dd {
 #history a.btn:nth-child(2) {
   margin-left: 1%;
 }
+
+#watch-later {
+  padding: 14px;
+  font-size: 13px;
+  background-color: #428bca;
+  color: white;
+  display: block;
+}
+
+#watch-later .glyphicons.plus {
+  height: 15px;
+  width: 16px;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+}
+
+#watch-later .glyphicons.plus:before {
+  font-size: 14px;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  #watch-later {
+    margin: 0 auto 20px;
+  }
+}
