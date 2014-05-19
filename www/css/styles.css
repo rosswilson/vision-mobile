@@ -242,34 +242,6 @@ dd {
   padding-bottom: 20px;
 }
 
-#history a.btn {
-  color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
-  float: left;
-  width: 49%;
-  margin-top: 20px;
-  height: 35px;
-  line-height: 35px;
-  font-size: 14px;
-}
-
-#history a.btn:nth-child(1) {
-  margin-right: 1%;
-}
-
-#history a.btn:nth-child(2) {
-  margin-left: 1%;
-}
-
-#history a.btn.watch_live {
-  margin-left: 0;
-  margin-right: 0;
-  background-color: #008000;
-  width: 100%;
-  border-color: #017001;
-}
-
 #watch-later {
   padding: 14px;
   font-size: 13px;
