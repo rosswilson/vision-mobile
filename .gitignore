@@ -1,5 +1,3 @@
-platforms/ios/build
-platforms/ios/CordovaLib/build
 platforms/ios/www
 
 platforms/android/ant-build
