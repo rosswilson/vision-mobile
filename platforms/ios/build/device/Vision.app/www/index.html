@@ -56,9 +56,8 @@
   <script type="text/ng-template" id="dashboard.html">
     <div class="content_padding">
       <h2>Recommendations</h2>
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="recommendations != null" />
       <ul class="flex-container">
-        <img src="images/ajax-loader.gif" class="spinner" ng-hide="recommendations != null" />
-
         <li class="table-view-cell group" ng-repeat="programme in recommendations">
           <a href="#/programmes/{{ programme.programme_id }}">
             <div class="left">
@@ -79,9 +78,8 @@
       </ul>
 
       <h2>Trending</h2>
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="trending != null" />
       <ul class="flex-container">
-        <img src="images/ajax-loader.gif" class="spinner" ng-hide="trending != null" />
-
         <li class="table-view-cell group" ng-repeat="programme in trending">
           <a href="#/programmes/{{ programme.programme_id }}">
             <div class="left">
@@ -111,17 +109,18 @@
     <div class="content_padding">
       <h2>Your Viewing History</h2>
       <p class="lead">See your viewing history from across all your devices and pickup from where you last were.</p>
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="history != null" />
 
       <ul id="history" class="vertical-list">
-        <img src="images/ajax-loader.gif" class="spinner" ng-hide="history != null" />
-        <li class="table-view-cell group" ng-repeat="programme in history">
-          <a ng-href="#/programmes/{{ programme.programme_id }}?start_at={{ programme.last_known_position }}">
+        <li class="table-view-cell" ng-repeat="programme in history">
+          <div class="progress_fill" style="width: {{ programme.percentage_watched }}%"></div>
+          <a class="group" ng-href="#/programmes/{{ programme.programme_id }}?start_at={{ programme.last_known_position }}">
             <div class="left">
               <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes &middot; {{ programme.percentage_watched }}% watched</p>
+              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} mins &middot; {{ programme.percentage_watched }}% watched</p>
             </div>
             <p class="small synopsis">{{ programme.synopsis | cut:true:160 }}</p>
           </a>
@@ -138,9 +137,9 @@
     <div class="content_padding">
       <h2>Watch Later</h2>
       <p class="lead">Click the Watch Later button when watching a programme to bookmark it here.</p>
-      <ul id="channel-list" class="flex-container">
-        <img src="images/ajax-loader.gif" class="spinner" ng-hide="watch_later != null" />
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="watch_later != null" />
 
+      <ul id="channel-list" class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in watch_later">
           <a href="#/programmes/{{ programme.programme_id }}?start_at={{ programme.position }}">
             <div class="left">
@@ -184,7 +183,7 @@
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="metadata">{{ programme.channel_name }}</p>
+              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }}</p>
               <span class="glyphicons chevron-right"></span>
             </div>
             <p class="small synopsis">{{ programme.synopsis | cut:true:130 }}</p>
@@ -202,9 +201,9 @@
     <div class="content_padding">
       <h2>Live Channels</h2>
       <p class="lead">With your Apple device you can watch live television or listen to live radio from over 50 channels.</p>
-      <ul id="channel-list" class="flex-container">
-        <img src="images/ajax-loader.gif" class="spinner" ng-hide="programmes != null" />
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="programmes != null" />
 
+      <ul id="channel-list" class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in programmes">
           <a href="#/programmes/{{ programme.programme_id }}">
             <div class="left">

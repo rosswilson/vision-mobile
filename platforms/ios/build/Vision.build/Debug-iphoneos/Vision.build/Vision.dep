@@ -1,7 +1,7 @@
-f30446cd4cf0acad08202752f9675cf3 d277359abc2acbe9a5f4743c0664dd29 ffffffffffffffffffffffffffffffff 468 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/Vision.build/Debug-iphoneos/Vision.build/Vision.xcent
+f30446cd4cf0c4de08202752f9675cf3 a0f26d67ac5c7c6d20ffef21b11e0a7b ffffffffffffffffffffffffffffffff 468 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/Vision.build/Debug-iphoneos/Vision.build/Vision.xcent
 2977b9285f7320792c7a0e37b193d5fd 22ea2929cdf85b4cdede6922c476a3d6 ffffffffffffffffffffffffffffffff 1156 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app
 000000005379f1470000000000001e28 fc956fa29412469c0c77acb3eb316bfe ffffffffffffffffffffffffffffffff 7720 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app/embedded.mobileprovision
-00000000537b29580000000000000b04 f30446cd4cabb01f08202752f9675763 ffffffffffffffffffffffffffffffff 0 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app/PkgInfo
+00000000537b412b0000000000000b04 f30446cd4cabb01f08202752f9675763 ffffffffffffffffffffffffffffffff 0 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app/PkgInfo
 000000005370a6bf0000000000000066 37bae5cf877cb2a743040295d986dc15 ffffffffffffffffffffffffffffffff 102 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app/CDVNotification.bundle
 00000000536b58920000000000002d02 87762161ce995457b8b9e0dde25f2cd7 ffffffffffffffffffffffffffffffff 13846 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app/icon-72@2x.png
 00000000536b5892000000000000316c d502e4618f4acb0ccc7a349d64b27ccc ffffffffffffffffffffffffffffffff 15858 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app/icon-76@2x.png
@@ -28,8 +28,8 @@ f30446cd4cf0acad08202752f9675cf3 d277359abc2acbe9a5f4743c0664dd29 ffffffffffffff
 00000000536b5892000000000000154a a389564e3754f6990a26daee972b821b ffffffffffffffffffffffffffffffff 6789 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app/icon-40@2x.png
 00000000536b58920000000000001402 be1127181258eca9d95d92be084246c5 ffffffffffffffffffffffffffffffff 6326 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app/icon-76.png
 00000000532035eb0000000000000096 8c65753757f1a457d33203ac18d8ad9b ffffffffffffffffffffffffffffffff 150 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app/ResourceRules.plist
-4608f2e1ef66e6dccbad3975fb7c71e3 45cbb37b842e81c89fd2feee75f78077 ffffffffffffffffffffffffffffffff 102 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app.dSYM
-00000000537b29580000000000000b04 f30446cd4cabb01f08202752f9675763 ffffffffffffffffffffffffffffffff 1756 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app/Info.plist
+4608f2e1ef668eafcbad3975fb7c71e3 45cbb37b842e81c89fd2feee75f78077 ffffffffffffffffffffffffffffffff 102 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app.dSYM
+00000000537b412b0000000000000b04 f30446cd4cabb01f08202752f9675763 ffffffffffffffffffffffffffffffff 1756 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app/Info.plist
 000000005320363e000000000296dbce b50cb42ca39649a5c38d1e27008df64a ffffffffffffffffffffffffffffffff 314720 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/Vision.app/Vision
 67d1f290fcc2cee07f24f89252997803 533b29d84c8d8e8618c45f2592adeb4b ffffffffffffffffffffffffffffffff 69052 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/Vision.build/Debug-iphoneos/Vision.build/Objects-normal/armv7/CDVNotification.o
 67d1f290fcc2cee07f24f89252996a30 b286ffe63e51a3316e06e3939bdc52a9 ffffffffffffffffffffffffffffffff 41788 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/Vision.build/Debug-iphoneos/Vision.build/Objects-normal/armv7/CDVLogger.o

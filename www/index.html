@@ -272,8 +272,8 @@
             <dt ng-show="programme.director">Director</dt>
             <dd ng-show="programme.director">{{ programme.director }}</dd>
 
-            <dt ng-show="programme.genre">Genre</dt>
-            <dd ng-show="programme.genre">{{ programme.genre }}</dd>
+            <dt ng-show="programme.genre && programme.genre != 'Unclassified'">Genre</dt>
+            <dd ng-show="programme.genre && programme.genre != 'Unclassified'">{{ programme.genre }}</dd>
 
             <dt>Duration</dt>
             <dd>{{ programme.duration }}</dd>

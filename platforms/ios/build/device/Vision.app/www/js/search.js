@@ -33,7 +33,7 @@ angular.module('vision')
       var params = {
         q: keyword,
         start: 0,
-        rows: 25,
+        rows: 30,
         url: '/future/select',
         wt: 'json',
         send_filters: false,
@@ -41,7 +41,15 @@ angular.module('vision')
       }
 
       var success = function (data, status, headers, config) {
-        deferred.resolve(data.response.docs);
+        var temp = [];
+
+        $.each(data.response.docs, function(key, value) {
+          if(!value.waiting_to_be_recorded && !value.not_available) {
+            temp.push(value);
+          }
+        });
+
+        deferred.resolve(temp);
       };
 
       var failure = function (data, status, headers, config) {
