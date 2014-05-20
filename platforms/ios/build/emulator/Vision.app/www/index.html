@@ -56,9 +56,8 @@
   <script type="text/ng-template" id="dashboard.html">
     <div class="content_padding">
       <h2>Recommendations</h2>
-      <ul id="channel-list" class="flex-container">
-        <img src="images/ajax-loader.gif" class="spinner" ng-hide="recommendations != null" />
-
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="recommendations != null" />
+      <ul class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in recommendations">
           <a href="#/programmes/{{ programme.programme_id }}">
             <div class="left">
@@ -66,10 +65,10 @@
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="small">{{ programme.synopsis | cut:true:130 }}</p>
               <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes</p>
               <span class="glyphicons chevron-right"></span>
             </div>
+            <p class="small synopsis">{{ programme.synopsis | cut:true:160 }}</p>
           </a>
         </li>
 
@@ -79,9 +78,8 @@
       </ul>
 
       <h2>Trending</h2>
-      <ul id="channel-list" class="flex-container">
-        <img src="images/ajax-loader.gif" class="spinner" ng-hide="trending != null" />
-
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="trending != null" />
+      <ul class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in trending">
           <a href="#/programmes/{{ programme.programme_id }}">
             <div class="left">
@@ -89,10 +87,10 @@
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="small">{{ programme.synopsis | cut:true:130 }}</p>
               <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes</p>
               <span class="glyphicons chevron-right"></span>
             </div>
+            <p class="small synopsis">{{ programme.synopsis | cut:true:160 }}</p>
           </a>
         </li>
 
@@ -111,24 +109,21 @@
     <div class="content_padding">
       <h2>Your Viewing History</h2>
       <p class="lead">See your viewing history from across all your devices and pickup from where you last were.</p>
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="history != null" />
 
       <ul id="history" class="vertical-list">
-        <img src="images/ajax-loader.gif" class="spinner" ng-hide="history != null" />
-        <li class="table-view-cell group" ng-repeat="programme in history">
-          <a ng-href="#/programmes/{{ programme.programme_id }}">
+        <li class="table-view-cell" ng-repeat="programme in history">
+          <div class="progress_fill" style="width: {{ programme.percentage_watched }}%"></div>
+          <a class="group" ng-href="#/programmes/{{ programme.programme_id }}?start_at={{ programme.last_known_position }}">
             <div class="left">
               <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="small">{{ programme.synopsis }}</p>
-              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes</p>
+              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes &middot; {{ programme.percentage_watched }}% watched</p>
             </div>
+            <p class="small synopsis">{{ programme.synopsis | cut:true:160 }}</p>
           </a>
-          <div class="buttons group">
-            <a class="btn" ng-href="#/programmes/{{ programme.programme_id }}?start_at={{ programme.last_known_position }}">Resume {{ programme.percentage_watched }}% watched</a>
-            <a class="btn" ng-href="#/programmes/{{ programme.programme_id }}">Play From Beginning</a>
-          </div>
         </li>
 
         <li class="table-view-cell empty-list-message" ng-show="history.length == 0">
@@ -142,9 +137,9 @@
     <div class="content_padding">
       <h2>Watch Later</h2>
       <p class="lead">Click the Watch Later button when watching a programme to bookmark it here.</p>
-      <ul id="channel-list" class="flex-container">
-        <img src="images/ajax-loader.gif" class="spinner" ng-hide="watch_later != null" />
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="watch_later != null" />
 
+      <ul id="channel-list" class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in watch_later">
           <a href="#/programmes/{{ programme.programme_id }}?start_at={{ programme.position }}">
             <div class="left">
@@ -152,10 +147,10 @@
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="small">{{ programme.synopsis | cut:true:200 }}</p>
               <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes</p>
               <span class="glyphicons chevron-right"></span>
             </div>
+            <p class="small synopsis">{{ programme.synopsis | cut:true:160 }}</p>
           </a>
         </li>
 
@@ -169,28 +164,57 @@
   <script type="text/ng-template" id="search.html">
     <div class="content_padding">
       <h2>Search</h2>
-      <p class="lead">Soon you'll be able to search for the programmes you like and watch them here on your mobile device.</p>
+      <p class="lead">Search for your favourite programmes below.</p>
+
+      <form id="search-form" ng-submit="search()">
+        <div class="inner">
+          <input name="search" id="search" type="text" ng-model="query" placeholder="Enter a search term" />
+        </div>
+        <button type="submit">Search</button>
+      </form>
+
+      <img src="images/ajax-loader.gif" class="spinner" ng-show="show_spinner" />
+
+      <ul id="search-results" class="flex-container">
+        <li class="table-view-cell group" ng-repeat="programme in results">
+          <a href="#/programmes/{{ programme.programme_id }}">
+            <div class="left">
+              <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
+            </div>
+            <div class="right">
+              <p>{{ programme.programme_name }}</p>
+              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }}</p>
+              <span class="glyphicons chevron-right"></span>
+            </div>
+            <p class="small synopsis">{{ programme.synopsis | cut:true:130 }}</p>
+          </a>
+        </li>
+
+        <li class="table-view-cell empty-list-message" ng-show="results.length == 0">
+          <p>No search results were found</p>
+        </li>
+      </ul>
     </div>
   </script>
 
   <script type="text/ng-template" id="live.html">
     <div class="content_padding">
       <h2>Live Channels</h2>
-      <p class="lead">With your Apple device you can watch live telivision or listen to live radio from over 50 channels.</p>
-      <ul id="channel-list" class="flex-container">
-        <img src="images/ajax-loader.gif" class="spinner" ng-hide="programmes != null" />
+      <p class="lead">With your Apple device you can watch live television or listen to live radio from over 50 channels.</p>
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="programmes != null" />
 
+      <ul id="channel-list" class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in programmes">
-          <a href="#/programmes/{{ programme.programme_id }}?live_channel={{ programme.wowza_code }}">
+          <a href="#/programmes/{{ programme.programme_id }}">
             <div class="left">
               <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="small">{{ programme.synopsis | cut:true:130 }}</p>
               <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes</p>
               <span class="glyphicons chevron-right"></span>
             </div>
+            <p class="small synopsis">{{ programme.synopsis | cut:true:130 }}</p>
           </a>
         </li>
 
@@ -209,14 +233,25 @@
       </div>
 
       <div ng-show="programme" class="group">
-        <h2>{{ programme.p_name }} <small ng-show="programme.sub_title">Episode {{ programme.sub_title }}</small></h2>
+        <h2>{{ programme.programme_name }} <small ng-show="programme.sub_title">Episode {{ programme.sub_title }}</small></h2>
         <article>
-          <div id="video_wrapper">
+          <div id="video_wrapper" ng-show="programme.watch_live || programme.watch_catchup">
             <video id="video-player" src="" width="100%" height="100%" controls="controls">
               <p>Sorry, your device is not capable of playing our videos</p>
             </video>
           </div>
-          <button id="watch-later" ng-click="watch_later()" ng-hide="live_channel">
+          <div class="message" ng-show="programme.available_soon">
+            <p>This programme is currently being recorded and processed.</p>
+            <p>It'll be available here soon.</p>
+          </div>
+          <div class="message" ng-show="programme.waiting_to_be_recorded">
+            <p>This programme has not been broadcast yet.</p>
+            <p>Come back here later to watch it live or on demand</p>
+          </div>
+          <div class="message" ng-show="programme.not_available && !programme.waiting_to_be_recorded">
+            <p>This programme is not available to watch.</p>
+          </div>
+          <button id="watch-later" ng-click="watch_later()">
             <span class="glyphicons plus icon"></span> Add to my Watch Later list
           </button>
         </article>
@@ -225,14 +260,14 @@
             <dt ng-show="programme.episode">Episode</dt>
             <dd ng-show="programme.episode">{{ programme.episode }}</dd>
 
-            <dt>Synopsis</dt>
-            <dd>{{ programme.synopsis ? programme.synopsis : programme.p_synopsis }}</dd>
+            <dt ng-show="programme.synopsis">Synopsis</dt>
+            <dd ng-show="programme.synopsis">{{ programme.synopsis }}</dd>
 
-            <dt>Date</dt>
-            <dd>{{ programme.p_start }}</dd>
+            <dt ng-show="programme.broadcast">Date</dt>
+            <dd ng-show="programme.broadcast">{{ programme.broadcast }}</dd>
 
-            <dt>Channel</dt>
-            <dd><img src="http://148.88.32.64/cache/170x100-2/programmes{{programme.channel_image}}" style="width: 85px; height: 50px;" /></dd>
+            <dt ng-show="programme.channel_name">Channel</dt>
+            <dd ng-show="programme.channel_name">{{ programme.channel_name }}</dd>
 
             <dt ng-show="programme.director">Director</dt>
             <dd ng-show="programme.director">{{ programme.director }}</dd>
@@ -241,7 +276,7 @@
             <dd ng-show="programme.genre">{{ programme.genre }}</dd>
 
             <dt>Duration</dt>
-            <dd>{{ programme.duration }} minutes</dd>
+            <dd>{{ programme.duration }}</dd>
           </dl>
         </aside>
       </div>

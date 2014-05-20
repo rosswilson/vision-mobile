@@ -110,9 +110,11 @@
       <h2>Your Viewing History</h2>
       <p class="lead">See your viewing history from across all your devices and pickup from where you last were.</p>
       <img src="images/ajax-loader.gif" class="spinner" ng-hide="history != null" />
+
       <ul id="history" class="vertical-list">
-        <li class="table-view-cell group" ng-repeat="programme in history">
-          <a ng-href="#/programmes/{{ programme.programme_id }}?start_at={{ programme.last_known_position }}">
+        <li class="table-view-cell" ng-repeat="programme in history">
+          <div class="progress_fill" style="width: {{ programme.percentage_watched }}%"></div>
+          <a class="group" ng-href="#/programmes/{{ programme.programme_id }}?start_at={{ programme.last_known_position }}">
             <div class="left">
               <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
             </div>

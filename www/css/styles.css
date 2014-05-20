@@ -118,12 +118,6 @@ h2 small {
   margin-bottom: 15px;
 }
 
-/*@media (max-width: 550px) {
-  .flex_vertical_center {
-    height: initial;
-  }
-}*/
-
 #login_wrapper #pin_preview {
   border: 1px solid #ddd;
   background-color: white;
@@ -269,7 +263,7 @@ dd {
 }
 
 .content_padding {
-  padding: 15px;
+  padding: 10px;
 }
 
 @media (min-width: 550px) {
