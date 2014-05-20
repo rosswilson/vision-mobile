@@ -224,7 +224,7 @@ button:focus, .btn:focus {
 .spinner {
   width: 32px;
   height: 32px;
-  margin: 0 auto;
+  margin: 15px auto;
   display: block;
 }
 
@@ -304,4 +304,49 @@ dd {
     float: left;
     padding-left: 10px;
   }
+}
+
+/* Search specific */
+form#search-form {
+  max-width: 900px;
+  margin: 15px auto;
+  position: relative;
+}
+
+form#search-form .inner {
+  margin-right: 80px;
+}
+
+form#search-form input#search {
+  padding: 0px 18px;
+  height: 44px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  margin: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-appearance:none;  /* Remove default shadow */
+
+  /* Needed otherwise iOS can't type into the field */
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  -o-user-select: initial;
+  user-select: initial;
+}
+
+form#search-form input#search:focus {
+  outline: 0;
+}
+
+form#search-form button {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 81px;
+  height: 44px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
