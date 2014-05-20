@@ -23,6 +23,7 @@ angular.module('vision')
 
       player = new MediaElementPlayer('#video-player', {
         type: ['video/mp4'],
+        iPhoneUseNativeControls: true,
         success: function (mediaElement, domObject) {
           var resume_playback = function() {
             mediaElement.setCurrentTime($scope.start_at);
@@ -61,7 +62,7 @@ angular.module('vision')
           });
 
           mediaElement.setSrc(programme.playback_url);
-          mediaElement.load();
+          // mediaElement.load();
         }
       });
     }

@@ -236,7 +236,7 @@
         <h2>{{ programme.programme_name }} <small ng-show="programme.sub_title">Episode {{ programme.sub_title }}</small></h2>
         <article>
           <div id="video_wrapper" ng-show="programme.watch_live || programme.watch_catchup">
-            <video id="video-player" src="" width="100%" height="100%" controls="controls">
+            <video id="video-player" src="" height="100%" controls="controls" preload='auto'>
               <p>Sorry, your device is not capable of playing our videos</p>
             </video>
           </div>
@@ -272,8 +272,8 @@
             <dt ng-show="programme.director">Director</dt>
             <dd ng-show="programme.director">{{ programme.director }}</dd>
 
-            <dt ng-show="programme.genre">Genre</dt>
-            <dd ng-show="programme.genre">{{ programme.genre }}</dd>
+            <dt ng-show="programme.genre && programme.genre != 'Unclassified'">Genre</dt>
+            <dd ng-show="programme.genre && programme.genre != 'Unclassified'">{{ programme.genre }}</dd>
 
             <dt>Duration</dt>
             <dd>{{ programme.duration }}</dd>
