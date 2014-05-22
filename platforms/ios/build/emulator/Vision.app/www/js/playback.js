@@ -1,6 +1,8 @@
 angular.module('vision')
 
-.controller('PlaybackCtrl', function ($scope, SetTitle, $routeParams, ProgrammeService, PlayerStatsService, WatchLaterService) {
+.controller('PlaybackCtrl', function ($scope, SetTitle, $routeParams, ProgrammeService,
+  PlayerStatsService, WatchLaterService, StatsLogging) {
+
   var self = this;
 
   SetTitle("Playback");
@@ -11,7 +13,14 @@ angular.module('vision')
   $scope.last_segment_start = $scope.start_at;
   $scope.last_segment_end = $scope.start_at;
 
+  // Make sure that the player is stopped on controller exit
+  $scope.$on('$destroy', function() {
+    document.getElementById('video-player').stop();
+    document.getElementById('video_wrapper').innerHtml = '';
+  });
+
   var success = function(programme) {
+    $scope.playback_error = false;
     $scope.programme = programme;
 
     if(programme.watch_live || programme.watch_catchup) {
@@ -62,13 +71,25 @@ angular.module('vision')
           });
 
           mediaElement.setSrc(programme.playback_url);
-          // mediaElement.load();
+          mediaElement.load();
         }
       });
     }
+
+    StatsLogging.log("MOBILE_PLAYBACK", {
+      programme_id: $scope.programme.programme_id,
+      file_id: $scope.programme.playback_url,
+      is_live: $scope.programme.watch_live,
+      is_vod: $scope.programme.watch_catchup,
+      is_available_soon: $scope.programme.available_soon,
+      is_waiting_recording: $scope.programme.waiting_to_be_recorded,
+      is_not_available: $scope.programme.not_available,
+      start_at: $scope.start_at
+    });
   };
 
   var error = function(error) {
+    $scope.playback_error = true;
     console.log(error);
   };
 
@@ -135,7 +156,7 @@ angular.module('vision')
   }
 })
 
-.service("PlayerStatsService", function(AuthService) {
+.service("PlayerStatsService", function(AuthService, $http, StatsLogging) {
   var _heartbeat_id = null;
 
   return {
@@ -143,10 +164,8 @@ angular.module('vision')
       _heartbeat_id = CryptoJS.SHA1("mobile" + Math.random() + programme_id).toString();
       console.log("Logging player instance, heartbeat ID: %s", _heartbeat_id);
 
-      $.ajax({
-        url: "http://10.42.32.75:9110/capture/player_instance",
-        type: "get",
-        data: {
+      $http.get("http://10.42.32.75:9110/capture/player_instance", {
+        params: {
           api: "53e659a15aff4a402de2d51b98703fa1ade5b8c5",
           heartbeat_id: _heartbeat_id,
           user_id: AuthService.user_id(),
@@ -154,27 +173,10 @@ angular.module('vision')
           file_id: file_url
         }
       });
-
-      // Log a Vision Mobile specific playback log
-      $.ajax({
-        url: "http://10.42.32.75:9110/capture/log",
-        type: "get",
-        data: {
-          api: "53e659a15aff4a402de2d51b98703fa1ade5b8c5",
-          log_type: "MOBILE_PLAYBACK",
-          user_id: AuthService.user_id(),
-          attributes: JSON.stringify({
-            programme_id: programme_id,
-            file_id: file_url
-          })
-        }
-      });
     },
     log_segment: function(start, end) {
-      $.ajax({
-        url: "http://10.42.32.75:9110/capture/heartbeat",
-        type: "get",
-        data: {
+      $http.get("http://10.42.32.75:9110/capture/heartbeat", {
+        params: {
           api: "53e659a15aff4a402de2d51b98703fa1ade5b8c5",
           heartbeat_id: _heartbeat_id,
           user_id: AuthService.user_id(),

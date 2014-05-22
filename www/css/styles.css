@@ -89,6 +89,33 @@ h2 small {
   padding: 30px;
 }
 
+#login_wrapper #screenshot_container {
+  padding-top: 20px;
+  display: none;
+}
+
+#login_wrapper #screenshot_container.visible {
+  display: block;
+}
+
+#login_wrapper #screenshot_container p {
+  color: #444;
+  font-size: 90%;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+#login_wrapper #screenshot {
+  width: 65%;
+  margin: 0 auto;
+  display: block;
+}
+
+#login_wrapper #instructions {
+  margin-top: 10px;
+}
+
 @media (min-width: 700px) {
   #login_wrapper {
     display: -webkit-flex;

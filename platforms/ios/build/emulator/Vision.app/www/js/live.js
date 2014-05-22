@@ -1,14 +1,24 @@
 angular.module('vision')
 
-.controller('LiveCtrl', function ($scope, SetTitle, CurrentlyAiring) {
+.controller('LiveCtrl', function ($scope, SetTitle, CurrentlyAiring, StatsLogging) {
   SetTitle("Live Channels");
 
   $scope.programmes = null;
 
   CurrentlyAiring.get().then(function(programmes) {
     $scope.programmes = programmes;
+
+    StatsLogging.log("MOBILE_LIVE_LOAD", {
+      num_results: programmes.length,
+    });
   }, function(reason) {
+    $scope.live_error = true;
     console.log(reason);
+
+    StatsLogging.log("MOBILE_LIVE_LOAD", {
+      num_results: 0,
+      error: reason
+    });
   });
 })
 

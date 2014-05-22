@@ -9,6 +9,10 @@ angular.module('vision')
   if(AuthService.is_logged_in()) {
    $location.path('/dashboard');
   }
+    
+  $("#instructions").click(function() {
+    $("#screenshot_container").toggleClass("visible");
+  });
 
   // If submitted code is valid, redirect to dashboard
   $scope.login = function() {
