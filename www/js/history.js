@@ -1,15 +1,23 @@
 angular.module('vision')
 
-.controller('HistoryCtrl', function ($scope, SetTitle, HistoryService, AuthService) {
+.controller('HistoryCtrl', function ($scope, SetTitle, HistoryService, AuthService, StatsLogging) {
   SetTitle("History");
 
   $scope.history = null;
 
   HistoryService.get(AuthService.user_id()).then(function(data) {
     $scope.history = data;
-  }, function(error) {
+
+    StatsLogging.log("MOBILE_HISTORY_LOAD", {
+      num_results: data.length
+    });
+  }, function(reason) {
     $scope.history_error = true;
-    console.log(error);
+    console.log(reason);
+    StatsLogging.log("MOBILE_HISTORY_LOAD", {
+      num_results: 0,
+      error: reason
+    });
   });
 })
 
@@ -25,8 +33,9 @@ angular.module('vision')
       }
 
       var success = function (data, status, headers, config) {
-        DurationCalculator.set_for_array(data);
-        deferred.resolve(data);
+        var history = data.slice(0, 50);
+        DurationCalculator.set_for_array(history);
+        deferred.resolve(history);
       };
 
       var failure = function (data, status, headers, config) {

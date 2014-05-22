@@ -130,15 +130,11 @@
 		</data>
 		<key>www/css/lists.css</key>
 		<data>
-		RO38pgJTRqdJgNq+fnol67F+JJg=
+		yq85tDDZbhTm1wAZAEOnJIM1P3g=
 		</data>
 		<key>www/css/nav-bars.css</key>
 		<data>
 		nOrChImHWcAeATc8cC9uqUGfKM4=
-		</data>
-		<key>www/css/pageslider.css</key>
-		<data>
-		etRp8SUg6cFL3Qi2I0eEinjfZoY=
 		</data>
 		<key>www/css/reset.css</key>
 		<data>
@@ -166,51 +162,47 @@
 		</data>
 		<key>www/images/ajax-loader.gif</key>
 		<data>
-		LrP59DD7KmJn4NJSEp72Rz0HTzc=
+		xhP+vpXfUvs0r2n/hO0WkLOHOE8=
 		</data>
 		<key>www/images/vision_logo.png</key>
 		<data>
-		uxr4eWh4WTwlUmFw/HIPzg1xDUQ=
+		b9FHlBD01x5ZWSmq/YY9HPZOQRY=
 		</data>
 		<key>www/index.html</key>
 		<data>
-		MIJtmeDbi1MFZZgN1RC4s2z+Mp4=
+		vbl752AuZyxtsCqrXsPPY0YMokc=
 		</data>
 		<key>www/js/app.js</key>
 		<data>
-		ITedy5hRNK9Gojec4XlYCTdF1FI=
+		QcbcN8epPV3xcabP7C5ZUI5aC1I=
 		</data>
 		<key>www/js/dashboard.js</key>
 		<data>
-		zH7cLG3A15I3YA4cXfahatP2LD0=
+		se01S5aSK/8fc0afS/Ub2WpgQoc=
 		</data>
 		<key>www/js/history.js</key>
 		<data>
-		wCEJKTkKm+uFfuW8niDpMtVTJUs=
+		4LeovM2AEwy2uE9O/dVsT16HiLI=
 		</data>
 		<key>www/js/library.js</key>
 		<data>
-		3xXKKXGHE/xZwUvK4v0qc8TaUwI=
+		epJAFVU5+fZczPyUQ6QGMtUJJRM=
 		</data>
 		<key>www/js/live.js</key>
 		<data>
-		E1VKKgIQcAKrl+JRPINV8A88eps=
+		EF/C+5lQ28BjT3q/pURfVyRPqBI=
 		</data>
 		<key>www/js/login.js</key>
 		<data>
-		Kih4QC4i7RS4vsqfLKp3ulmQjY4=
+		YRlbo6r3gz5oWHoYyGU/WECt14g=
 		</data>
 		<key>www/js/playback.js</key>
 		<data>
-		VSXLscb/Gl7pS+MhJbeMzE5YT9k=
+		yZuF2twxfiaL3hKJDNIeqUx2xn0=
 		</data>
 		<key>www/js/search.js</key>
 		<data>
-		l8vxiNrvHr09kcJfNn1agohfk+E=
-		</data>
-		<key>www/lib/angular/angular-animate.min.js</key>
-		<data>
-		G3R1TRy22e77fNNgUxylqCgkHyo=
+		zONZSMiQ6c7un8ejxV3bGViV6Ko=
 		</data>
 		<key>www/lib/angular/angular-resource.min.js</key>
 		<data>
@@ -228,13 +220,9 @@
 		<data>
 		oryGo0vubo9d2WU3rL5bQHIL5Zk=
 		</data>
-		<key>www/lib/handlebars.js</key>
+		<key>www/lib/glyphicons.css</key>
 		<data>
-		2yRIyL8k74qwM+ZxLaJ4T5CUwn8=
-		</data>
-		<key>www/lib/iscroll.js</key>
-		<data>
-		yjx4qo1wuPQW3rZiclpoRbSx260=
+		zNwEB5Ay21oO91EIwNchG/ySwxk=
 		</data>
 		<key>www/lib/jquery.js</key>
 		<data>
@@ -336,9 +324,9 @@
 		<data>
 		e+rRJGNR6DGeDSo8sA2v1gENl2s=
 		</data>
-		<key>www/lib/pageslider.js</key>
+		<key>www/lib/reset.css</key>
 		<data>
-		+dTnuOYnM7k4Lc3QCBeEwcBz+Mo=
+		69I62EMtHxQi2A9NYvQ5aADmuVM=
 		</data>
 		<key>www/lib/sha1.js</key>
 		<data>
@@ -493,15 +481,11 @@
 		</data>
 		<key>www/css/lists.css</key>
 		<data>
-		RO38pgJTRqdJgNq+fnol67F+JJg=
+		yq85tDDZbhTm1wAZAEOnJIM1P3g=
 		</data>
 		<key>www/css/nav-bars.css</key>
 		<data>
 		nOrChImHWcAeATc8cC9uqUGfKM4=
-		</data>
-		<key>www/css/pageslider.css</key>
-		<data>
-		etRp8SUg6cFL3Qi2I0eEinjfZoY=
 		</data>
 		<key>www/css/reset.css</key>
 		<data>
@@ -529,51 +513,47 @@
 		</data>
 		<key>www/images/ajax-loader.gif</key>
 		<data>
-		LrP59DD7KmJn4NJSEp72Rz0HTzc=
+		xhP+vpXfUvs0r2n/hO0WkLOHOE8=
 		</data>
 		<key>www/images/vision_logo.png</key>
 		<data>
-		uxr4eWh4WTwlUmFw/HIPzg1xDUQ=
+		b9FHlBD01x5ZWSmq/YY9HPZOQRY=
 		</data>
 		<key>www/index.html</key>
 		<data>
-		MIJtmeDbi1MFZZgN1RC4s2z+Mp4=
+		vbl752AuZyxtsCqrXsPPY0YMokc=
 		</data>
 		<key>www/js/app.js</key>
 		<data>
-		ITedy5hRNK9Gojec4XlYCTdF1FI=
+		QcbcN8epPV3xcabP7C5ZUI5aC1I=
 		</data>
 		<key>www/js/dashboard.js</key>
 		<data>
-		zH7cLG3A15I3YA4cXfahatP2LD0=
+		se01S5aSK/8fc0afS/Ub2WpgQoc=
 		</data>
 		<key>www/js/history.js</key>
 		<data>
-		wCEJKTkKm+uFfuW8niDpMtVTJUs=
+		4LeovM2AEwy2uE9O/dVsT16HiLI=
 		</data>
 		<key>www/js/library.js</key>
 		<data>
-		3xXKKXGHE/xZwUvK4v0qc8TaUwI=
+		epJAFVU5+fZczPyUQ6QGMtUJJRM=
 		</data>
 		<key>www/js/live.js</key>
 		<data>
-		E1VKKgIQcAKrl+JRPINV8A88eps=
+		EF/C+5lQ28BjT3q/pURfVyRPqBI=
 		</data>
 		<key>www/js/login.js</key>
 		<data>
-		Kih4QC4i7RS4vsqfLKp3ulmQjY4=
+		YRlbo6r3gz5oWHoYyGU/WECt14g=
 		</data>
 		<key>www/js/playback.js</key>
 		<data>
-		VSXLscb/Gl7pS+MhJbeMzE5YT9k=
+		yZuF2twxfiaL3hKJDNIeqUx2xn0=
 		</data>
 		<key>www/js/search.js</key>
 		<data>
-		l8vxiNrvHr09kcJfNn1agohfk+E=
-		</data>
-		<key>www/lib/angular/angular-animate.min.js</key>
-		<data>
-		G3R1TRy22e77fNNgUxylqCgkHyo=
+		zONZSMiQ6c7un8ejxV3bGViV6Ko=
 		</data>
 		<key>www/lib/angular/angular-resource.min.js</key>
 		<data>
@@ -591,13 +571,9 @@
 		<data>
 		oryGo0vubo9d2WU3rL5bQHIL5Zk=
 		</data>
-		<key>www/lib/handlebars.js</key>
+		<key>www/lib/glyphicons.css</key>
 		<data>
-		2yRIyL8k74qwM+ZxLaJ4T5CUwn8=
-		</data>
-		<key>www/lib/iscroll.js</key>
-		<data>
-		yjx4qo1wuPQW3rZiclpoRbSx260=
+		zNwEB5Ay21oO91EIwNchG/ySwxk=
 		</data>
 		<key>www/lib/jquery.js</key>
 		<data>
@@ -699,9 +675,9 @@
 		<data>
 		e+rRJGNR6DGeDSo8sA2v1gENl2s=
 		</data>
-		<key>www/lib/pageslider.js</key>
+		<key>www/lib/reset.css</key>
 		<data>
-		+dTnuOYnM7k4Lc3QCBeEwcBz+Mo=
+		69I62EMtHxQi2A9NYvQ5aADmuVM=
 		</data>
 		<key>www/lib/sha1.js</key>
 		<data>

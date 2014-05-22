@@ -1,6 +1,6 @@
 angular.module('vision')
 
-.controller('LoginCtrl', function ($scope, SetTitle, AuthService, $location) {
+.controller('LoginCtrl', function ($scope, SetTitle, AuthService, $location, StatsLogging) {
   SetTitle("Login");
 
   $scope.pin_code = '';
@@ -13,6 +13,7 @@ angular.module('vision')
   // If submitted code is valid, redirect to dashboard
   $scope.login = function() {
     var success = function(data) {
+      StatsLogging.log("MOBILE_LOGIN_SUCCESS");
       $location.path('/dashboard');
     };
 
@@ -26,6 +27,8 @@ angular.module('vision')
         $scope.error_message = "Invalid PIN code, please retry";
         $scope.pin_code = '';
       }
+
+      StatsLogging.log("MOBILE_LOGIN_FAIL");
     };
 
     AuthService.verify($scope.pin_code).then(success, error);

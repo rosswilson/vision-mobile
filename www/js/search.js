@@ -1,7 +1,9 @@
 angular.module('vision')
 
-.controller('SearchCtrl', function ($scope, SetTitle, SearchService) {
+.controller('SearchCtrl', function ($scope, SetTitle, SearchService, StatsLogging) {
   SetTitle("Search");
+
+  StatsLogging.log("MOBILE_SEARCH_LOADED");
 
   $scope.show_spinner = false;
   $scope.results = null;
@@ -13,12 +15,21 @@ angular.module('vision')
     var success = function(results) {
       $scope.show_spinner = false;
       $scope.results = results;
+      StatsLogging.log("MOBILE_SEARCH_RESULTS", {
+        num_results: results.length,
+        is_error: "false",
+        query: $scope.query
+      });
     }
 
     var error = function(reason) {
       $scope.search_error = true;
       $scope.show_spinner = false;
       console.log("Error getting search results");
+      StatsLogging.log("MOBILE_SEARCH_RESULTS", {
+        num_results: 0,
+        is_error: "true"
+      });
     }
 
     var promise = SearchService.get($scope.query).then(success, error);

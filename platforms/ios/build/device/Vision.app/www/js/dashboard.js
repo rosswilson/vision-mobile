@@ -1,6 +1,6 @@
 angular.module('vision')
 
-.controller('DashboardCtrl', function ($scope, SetTitle, AuthService, $location, RecommendationsEngine, TrendingEngine) {
+.controller('DashboardCtrl', function ($scope, SetTitle, AuthService, $location, RecommendationsEngine, TrendingEngine, $q, StatsLogging) {
   SetTitle("Dashboard");
 
   $scope.recommendations = null;
@@ -11,19 +11,28 @@ angular.module('vision')
     $location.path('/login');
   }
 
-  RecommendationsEngine.get(AuthService.user_id()).then(function(recommendations) {
+  var r_promise = RecommendationsEngine.get(AuthService.user_id())
+  .then(function(recommendations) {
     $scope.recommendations = recommendations;
   }, function(reason) {
     $scope.recommendations_error = true;
     console.log(reason);
   });
 
-  TrendingEngine.get(AuthService.user_id()).then(function(trending) {
+  var t_promise = TrendingEngine.get(AuthService.user_id()).then(function(trending) {
     $scope.trending = trending;
   }, function(reason) {
     $scope.trending_error = true;
     console.log(reason);
   });
+
+  $q.all([r_promise, t_promise]).then(function(results) {
+    StatsLogging.log("MOBILE_DASHBOARD_LOAD", {
+      recommendation_results: $scope.recommendations.length,
+      trending_results: $scope.trending.length
+    });
+  });
+
 })
 
 .service('RecommendationsEngine', function($http, $q, QueryStringBuilder, DurationCalculator) {

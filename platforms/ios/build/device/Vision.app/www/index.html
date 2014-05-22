@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
   <!-- CSS libs -->
-  <link href="css/reset.css" rel="stylesheet">
+  <link href="lib/reset.css" rel="stylesheet">
+  <link href="lib/glyphicons.css" rel="stylesheet">
   <link href="lib/mediaelement/mediaelementplayer.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="css/glyphicons.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/nav-bars.css" rel="stylesheet">
   <link href="css/lists.css" rel="stylesheet">
@@ -23,7 +23,7 @@
 <body ng-cloak>
   <header class="bar bar-nav">
     <h1 id="page-title">{{ title ? title : "Vision Mobile" }}</h1>
-    <img src="images/vision_logo.png" />
+    <a href="#/"><img src="images/vision_logo.png" /></a>
   </header>
 
   <nav class="bar bar-tab" ng-show="logged_in" ng-class="{ visible: logged_in }">
@@ -361,7 +361,6 @@
   <script src="lib/sha1.js"></script>
   <script src="lib/mediaelement/mediaelement-and-player.min.js"></script>
   <script src="lib/angular/angular.min.js"></script>
-  <script src="lib/angular/angular-animate.min.js"></script>
   <script src="lib/angular/angular-resource.min.js"></script>
   <script src="lib/angular/angular-route.min.js"></script>
 
@@ -374,9 +373,5 @@
   <script src="js/playback.js"></script>
   <script src="js/live.js"></script>
   <script src="js/login.js"></script>
-
-  <script>
-    $('video,audio').mediaelementplayer(/* Options */);
-  </script>
 </body>
 </html>
