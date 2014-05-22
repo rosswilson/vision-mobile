@@ -14,12 +14,14 @@ angular.module('vision')
   RecommendationsEngine.get(AuthService.user_id()).then(function(recommendations) {
     $scope.recommendations = recommendations;
   }, function(reason) {
+    $scope.recommendations_error = true;
     console.log(reason);
   });
 
   TrendingEngine.get(AuthService.user_id()).then(function(trending) {
     $scope.trending = trending;
   }, function(reason) {
+    $scope.trending_error = true;
     console.log(reason);
   });
 })

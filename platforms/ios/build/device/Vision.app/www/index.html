@@ -56,7 +56,7 @@
   <script type="text/ng-template" id="dashboard.html">
     <div class="content_padding">
       <h2>Recommendations</h2>
-      <img src="images/ajax-loader.gif" class="spinner" ng-hide="recommendations != null" />
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="recommendations != null || recommendations_error" />
       <ul class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in recommendations">
           <a href="#/programmes/{{ programme.programme_id }}">
@@ -75,10 +75,15 @@
         <li class="table-view-cell empty-list-message" ng-show="recommendations.length == 0">
           <p>We don't have any recommendations for you at the moment</p>
         </li>
+
+        <li class="table-view-cell empty-list-message error-message" ng-show="recommendations_error">
+          <p>Problem getting recommendations</p>
+          <p>Ensure you're on the Lancaster network either via eduroam or by connecting over VPN.</p>
+        </li>
       </ul>
 
       <h2>Trending</h2>
-      <img src="images/ajax-loader.gif" class="spinner" ng-hide="trending != null" />
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="trending != null || trending_error" />
       <ul class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in trending">
           <a href="#/programmes/{{ programme.programme_id }}">
@@ -97,6 +102,11 @@
         <li class="table-view-cell empty-list-message" ng-show="trending.length == 0">
           <p>We don't have any trending programmes at the moment</p>
         </li>
+
+        <li class="table-view-cell empty-list-message error-message" ng-show="trending_error">
+          <p>Problem getting trending programmes</p>
+          <p>Ensure you're on the Lancaster network either via eduroam or by connecting over VPN.</p>
+        </li>
       </ul>
 
       <p id="footer">
@@ -109,7 +119,7 @@
     <div class="content_padding">
       <h2>Your Viewing History</h2>
       <p class="lead">See your viewing history from across all your devices and pickup from where you last were.</p>
-      <img src="images/ajax-loader.gif" class="spinner" ng-hide="history != null" />
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="history != null || history_error" />
 
       <ul id="history" class="vertical-list">
         <li class="table-view-cell" ng-repeat="programme in history">
@@ -129,6 +139,11 @@
         <li class="table-view-cell empty-list-message" ng-show="history.length == 0">
           <p>You have not watched anything yet</p>
         </li>
+
+        <li class="table-view-cell empty-list-message error-message" ng-show="history_error">
+          <p>Problem getting your viewing history</p>
+          <p>Ensure you're on the Lancaster network either via eduroam or by connecting over VPN.</p>
+        </li>
       </ul>
     </div>
   </script>
@@ -137,7 +152,7 @@
     <div class="content_padding">
       <h2>Watch Later</h2>
       <p class="lead">Click the Watch Later button when watching a programme to bookmark it here.</p>
-      <img src="images/ajax-loader.gif" class="spinner" ng-hide="watch_later != null" />
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="watch_later != null || library_error" />
 
       <ul id="channel-list" class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in watch_later">
@@ -156,6 +171,11 @@
 
         <li class="table-view-cell empty-list-message" ng-show="watch_later.length == 0">
           <p>Your Watch Later list is empty</p>
+        </li>
+
+        <li class="table-view-cell empty-list-message error-message" ng-show="library_error">
+          <p>Problem getting your programme library</p>
+          <p>Ensure you're on the Lancaster network either via eduroam or by connecting over VPN.</p>
         </li>
       </ul>
     </div>
@@ -193,6 +213,11 @@
         <li class="table-view-cell empty-list-message" ng-show="results.length == 0">
           <p>No search results were found</p>
         </li>
+
+        <li class="table-view-cell empty-list-message error-message" ng-show="search_error">
+          <p>Problem getting search results</p>
+          <p>Ensure you're on the Lancaster network either via eduroam or by connecting over VPN.</p>
+        </li>
       </ul>
     </div>
   </script>
@@ -201,7 +226,7 @@
     <div class="content_padding">
       <h2>Live Channels</h2>
       <p class="lead">With your Apple device you can watch live television or listen to live radio from over 50 channels.</p>
-      <img src="images/ajax-loader.gif" class="spinner" ng-hide="programmes != null" />
+      <img src="images/ajax-loader.gif" class="spinner" ng-hide="programmes != null || live_error" />
 
       <ul id="channel-list" class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in programmes">
@@ -221,15 +246,25 @@
         <li class="table-view-cell empty-list-message" ng-show="programmes.length == 0">
           <p>We don't have any live channels broadcasting at the moment</p>
         </li>
+
+        <li class="table-view-cell error-message" ng-show="live_error">
+          <p>Problem getting live channels</p>
+          <p>Ensure you're on the Lancaster network either via eduroam or by connecting over VPN.</p>
+        </li>
       </ul>
     </div>
   </script>
 
   <script type="text/ng-template" id="playback.html">
     <div class="content_padding" id="playback">
-      <div ng-hide="programme">
+      <div ng-hide="programme || playback_error">
         <h2>Waiting for programme to load</h2>
         <img src="images/ajax-loader.gif" class="spinner" ng-hide="programme" />
+      </div>
+
+      <div ng-show="playback_error" class="error-message">
+        <p>Problem getting programme information</p>
+        <p>Ensure you're on the Lancaster network either via eduroam or by connecting over VPN.</p>
       </div>
 
       <div ng-show="programme" class="group">

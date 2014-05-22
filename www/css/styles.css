@@ -28,7 +28,7 @@ body {
 
 .content {
   position: absolute;
-  overflow:scroll;
+  overflow: auto;
   -webkit-overflow-scrolling:touch;
   top: 0;
   right: 0;
@@ -89,7 +89,7 @@ h2 small {
   padding: 30px;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 700px) {
   #login_wrapper {
     display: -webkit-flex;
     display: flex;
@@ -108,7 +108,7 @@ h2 small {
     margin: 0 auto;
     border-radius: 10px;
     border: 1px solid #eee;
-    max-width: 450px;
+    max-width: 480px;
   }
 }
 
@@ -302,7 +302,7 @@ dd {
 
 /* Search specific */
 form#search-form {
-  max-width: 900px;
+  /*max-width: 900px;*/
   margin: 15px auto;
   position: relative;
 }

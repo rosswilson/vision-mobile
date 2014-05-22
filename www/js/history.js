@@ -8,6 +8,7 @@ angular.module('vision')
   HistoryService.get(AuthService.user_id()).then(function(data) {
     $scope.history = data;
   }, function(error) {
+    $scope.history_error = true;
     console.log(error);
   });
 })

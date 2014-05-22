@@ -8,6 +8,7 @@ angular.module('vision')
   CurrentlyAiring.get().then(function(programmes) {
     $scope.programmes = programmes;
   }, function(reason) {
+    $scope.live_error = true;
     console.log(reason);
   });
 })

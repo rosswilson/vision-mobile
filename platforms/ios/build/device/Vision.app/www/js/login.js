@@ -17,8 +17,15 @@ angular.module('vision')
     };
 
     var error = function(error) {
-      $scope.error_message = "Invalid PIN code, please retry";
-      $scope.pin_code = '';
+      console.log(error);
+
+      if(error == 0) {
+        $scope.error_message = "Can't access Vision. Are you on Lancaster's network?";
+        $scope.pin_code = '';
+      } else {
+        $scope.error_message = "Invalid PIN code, please retry";
+        $scope.pin_code = '';
+      }
     };
 
     AuthService.verify($scope.pin_code).then(success, error);
@@ -61,7 +68,8 @@ angular.module('vision')
         if(status == 500 || status == 401) {
           deferred.reject("Authentication PIN code is invalid");
         } else {
-          deferred.reject("Authentication API communication error, code: " + status);
+          console.log("Authentication API communication error: " + status);
+          deferred.reject(status);
         }
       };
 

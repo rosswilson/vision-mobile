@@ -16,6 +16,8 @@ angular.module('vision')
     }
 
     var error = function(reason) {
+      $scope.search_error = true;
+      $scope.show_spinner = false;
       console.log("Error getting search results");
     }
 

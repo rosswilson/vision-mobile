@@ -11,7 +11,14 @@ angular.module('vision')
   $scope.last_segment_start = $scope.start_at;
   $scope.last_segment_end = $scope.start_at;
 
+  // Make sure that the player is stopped on controller exit
+  $scope.$on('$destroy', function() {
+    document.getElementById('video-player').stop();
+    document.getElementById('video_wrapper').innerHtml = '';
+  });
+
   var success = function(programme) {
+    $scope.playback_error = false;
     $scope.programme = programme;
 
     if(programme.watch_live || programme.watch_catchup) {
@@ -69,6 +76,7 @@ angular.module('vision')
   };
 
   var error = function(error) {
+    $scope.playback_error = true;
     console.log(error);
   };
 

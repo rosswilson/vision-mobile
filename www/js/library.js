@@ -8,6 +8,7 @@ angular.module('vision')
   WatchLaterService.get(AuthService.user_id()).then(function(watch_later) {
     $scope.watch_later = watch_later;
   }, function(reason) {
+    $scope.library_error = true;
     console.log(reason);
   });
 

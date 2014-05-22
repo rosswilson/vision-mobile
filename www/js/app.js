@@ -1,5 +1,5 @@
 // Declare the app level module which loads all it's dependencies
-angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
+angular.module('vision', ['ngRoute', 'ngResource'])
 
 .run(function($rootScope, AuthService) {
   FastClick.attach(document.body);
