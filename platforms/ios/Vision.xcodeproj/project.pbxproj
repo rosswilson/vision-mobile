@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -533,7 +534,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = Vision;
-				PROVISIONING_PROFILE = "87F3236B-5E3E-4718-9952-AF8622775746";
+				PROVISIONING_PROFILE = "9FB6C4E7-A35C-4761-9D16-6A7B14D6C2C7";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -567,7 +568,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = Vision;
-				PROVISIONING_PROFILE = "1448AECB-1628-4A4F-8652-CC08F5EFA9F9";
+				PROVISIONING_PROFILE = "09E0E3FD-AE74-4CB0-A1BF-FC9A3F031A59";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

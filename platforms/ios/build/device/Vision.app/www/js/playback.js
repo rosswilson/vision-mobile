@@ -71,7 +71,7 @@ angular.module('vision')
           });
 
           mediaElement.setSrc(programme.playback_url);
-          mediaElement.load();
+          // mediaElement.load();
         }
       });
     }
@@ -130,7 +130,7 @@ angular.module('vision')
 
           // Set the playback URL either to the VOD file or live stream address
           if(programme.watch_catchup) {
-            programme['playback_url'] = 'http://148.88.32.70/' + programme.programme_id + '.mp4';
+            programme['playback_url'] = 'http://148.88.67.135/' + programme.programme_id + '.mp4';
           } else if(programme.watch_live) {
             programme['playback_url'] = 'http://10.42.67.123:1935/live/mp4:' + programme.wowza_code + '/playlist.m3u8';
           }

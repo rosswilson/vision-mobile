@@ -263,3 +263,19 @@ Terminating in response to SpringBoard's termination.
 2014-05-22 17:41:37.065 Vision[6987:70b] [CDVTimer][TotalPluginStartup] 10.726988ms
 2014-05-22 17:41:37.223 Vision[6987:70b] Resetting plugins due to page load.
 2014-05-22 17:41:37.766 Vision[6987:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4D08FAFE-FF70-4D03-B34C-C8D1CC4F2E36/Vision.app/www/index.html#/login
+Terminating in response to SpringBoard's termination.
+2014-05-22 17:45:56.802 Vision[7310:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-22 17:45:56.811 Vision[7310:70b] Unlimited access to network resources
+2014-05-22 17:45:56.847 Vision[7310:70b] [CDVTimer][splashscreen] 11.262000ms
+2014-05-22 17:45:56.848 Vision[7310:70b] [CDVTimer][TotalPluginStartup] 11.820972ms
+2014-05-22 17:45:57.028 Vision[7310:70b] Resetting plugins due to page load.
+2014-05-22 18:01:45.589 Vision[9023:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-22 18:01:45.597 Vision[9023:70b] Unlimited access to network resources
+2014-05-22 18:01:45.632 Vision[9023:70b] [CDVTimer][splashscreen] 11.169970ms
+2014-05-22 18:01:45.632 Vision[9023:70b] [CDVTimer][TotalPluginStartup] 11.830032ms
+2014-05-22 18:01:45.764 Vision[9023:70b] Resetting plugins due to page load.
+2014-05-22 18:01:46.063 Vision[9023:70b] Finished load of: file:///Users/rosswilson/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/4D08FAFE-FF70-4D03-B34C-C8D1CC4F2E36/Vision.app/www/index.html#/login
+2014-05-22 18:02:06.506 Vision[9023:70b] Logging player instance, heartbeat ID: d3377294c04cddbca9c272d2fa42c45b0e4207e8
+2014-05-22 18:02:09.039 Vision[9023:70b] setting movie path: http://148.88.32.70/ec9fe418128b66d33fd1e857ac09da24861f7627.mp4
+2014-05-22 18:02:09.381 Vision[9023:600b] RTCReporting: resolve from http://pancake.apple.com/bags/hls?version=4.12
+2014-05-22 18:02:19.109 Vision[9023:70b] Received memory warning.
