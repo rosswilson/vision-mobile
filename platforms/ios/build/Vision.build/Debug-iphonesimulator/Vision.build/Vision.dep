@@ -1,5 +1,5 @@
 da7d41da4ee58c32ed8a93d3d87042b9 b09c6f1d6d2b489e6dc10c3062756e97 ffffffffffffffffffffffffffffffff 1054 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app
-00000000537e2e830000000000000b06 e75040e0ee144148ccd268883ac3e2c0 ffffffffffffffffffffffffffffffff 0 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/PkgInfo
+000000005384770c0000000000000b06 e75040e0ee144148ccd268883ac3e2c0 ffffffffffffffffffffffffffffffff 0 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/PkgInfo
 000000005370a6bf0000000000000066 44ee9feb456f076b400cea186adf625e ffffffffffffffffffffffffffffffff 102 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/CDVNotification.bundle
 00000000536b58920000000000002d02 20018b11db132629afadbe104c855ea5 ffffffffffffffffffffffffffffffff 11522 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/icon-72@2x.png
 00000000536b5892000000000000316c 3d790f49e17519861de7f267b36205d3 ffffffffffffffffffffffffffffffff 12652 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/icon-76@2x.png
@@ -25,8 +25,8 @@ da7d41da4ee58c32ed8a93d3d87042b9 b09c6f1d6d2b489e6dc10c3062756e97 ffffffffffffff
 00000000536b58920000000000001288 ecd407e7880880c87162d76b2e8f1bc8 ffffffffffffffffffffffffffffffff 4744 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/icon-72.png
 00000000536b5892000000000000154a 563e4ae1c6ea0f1b9f5b888e662b37d9 ffffffffffffffffffffffffffffffff 5450 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/icon-40@2x.png
 00000000536b58920000000000001402 da4687829fd75608b5e0357f221efccf ffffffffffffffffffffffffffffffff 5122 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/icon-76.png
-dca5d1df684e799898be85efbf0118c4 eb7ff6e04ef1f7bf950dcd0082df0c28 ffffffffffffffffffffffffffffffff 102 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app.dSYM
-00000000537e2e830000000000000b06 e75040e0ee144148ccd268883ac3e2c0 ffffffffffffffffffffffffffffffff 1482 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/Info.plist
+dca5d1df68b4201798be85efbf0118c4 eb7ff6e04ef1f7bf950dcd0082df0c28 ffffffffffffffffffffffffffffffff 102 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app.dSYM
+000000005384770c0000000000000b06 e75040e0ee144148ccd268883ac3e2c0 ffffffffffffffffffffffffffffffff 1482 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/Info.plist
 00000000013d20810000000001683cec 3bf5913fd41936d2546ced6784aacdee ffffffffffffffffffffffffffffffff 309708 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/Vision
 aa0f8e322aceb6b8a8980b73cf6a7dda 089c26b2f22743a8a3791c8ae12b118f ffffffffffffffffffffffffffffffff 68448 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/Vision.build/Debug-iphonesimulator/Vision.build/Objects-normal/i386/CDVNotification.o
 aa0f8e322aceb6b8a8980b73cf6a71a7 f8d1e07f15070149b88b8f02fd62583e ffffffffffffffffffffffffffffffff 41516 /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/Vision.build/Debug-iphonesimulator/Vision.build/Objects-normal/i386/CDVLogger.o

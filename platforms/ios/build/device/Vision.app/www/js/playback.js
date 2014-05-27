@@ -107,7 +107,7 @@ angular.module('vision')
   };
 })
 
-.service('ProgrammeService', function ($http, $q, QueryStringBuilder) {
+.service('ProgrammeService', function ($http, $q, QueryStringBuilder, VODBalanceService) {
   var _url = 'http://10.42.32.184/search2.php';
 
   return {
@@ -124,13 +124,25 @@ angular.module('vision')
         sort: 'score+desc'
       }
 
-      var success = function (data, status, headers, config) {
-        var programme = data.response.docs[0];
+      // Fire the SOLR search query and store the promise
+      var url = _url + '?' + QueryStringBuilder(params);
+      var search_promise = $http.get(url, { cache: false });
+
+      // Fire the VOD load balance query and store the promise
+      var lb_promise = VODBalanceService.get();
+
+      // Once both promises have returned we process the data and return the main promise
+      $q.all([search_promise, lb_promise]).then(function(results) {
+        var programme = results[0].data.response.docs[0];
+        var vod_server = results[1].ip || "148.88.32.70";
+
+        console.log("Using VOD server:", vod_server);
+
         if(programme) {
 
           // Set the playback URL either to the VOD file or live stream address
           if(programme.watch_catchup) {
-            programme['playback_url'] = 'http://148.88.67.135/' + programme.programme_id + '.mp4';
+            programme['playback_url'] = 'http://' + vod_server + '/' + programme.programme_id + '.mp4';
           } else if(programme.watch_live) {
             programme['playback_url'] = 'http://10.42.67.123:1935/live/mp4:' + programme.wowza_code + '/playlist.m3u8';
           }
@@ -139,14 +151,8 @@ angular.module('vision')
         } else {
           deferred.reject("Unknown programme ID");
         }
-      };
 
-      var failure = function (data, status, headers, config) {
-        deferred.reject("Error accessing SOLR engine to lookup programme ID");
-      };
-
-      var url = _url + '?' + QueryStringBuilder(params);
-      $http.get(url, { cache: false }).success(success).error(failure);
+      });
 
       return deferred.promise;
     },
@@ -184,6 +190,28 @@ angular.module('vision')
           end: end
         }
       });
+    }
+  }
+})
+
+.service("VODBalanceService", function($q, $http) {
+  var _url = 'http://10.42.32.199:2000/balance/vod';
+
+  return {
+    get: function() {
+      var deferred = $q.defer();
+
+      var success = function (data, status, headers, config) {
+        deferred.resolve(data[0]);
+      };
+
+      var failure = function (data, status, headers, config) {
+        deferred.reject("Error accessing VOD load balancing server");
+      };
+
+      $http.get(_url, { cache: false }).success(success).error(failure);
+
+      return deferred.promise;
     }
   }
 });
