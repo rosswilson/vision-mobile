@@ -1,6 +1,8 @@
 angular.module('vision')
 
-.controller('DashboardCtrl', function ($scope, SetTitle, AuthService, $location, RecommendationsEngine, TrendingEngine, $q, StatsLogging) {
+.controller('DashboardCtrl', function ($scope, SetTitle, AuthService, $location,
+  RecommendationsEngine, TrendingEngine, $q, StatsLogging, ProgressService) {
+
   SetTitle("Dashboard");
 
   $scope.recommendations = null;
@@ -14,6 +16,9 @@ angular.module('vision')
   var r_promise = RecommendationsEngine.get(AuthService.user_id())
   .then(function(recommendations) {
     $scope.recommendations = recommendations;
+
+    // Decorate programmes with the percentage watched
+    ProgressService.decorate_programmes($scope.recommendations);
   }, function(reason) {
     $scope.recommendations_error = true;
     console.log(reason);
@@ -21,6 +26,9 @@ angular.module('vision')
 
   var t_promise = TrendingEngine.get(AuthService.user_id()).then(function(trending) {
     $scope.trending = trending;
+
+    // Decorate programmes with the percentage watched
+    ProgressService.decorate_programmes($scope.trending);
   }, function(reason) {
     $scope.trending_error = true;
     console.log(reason);

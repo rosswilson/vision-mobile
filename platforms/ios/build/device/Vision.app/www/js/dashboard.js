@@ -1,6 +1,8 @@
 angular.module('vision')
 
-.controller('DashboardCtrl', function ($scope, SetTitle, AuthService, $location, RecommendationsEngine, TrendingEngine, $q, StatsLogging) {
+.controller('DashboardCtrl', function ($scope, SetTitle, AuthService, $location,
+  RecommendationsEngine, TrendingEngine, $q, StatsLogging, ProgressService) {
+
   SetTitle("Dashboard");
 
   $scope.recommendations = null;
@@ -31,6 +33,30 @@ angular.module('vision')
       recommendation_results: $scope.recommendations.length,
       trending_results: $scope.trending.length
     });
+
+    var rec_arr = jQuery.map($scope.recommendations, function(n, i) {
+      return n.programme_id;
+    });
+
+    var trending_arr = jQuery.map($scope.trending, function(n, i) {
+      return n.programme_id;
+    });
+
+    ProgressService.get(trending_arr).then(function(data) {
+      var associative_array = {};
+
+      $.each(data, function(key, value) {
+        associative_array[value.programme_id] = value.progress;
+      });
+
+      $.each($scope.trending, function(key, value) {
+        value.percentage_watched = (associative_array[value.programme_id] * 100);
+      });
+
+      console.log(associative_array);
+      console.log($scope.trending);
+    });
+
   });
 
 })
