@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -507,7 +508,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Ross Wilson (FW2CG7JHK5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ross Wilson (FW2CG7JHK5)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -533,7 +534,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = Vision;
-				PROVISIONING_PROFILE = "9FB6C4E7-A35C-4761-9D16-6A7B14D6C2C7";
+				PROVISIONING_PROFILE = "EA82F046-BC4F-4F35-821D-D39124156D33";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -543,7 +544,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Ross Wilson (7HNCY87NJS)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ross Wilson (7HNCY87NJS)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -567,7 +568,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = Vision;
-				PROVISIONING_PROFILE = "09E0E3FD-AE74-4CB0-A1BF-FC9A3F031A59";
+				PROVISIONING_PROFILE = "FE27F590-B1C9-4334-8D85-8426744E2907";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
