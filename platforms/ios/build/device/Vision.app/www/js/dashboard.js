@@ -16,6 +16,9 @@ angular.module('vision')
   var r_promise = RecommendationsEngine.get(AuthService.user_id())
   .then(function(recommendations) {
     $scope.recommendations = recommendations;
+
+    // Decorate programmes with the percentage watched
+    ProgressService.decorate_programmes($scope.recommendations);
   }, function(reason) {
     $scope.recommendations_error = true;
     console.log(reason);
@@ -23,6 +26,9 @@ angular.module('vision')
 
   var t_promise = TrendingEngine.get(AuthService.user_id()).then(function(trending) {
     $scope.trending = trending;
+
+    // Decorate programmes with the percentage watched
+    ProgressService.decorate_programmes($scope.trending);
   }, function(reason) {
     $scope.trending_error = true;
     console.log(reason);
@@ -33,30 +39,6 @@ angular.module('vision')
       recommendation_results: $scope.recommendations.length,
       trending_results: $scope.trending.length
     });
-
-    var rec_arr = jQuery.map($scope.recommendations, function(n, i) {
-      return n.programme_id;
-    });
-
-    var trending_arr = jQuery.map($scope.trending, function(n, i) {
-      return n.programme_id;
-    });
-
-    ProgressService.get(trending_arr).then(function(data) {
-      var associative_array = {};
-
-      $.each(data, function(key, value) {
-        associative_array[value.programme_id] = value.progress;
-      });
-
-      $.each($scope.trending, function(key, value) {
-        value.percentage_watched = (associative_array[value.programme_id] * 100);
-      });
-
-      console.log(associative_array);
-      console.log($scope.trending);
-    });
-
   });
 
 })

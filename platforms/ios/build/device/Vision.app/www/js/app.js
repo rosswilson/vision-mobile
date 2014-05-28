@@ -159,6 +159,27 @@ service("DurationCalculator", function() {
       $http.get(_url, { cache: false, params: params }).success(success).error(failure);
 
       return deferred.promise;
+    },
+    decorate_programmes: function(programmes) {
+
+      // Build a simple array of all programme IDs
+      var prog_ids = jQuery.map(programmes, function(p) { return p.programme_id });
+
+      // Check all prog IDs against /progress stats API
+      this.get(prog_ids).then(function(data) {
+        var associative_array = {};
+
+        // Convert returned array to an array of objects prog_id => percentage
+        $.each(data, function(key, value) {
+          associative_array[value.programme_id] = Math.floor(value.progress * 100);
+        });
+
+        // Decorate each passed-in programme with it's percentage if known
+        $.each(programmes, function(key, value) {
+          value.percentage_watched = associative_array[value.programme_id];
+        });
+      });
+
     }
   }
 });
