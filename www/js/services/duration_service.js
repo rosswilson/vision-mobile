@@ -1,6 +1,6 @@
 angular.module('vision')
 
-.service("DurationCalculator", function() {
+.service("DurationService", function() {
   return {
     // Returns integer number of minutes given a HH:MM:SS format string
     from_hh_mm_ss: function(time) {

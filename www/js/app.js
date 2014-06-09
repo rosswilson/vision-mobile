@@ -1,7 +1,7 @@
 // Declare the app level module which loads all it's dependencies
 angular.module('vision', ['ngRoute', 'ngResource'])
 
-.run(function($rootScope, AuthService, StatsLogging) {
+.run(function($rootScope, AuthService, StatsService, $location) {
   FastClick.attach(document.body);
 
   $rootScope.logged_in = AuthService.is_logged_in();
@@ -12,9 +12,10 @@ angular.module('vision', ['ngRoute', 'ngResource'])
 
   $rootScope.$on('LOGGED_OUT', function() {
     $rootScope.logged_in = false;
+    $location.path('/login');
   });
 
-  StatsLogging.log("MOBILE_APP_BOOT", {
+  StatsService.log("MOBILE_APP_BOOT", {
     user_agent: navigator.userAgent
   });
 })

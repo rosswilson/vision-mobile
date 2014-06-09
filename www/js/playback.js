@@ -1,14 +1,14 @@
 angular.module('vision')
 
 .controller('PlaybackCtrl', function ($scope, SetTitle, $routeParams, ProgrammeService,
-  PlayerStatsService, WatchLaterService, StatsLogging, ImageService) {
+  StatsService, WatchLaterService, StatsService, ImageService) {
 
   var self = this;
 
   SetTitle("Playback");
 
   $scope.programme_id = $routeParams['programme_id'];
-  $scope.start_at = $routeParams['start_at'] ? $routeParams['start_at'] : 0;
+  $scope.start_at = $routeParams['start_at'] || 0;
 
   $scope.last_segment_start = $scope.start_at;
   $scope.last_segment_end = $scope.start_at;
@@ -16,7 +16,6 @@ angular.module('vision')
   // Make sure that the player is stopped on controller exit
   $scope.$on('$destroy', function() {
     document.getElementById('video-player').stop();
-    document.getElementById('video_wrapper').innerHtml = '';
   });
 
   var success = function(programme) {
@@ -24,14 +23,15 @@ angular.module('vision')
     $scope.programme = programme;
 
     if(programme.watch_live || programme.watch_catchup) {
-      PlayerStatsService.new_instance(programme.programme_id, programme.playback_url);
+      StatsService.player_instance(programme.programme_id, programme.playback_url);
 
-      // Set channel image URL
-      $scope.programme.channel_image = ImageService.get_url($scope.programme.channel_image, 100, 56);
-
-      // Set the video player poster image if not resuming (since we'll immediately start playing)
+      // Set the video player poster image
+      // TODO: Make this a directive
       var player = document.getElementById('video-player');
       player.setAttribute("poster", ImageService.get_url($scope.programme.image, 720, 405));
+
+      // Set the video player video source
+      player.setAttribute("src", programme.playback_url);
 
       player = new MediaElementPlayer('#video-player', {
         type: ['video/mp4'],
@@ -57,10 +57,9 @@ angular.module('vision')
               // Check if skipped more than *5* seconds (not 3) incase timings are slightly inaccurate
               if(currentSeconds < $scope.last_segment_end || currentSeconds > $scope.last_segment_end + 5) {
                 $scope.last_segment_start = currentSeconds;
-                // console.log("Logging skipped segment " + $scope.last_segment_start + ":" + currentSeconds);
               }
 
-              PlayerStatsService.log_segment($scope.last_segment_start, $scope.last_segment_end);
+              StatsService.log_segment($scope.last_segment_start, $scope.last_segment_end);
               $scope.last_segment_end = currentSeconds;
             }
           }
@@ -72,14 +71,11 @@ angular.module('vision')
           mediaElement.addEventListener('seeked', function() {
             calculate_segment();
           });
-
-          mediaElement.setSrc(programme.playback_url);
-          // mediaElement.load();
         }
       });
     }
 
-    StatsLogging.log("MOBILE_PLAYBACK", {
+    StatsService.log("MOBILE_PLAYBACK", {
       programme_id: $scope.programme.programme_id,
       file_id: $scope.programme.playback_url,
       is_live: $scope.programme.watch_live,
@@ -98,6 +94,7 @@ angular.module('vision')
 
   var promise = ProgrammeService.get($scope.programme_id).then(success, error);
 
+  // Watch Later button click handler function
   $scope.watch_later = function() {
     var player = document.getElementById('video-player');
     var current_time = 0;
