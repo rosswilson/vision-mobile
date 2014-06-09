@@ -1,7 +1,7 @@
 angular.module('vision')
 
 .controller('PlaybackCtrl', function ($scope, SetTitle, $routeParams, ProgrammeService,
-  PlayerStatsService, WatchLaterService, StatsLogging) {
+  PlayerStatsService, WatchLaterService, StatsLogging, ImageService) {
 
   var self = this;
 
@@ -26,9 +26,12 @@ angular.module('vision')
     if(programme.watch_live || programme.watch_catchup) {
       PlayerStatsService.new_instance(programme.programme_id, programme.playback_url);
 
+      // Set channel image URL
+      $scope.programme.channel_image = ImageService.get_url($scope.programme.channel_image, 100, 56);
+
       // Set the video player poster image if not resuming (since we'll immediately start playing)
       var player = document.getElementById('video-player');
-      player.setAttribute("poster", ProgrammeService.get_poster_url($scope.programme, 720, 405));
+      player.setAttribute("poster", ImageService.get_url($scope.programme.image, 720, 405));
 
       player = new MediaElementPlayer('#video-player', {
         type: ['video/mp4'],
@@ -121,7 +124,8 @@ angular.module('vision')
         url: '/future/select',
         wt: 'json',
         send_filters: false,
-        sort: 'score+desc'
+        sort: 'score+desc',
+        raw_duration: true
       }
 
       // Fire the SOLR search query and store the promise
@@ -136,8 +140,6 @@ angular.module('vision')
         var programme = results[0].data.response.docs[0];
         var vod_server = results[1].ip || "148.88.32.70";
 
-        console.log("Using VOD server:", vod_server);
-
         if(programme) {
 
           // Set the playback URL either to the VOD file or live stream address
@@ -147,6 +149,8 @@ angular.module('vision')
             programme['playback_url'] = 'http://10.42.67.123:1935/live/mp4:' + programme.wowza_code + '/playlist.m3u8';
           }
 
+          programme['channel_image'] = programme['image'].replace(/[^/]*$/, '404.jpg');
+
           deferred.resolve(programme);
         } else {
           deferred.reject("Unknown programme ID");
@@ -155,9 +159,14 @@ angular.module('vision')
       });
 
       return deferred.promise;
-    },
-    get_poster_url: function(programme, width, height) {
-      return "http://148.88.32.64/cache/" + width + "x" + height + "/programmes" + programme.image;
+    }
+  }
+})
+
+.service("ImageService", function() {
+  return {
+    get_url: function(path, width, height) {
+      return "http://148.88.32.64/cache/" + width + "x" + height + "/programmes" + path;
     }
   }
 })
