@@ -1,40 +1,62 @@
 angular.module('vision')
 
-.controller('DashboardCtrl', function ($scope, CurrentlyAiring, SetTitle) {
+.controller('DashboardCtrl', function ($scope, SetTitle, AuthService,
+  RecommendationService, TrendingService, $q, StatsService, ProgressService) {
+
   SetTitle("Dashboard");
 
-  var promise = CurrentlyAiring.get();
+  // Init recommendations and trending lists to null so loading spinner shows
+  $scope.recommendations = null;
+  $scope.trending = null;
 
-  promise.then(function(programmes) {
-    $scope.programmes = programmes;
-  }, function(reason) {
-    console.log(reason);
+  // Logout function called by Dashboard footer link
+  $scope.logout = function() {
+    AuthService.logout();
+  }
+
+  // Get recommendations from RecommendationsEngine
+  var r_promise = RecommendationService.get(AuthService.user_id()).then(
+
+    // If success, store recommendations on scope and decorate each with progress watched
+    function(recommendations) {
+      $scope.recommendations = recommendations;
+
+      // Decorate programmes with the percentage watched
+      ProgressService.decorate_programmes($scope.recommendations);
+    },
+
+    // If error, set flag to show error warning message
+    function(reason) {
+      $scope.recommendations_error = true;
+      console.log(reason);
+    }
+
+  );
+
+  // Get trending programmes from TrendingEngine
+  var t_promise = TrendingService.get(AuthService.user_id()).then(
+
+    // If success, store programmes on scope and decorate each with progress watched
+    function(trending) {
+      $scope.trending = trending;
+
+      // Decorate programmes with the percentage watched
+      ProgressService.decorate_programmes($scope.trending);
+    },
+
+    // If error, set flag to show error warning message
+    function(reason) {
+      $scope.trending_error = true;
+      console.log(reason);
+    }
+  );
+
+  // Once both recommendations and trending calls have returned, send stats log message
+  $q.all([r_promise, t_promise]).then(function(results) {
+    StatsService.log("MOBILE_DASHBOARD_LOAD", {
+      recommendation_results: $scope.recommendations.length,
+      trending_results: $scope.trending.length
+    });
   });
 
-  $scope.alert = function(message) {
-    alert(message);
-  }
-})
-
-.service('CurrentlyAiring', function ($http, $q, $cacheFactory) {
-  var _url = 'http://vision.lancs.ac.uk/JSON_CACHE/currently_airing.json';
-  var cache = $cacheFactory('currently_airing');
-
-  return {
-    get: function() {
-      var deferred = $q.defer();
-
-      var success = function (data, status, headers, config) {
-        deferred.resolve(data);
-      };
-
-      var failure = function (data, status, headers, config) {
-        deferred.reject("Error getting currently airing JSON cache file");
-      };
-
-      $http.get(_url, { cache: true }).success(success).error(failure);
-
-      return deferred.promise;
-    }
-  }
 });

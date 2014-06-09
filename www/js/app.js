@@ -1,8 +1,23 @@
 // Declare the app level module which loads all it's dependencies
-angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
+angular.module('vision', ['ngRoute', 'ngResource'])
 
-.run(function() {
+.run(function($rootScope, AuthService, StatsService, $location) {
   FastClick.attach(document.body);
+
+  $rootScope.logged_in = AuthService.is_logged_in();
+
+  $rootScope.$on('LOGGED_IN', function() {
+    $rootScope.logged_in = true;
+  });
+
+  $rootScope.$on('LOGGED_OUT', function() {
+    $rootScope.logged_in = false;
+    $location.path('/login');
+  });
+
+  StatsService.log("MOBILE_APP_BOOT", {
+    user_agent: navigator.userAgent
+  });
 })
 
 .config(function($routeProvider) {
@@ -11,9 +26,9 @@ angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
     templateUrl: 'dashboard.html',
     controller: 'DashboardCtrl'
   }).
-  when('/favourites', {
-    templateUrl: 'favourites.html',
-    controller: 'FavouritesCtrl'
+  when('/library', {
+    templateUrl: 'library.html',
+    controller: 'LibraryCtrl'
   }).
   when('/history', {
     templateUrl: 'history.html',
@@ -23,16 +38,20 @@ angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
     templateUrl: 'search.html',
     controller: 'SearchCtrl'
   }).
-  when('/guide', {
-    templateUrl: 'guide.html',
-    controller: 'GuideCtrl'
+  when('/live', {
+    templateUrl: 'live.html',
+    controller: 'LiveCtrl'
   }).
   when('/programmes/:programme_id', {
     templateUrl: 'playback.html',
     controller: 'PlaybackCtrl'
   }).
+  when('/login', {
+    templateUrl: 'login.html',
+    controller: 'LoginCtrl'
+  }).
   otherwise({
-    redirectTo: '/dashboard'
+    redirectTo: '/login'
   });
 })
 
@@ -44,9 +63,30 @@ angular.module('vision', ['ngRoute', 'ngResource', 'ngAnimate'])
 
 .factory('QueryStringBuilder', function() {
   return function(data) {
-   var ret = [];
-   for (var d in data)
+    var ret = [];
+    for (var d in data) {
       ret.push(encodeURIComponent(d) + "=" + encodeURIComponent(data[d]));
-   return ret.join("&");
+    }
+    return ret.join("&");
   }
+})
+
+.filter('cut', function () {
+  return function (value, wordwise, max, tail) {
+    if (!value) return '';
+
+    max = parseInt(max, 10);
+    if (!max) return value;
+    if (value.length <= max) return value;
+
+    value = value.substr(0, max);
+    if (wordwise) {
+      var lastspace = value.lastIndexOf(' ');
+      if (lastspace != -1) {
+        value = value.substr(0, lastspace);
+      }
+    }
+
+    return value + (tail || ' …');
+  };
 });

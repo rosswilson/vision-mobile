@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDV.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h \
+  /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
