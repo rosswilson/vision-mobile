@@ -23,31 +23,31 @@ angular.module('vision', ['ngRoute', 'ngResource'])
 .config(function($routeProvider) {
   $routeProvider.
   when('/dashboard', {
-    templateUrl: 'dashboard.html',
+    templateUrl: 'templates/dashboard.html',
     controller: 'DashboardCtrl'
   }).
   when('/library', {
-    templateUrl: 'library.html',
+    templateUrl: 'templates/library.html',
     controller: 'LibraryCtrl'
   }).
   when('/history', {
-    templateUrl: 'history.html',
+    templateUrl: 'templates/history.html',
     controller: 'HistoryCtrl'
   }).
   when('/search', {
-    templateUrl: 'search.html',
+    templateUrl: 'templates/search.html',
     controller: 'SearchCtrl'
   }).
   when('/live', {
-    templateUrl: 'live.html',
+    templateUrl: 'templates/live.html',
     controller: 'LiveCtrl'
   }).
   when('/programmes/:programme_id', {
-    templateUrl: 'playback.html',
+    templateUrl: 'templates/playback.html',
     controller: 'PlaybackCtrl'
   }).
   when('/login', {
-    templateUrl: 'login.html',
+    templateUrl: 'templates/login.html',
     controller: 'LoginCtrl'
   }).
   otherwise({
