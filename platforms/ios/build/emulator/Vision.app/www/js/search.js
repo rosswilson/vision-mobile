@@ -1,6 +1,6 @@
 angular.module('vision')
 
-.controller('SearchCtrl', function ($scope, SetTitle, SearchService, StatsLogging) {
+.controller('SearchCtrl', function ($scope, SetTitle, SearchService, StatsLogging, ProgressService) {
   SetTitle("Search");
 
   StatsLogging.log("MOBILE_SEARCH_LOADED");
@@ -14,7 +14,12 @@ angular.module('vision')
 
     var success = function(results) {
       $scope.show_spinner = false;
+
       $scope.results = results;
+
+      // Decorate programmes with the percentage watched
+      ProgressService.decorate_programmes($scope.results);
+
       StatsLogging.log("MOBILE_SEARCH_RESULTS", {
         num_results: results.length,
         is_error: "false",

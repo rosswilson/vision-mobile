@@ -65,7 +65,10 @@
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes</p>
+              <p class="metadata">
+                <span ng-show="programme.percentage_watched">{{ programme.percentage_watched}}% Watched &middot; </span>
+                {{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes
+              </p>
               <span class="glyphicons chevron-right"></span>
             </div>
             <p class="small synopsis">{{ programme.synopsis | cut:true:160 }}</p>
@@ -86,13 +89,17 @@
       <img src="images/ajax-loader.gif" class="spinner" ng-hide="trending != null || trending_error" />
       <ul class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in trending">
+          <div class="progress_fill" style="width: {{ programme.percentage_watched }}%"></div>
           <a href="#/programmes/{{ programme.programme_id }}">
             <div class="left">
               <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes</p>
+              <p class="metadata">
+                <span ng-show="programme.percentage_watched">{{ programme.percentage_watched}}% Watched &middot; </span>
+                {{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes
+              </p>
               <span class="glyphicons chevron-right"></span>
             </div>
             <p class="small synopsis">{{ programme.synopsis | cut:true:160 }}</p>
@@ -156,13 +163,17 @@
 
       <ul id="channel-list" class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in watch_later">
+          <div class="progress_fill" style="width: {{ programme.percentage_watched }}%"></div>
           <a href="#/programmes/{{ programme.programme_id }}?start_at={{ programme.position }}">
             <div class="left">
               <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes</p>
+              <p class="metadata">
+                <span ng-show="programme.percentage_watched">{{ programme.percentage_watched}}% Watched &middot; </span>
+                {{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes
+              </p>
               <span class="glyphicons chevron-right"></span>
             </div>
             <p class="small synopsis">{{ programme.synopsis | cut:true:160 }}</p>
@@ -197,13 +208,17 @@
 
       <ul id="search-results" class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in results">
+          <div class="progress_fill" style="width: {{ programme.percentage_watched }}%"></div>
           <a href="#/programmes/{{ programme.programme_id }}">
             <div class="left">
               <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration }}</p>
+              <p class="metadata">
+                <span ng-show="programme.percentage_watched">{{ programme.percentage_watched}}% Watched &middot; </span>
+                {{ programme.channel_name }} &middot; {{ programme.duration }}
+              </p>
               <span class="glyphicons chevron-right"></span>
             </div>
             <p class="small synopsis">{{ programme.synopsis | cut:true:130 }}</p>
@@ -230,13 +245,17 @@
 
       <ul id="channel-list" class="flex-container">
         <li class="table-view-cell group" ng-repeat="programme in programmes">
+          <div class="progress_fill" style="width: {{ programme.percentage_watched }}%"></div>
           <a href="#/programmes/{{ programme.programme_id }}">
             <div class="left">
               <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
             </div>
             <div class="right">
               <p>{{ programme.programme_name }}</p>
-              <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes</p>
+              <p class="metadata">
+                <span ng-show="programme.percentage_watched">{{ programme.percentage_watched}}% Watched &middot; </span>
+                {{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes
+              </p>
               <span class="glyphicons chevron-right"></span>
             </div>
             <p class="small synopsis">{{ programme.synopsis | cut:true:130 }}</p>

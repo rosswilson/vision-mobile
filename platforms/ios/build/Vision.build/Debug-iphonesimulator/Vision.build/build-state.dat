@@ -432,8 +432,8 @@ t1399543954
 s13584
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/Vision/Vision-Info.plist
-c000000005384770C0000000000000B06
-t1401190156
+c000000005387766E0000000000000B06
+t1401386606
 s2822
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/Vision/Vision-Prefix.pch
@@ -485,11 +485,11 @@ t1399891960
 s45
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app
-t1401190159
+t1401386608
 s1054
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app.dSYM
-t1401188373
+t1401386396
 s102
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/CDVNotification.bundle
@@ -525,7 +525,7 @@ t1399891960
 s13584
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/Info.plist
-t1401190158
+t1401386608
 s1482
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/MainViewController.nib
@@ -854,7 +854,7 @@ s5376516
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd195cc8eae34b941^83a4d78eae34b941^---0#1#1#--18"Check dependencies36"DA214423-8196-400A-91EF-0050B115667E-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesadda1df0ad37b941^7a1c1ef0ad37b941^---0#1#1#--18"Check dependencies36"308C56BA-9079-42BD-A5BE-96D60AF45105-
 
 CCompileC build/Vision.build/Debug-iphonesimulator/Vision.build/Objects-normal/i386/AppDelegate.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/Vision/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s422468846.480041
@@ -1299,14 +1299,14 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy bu
 b69915E37-5742-470D-8E8D-B9BC95377ABB
 
 CGenerateDSYMFile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app.dSYM /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/Vision
-s422882959.567174
-e422882959.713250
+s423079408.456791
+e423079408.514191
 r1
 xGenerateDSYMFile
 x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app.dSYM
 x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/Vision
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Generate /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app.dSYM96"[1mGenerateDSYMFile[0m [1mbuild/emulator/Vision.app.dSYM[0m build/emulator/Vision.app/Vision6151918fae34b941^5ea2b68fae34b941^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app.dSYM/0000000000000000^887"[1mGenerateDSYMFile[0m [1mbuild/emulator/Vision.app.dSYM[0m build/emulator/Vision.app/Vision    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/Vision -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app.dSYM36"823A92DB-91F3-49A9-ACDC-CB179CE72039-
-b6D3EE8AC-C3F1-4991-8FD0-A4991B709277
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Generate /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app.dSYM96"[1mGenerateDSYMFile[0m [1mbuild/emulator/Vision.app.dSYM[0m build/emulator/Vision.app/Visionbf0d75f0ad37b941^881384f0ad37b941^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app.dSYM/0000000000000000^887"[1mGenerateDSYMFile[0m [1mbuild/emulator/Vision.app.dSYM[0m build/emulator/Vision.app/Vision    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/Vision -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app.dSYM36"8A4CC13D-DCF1-4DBD-90C6-F55B104B2E13-
+b1DF34F84-5E0F-4593-86B0-70D7E7E69522
 
 CLd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/Vision normal i386
 s422468846.837749
@@ -1393,28 +1393,28 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Link /U
 b626DC94A-E3FC-4E56-AD72-6CC136696870
 
 CPhaseScriptExecution Copy\ www\ directory /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/Vision.build/Debug-iphonesimulator/Vision.build/Script-304B58A110DAC018002A0835.sh
-s422882958.851797
-e422882959.550915
+s423079408.134969
+e423079408.447332
 r1
 xPhaseScriptExecution
 xCopy www directory
 x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/Vision.build/Debug-iphonesimulator/Vision.build/Script-304B58A110DAC018002A0835.sh
 o
-oreal	0m0.659s
-ouser	0m0.084s
-osys	0m0.180s
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'138"[1mPhaseScriptExecution[0m Copy\ www\ directory build/Vision.build/Debug-iphonesimulator/Vision.build/Script-304B58A110DAC018002A0835.shc18fda8eae34b941^a3598d8fae34b941^-42"real	0m0.659suser	0m0.084ssys	0m0.180s3(21%IDEActivityLogMessage2@14"real	0m0.659s-422882959#1#14#-0#-----2@14"user	0m0.084s-422882959#15#14#-0#-----2@13"sys	0m0.180s-422882959#29#13#-0#-----0#0#1#--358"[1mPhaseScriptExecution[0m Copy\ www\ directory build/Vision.build/Debug-iphonesimulator/Vision.build/Script-304B58A110DAC018002A0835.sh    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios    /bin/sh -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/Vision.build/Debug-iphonesimulator/Vision.build/Script-304B58A110DAC018002A0835.sh36"3A3D9C77-9029-448C-BA75-EBCECD679B48-
-b6D3EE8AC-C3F1-4991-8FD0-A4991B709277
+oreal	0m0.283s
+ouser	0m0.079s
+osys	0m0.155s
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'138"[1mPhaseScriptExecution[0m Copy\ www\ directory build/Vision.build/Debug-iphonesimulator/Vision.build/Script-304B58A110DAC018002A0835.sh6a4d23f0ad37b941^c4eb72f0ad37b941^-42"real	0m0.283suser	0m0.079ssys	0m0.155s3(21%IDEActivityLogMessage2@14"real	0m0.283s-423079408#1#14#-0#-----2@14"user	0m0.079s-423079408#15#14#-0#-----2@13"sys	0m0.155s-423079408#29#13#-0#-----0#0#1#--358"[1mPhaseScriptExecution[0m Copy\ www\ directory build/Vision.build/Debug-iphonesimulator/Vision.build/Script-304B58A110DAC018002A0835.sh    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios    /bin/sh -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/Vision.build/Debug-iphonesimulator/Vision.build/Script-304B58A110DAC018002A0835.sh36"C7AE3497-7B20-4378-92E6-3460A32BFA40-
+b1DF34F84-5E0F-4593-86B0-70D7E7E69522
 
 CProcessInfoPlistFile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/Info.plist /Users/rosswilson/Desktop/vision-mobile/platforms/ios/Vision/Vision-Info.plist
-s422882958.843679
-e422882958.849878
+s423079408.118513
+e423079408.133081
 r1
 xProcessInfoPlistFile
 x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/Info.plist
 x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/Vision/Vision-Info.plist
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Process /Users/rosswilson/Desktop/vision-mobile/platforms/ios/Vision/Vision-Info.plist98"[1mProcessInfoPlistFile[0m build/emulator/Vision.app/Info.plist [1mVision/Vision-Info.plist[0mfd68d88eae34b941^5e9fd98eae34b941^---0#0#1#-19%DVTDocumentLocation2@85"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/Vision/Vision-Info.plist0000000000000000^978"[1mProcessInfoPlistFile[0m build/emulator/Vision.app/Info.plist [1mVision/Vision-Info.plist[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-infoPlistUtility /Users/rosswilson/Desktop/vision-mobile/platforms/ios/Vision/Vision-Info.plist -genpkginfo /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/Info.plist36"1AB9274B-2EAA-43FD-BC91-0CEDAF80D2DE-
-b6D3EE8AC-C3F1-4991-8FD0-A4991B709277
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Process /Users/rosswilson/Desktop/vision-mobile/platforms/ios/Vision/Vision-Info.plist98"[1mProcessInfoPlistFile[0m build/emulator/Vision.app/Info.plist [1mVision/Vision-Info.plist[0m96761ef0ad37b941^721622f0ad37b941^---0#0#1#-19%DVTDocumentLocation2@85"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/Vision/Vision-Info.plist0000000000000000^978"[1mProcessInfoPlistFile[0m build/emulator/Vision.app/Info.plist [1mVision/Vision-Info.plist[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-infoPlistUtility /Users/rosswilson/Desktop/vision-mobile/platforms/ios/Vision/Vision-Info.plist -genpkginfo /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app/Info.plist36"601C3BBB-F97C-4133-AED6-0CCA1B3C798E-
+b1DF34F84-5E0F-4593-86B0-70D7E7E69522
 
 CProcessPCH /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/Vision-Prefix-crroffhhmbpiomdumvhraoiztxbu/Vision-Prefix.pch.pch Vision/Vision-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s421584763.961225
@@ -1447,11 +1447,11 @@ lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Precomp
 b626DC94A-E3FC-4E56-AD72-6CC136696870
 
 CTouch /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app
-s422882959.715464
-e422882959.723985
+s423079408.516604
+e423079408.522310
 r1
 xTouch
 x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Touch /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app39"[1mTouch[0m build/emulator/Vision.app1442b78fae34b941^0725c08fae34b941^---0#0#1#--657"[1mTouch[0m build/emulator/Vision.app    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /usr/bin/touch -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app36"CE3F57A4-2E97-4D16-8539-A4201C94614B-
-b6D3EE8AC-C3F1-4991-8FD0-A4991B709277
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Touch /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app39"[1mTouch[0m build/emulator/Vision.app825684f0ad37b941^8cbb85f0ad37b941^---0#0#1#--657"[1mTouch[0m build/emulator/Vision.app    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /usr/bin/touch -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/emulator/Vision.app36"B173A8F8-5090-4F7E-9077-A38A663CF4D0-
+b1DF34F84-5E0F-4593-86B0-70D7E7E69522
 

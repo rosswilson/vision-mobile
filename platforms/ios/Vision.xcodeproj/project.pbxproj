@@ -508,7 +508,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ross Wilson (FW2CG7JHK5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ross Wilson (FW2CG7JHK5)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -534,7 +534,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = Vision;
-				PROVISIONING_PROFILE = "EA82F046-BC4F-4F35-821D-D39124156D33";
+				PROVISIONING_PROFILE = "1999824E-A5D9-4397-8FA8-B5638EFEB911";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -544,7 +544,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ross Wilson (7HNCY87NJS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ross Wilson (7HNCY87NJS)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -568,7 +568,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = Vision;
-				PROVISIONING_PROFILE = "FE27F590-B1C9-4334-8D85-8426744E2907";
+				PROVISIONING_PROFILE = "5C8C61C3-8677-4C7D-8BB1-1134FBFAA433";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
