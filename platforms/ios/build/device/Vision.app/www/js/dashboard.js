@@ -1,100 +1,62 @@
 angular.module('vision')
 
-.controller('DashboardCtrl', function ($scope, SetTitle, AuthService, $location,
-  RecommendationsEngine, TrendingEngine, $q, StatsLogging, ProgressService) {
+.controller('DashboardCtrl', function ($scope, SetTitle, AuthService,
+  RecommendationService, TrendingService, $q, StatsService, ProgressService) {
 
   SetTitle("Dashboard");
 
+  // Init recommendations and trending lists to null so loading spinner shows
   $scope.recommendations = null;
   $scope.trending = null;
 
+  // Logout function called by Dashboard footer link
   $scope.logout = function() {
     AuthService.logout();
-    $location.path('/login');
   }
 
-  var r_promise = RecommendationsEngine.get(AuthService.user_id())
-  .then(function(recommendations) {
-    $scope.recommendations = recommendations;
+  // Get recommendations from RecommendationsEngine
+  var r_promise = RecommendationService.get(AuthService.user_id()).then(
 
-    // Decorate programmes with the percentage watched
-    ProgressService.decorate_programmes($scope.recommendations);
-  }, function(reason) {
-    $scope.recommendations_error = true;
-    console.log(reason);
-  });
+    // If success, store recommendations on scope and decorate each with progress watched
+    function(recommendations) {
+      $scope.recommendations = recommendations;
 
-  var t_promise = TrendingEngine.get(AuthService.user_id()).then(function(trending) {
-    $scope.trending = trending;
+      // Decorate programmes with the percentage watched
+      ProgressService.decorate_programmes($scope.recommendations);
+    },
 
-    // Decorate programmes with the percentage watched
-    ProgressService.decorate_programmes($scope.trending);
-  }, function(reason) {
-    $scope.trending_error = true;
-    console.log(reason);
-  });
+    // If error, set flag to show error warning message
+    function(reason) {
+      $scope.recommendations_error = true;
+      console.log(reason);
+    }
 
+  );
+
+  // Get trending programmes from TrendingEngine
+  var t_promise = TrendingService.get(AuthService.user_id()).then(
+
+    // If success, store programmes on scope and decorate each with progress watched
+    function(trending) {
+      $scope.trending = trending;
+
+      // Decorate programmes with the percentage watched
+      ProgressService.decorate_programmes($scope.trending);
+    },
+
+    // If error, set flag to show error warning message
+    function(reason) {
+      $scope.trending_error = true;
+      console.log(reason);
+    }
+  );
+
+  // Once both recommendations and trending calls have returned, send stats log message
   $q.all([r_promise, t_promise]).then(function(results) {
-    StatsLogging.log("MOBILE_DASHBOARD_LOAD", {
+    StatsService.log("MOBILE_DASHBOARD_LOAD", {
       recommendation_results: $scope.recommendations.length,
       trending_results: $scope.trending.length
     });
   });
 
-})
-
-.service('RecommendationsEngine', function($http, $q, QueryStringBuilder, DurationCalculator) {
-  var _url = "http://10.42.32.75:9110/recommender/get_recommendations";
-
-  return {
-    get: function(user_id) {
-      var deferred = $q.defer();
-      var params = {
-        user_id: user_id,
-        seed: 'history',
-        api: '53e659a15aff4a402de2d51b98703fa1ade5b8c5'
-      }
-
-      var success = function(data, status, headers, config) {
-        DurationCalculator.set_for_array(data);
-        deferred.resolve(data);
-      }
-
-      var failure = function(data, status, headers, config) {
-        deferred.reject("Error getting recommended programmes from the engine");
-      }
-
-      var url = _url + '?' + QueryStringBuilder(params);
-      $http.get(url, { cache: false }).success(success).error(failure);
-
-      return deferred.promise;
-    }
-  }
-})
-
-.service('TrendingEngine', function($http, $q, QueryStringBuilder, DurationCalculator) {
-  var _url = "http://10.42.32.199:2000/trending";
-
-  return {
-    get: function(user_id) {
-      var deferred = $q.defer();
-      var params = {
-        user_id: user_id
-      }
-
-      var success = function(data, status, headers, config) {
-        DurationCalculator.set_for_array(data);
-        deferred.resolve(data);
-      }
-
-      var failure = function(data, status, headers, config) {
-        deferred.reject("Error getting trending programmes from the engine");
-      }
-
-      var url = _url + '?' + QueryStringBuilder(params);
-      $http.get(url, { cache: false }).success(success).error(failure);
-
-      return deferred.promise;
-    }
-  }
 });

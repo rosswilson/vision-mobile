@@ -18,6 +18,9 @@
 
   <!-- In the <head> as it needs to load before the page DOM is built -->
   <script src="lib/modernizr.js"></script>
+
+  <!-- Load the socket.io client-side file -->
+  <script src="lib/socketio.js"></script>
 </head>
 
 <body ng-cloak>
@@ -35,7 +38,7 @@
       <span class="glyphicons clock icon"></span>
       <span class="tab-label">History</span>
     </a>
-    <a class="tab-item" href="#/" ng-class="{ active: title == 'Dashboard' }">
+    <a class="tab-item" href="#/dashboard" ng-class="{ active: title == 'Dashboard' }">
       <span class="glyphicons home icon"></span>
       <span class="tab-label">Dashboard</span>
     </a>
@@ -82,6 +85,7 @@
   <script src="js/services/watch_later_service.js"></script>
   <script src="js/services/currently_airing.js"></script>
   <script src="js/services/search_service.js"></script>
+  <script src="js/services/web_socket_service.js"></script>
 
   <!-- Load directives -->
   <script src="js/directives/channel_image.js"></script>

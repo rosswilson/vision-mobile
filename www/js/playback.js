@@ -1,17 +1,13 @@
 angular.module('vision')
 
 .controller('PlaybackCtrl', function ($scope, SetTitle, $routeParams, ProgrammeService,
-  StatsService, WatchLaterService, StatsService, ImageService) {
+  StatsService, WatchLaterService, StatsService, ImageService, WebSocketService) {
 
   var self = this;
 
   SetTitle("Playback");
 
   $scope.programme_id = $routeParams['programme_id'];
-  $scope.start_at = $routeParams['start_at'] || 0;
-
-  $scope.last_segment_start = $scope.start_at;
-  $scope.last_segment_end = $scope.start_at;
 
   // Make sure that the player is stopped on controller exit
   $scope.$on('$destroy', function() {
@@ -22,6 +18,11 @@ angular.module('vision')
     $scope.playback_error = false;
     $scope.programme = programme;
 
+    $scope.start_at = programme.last_known_position || 0;
+
+    $scope.last_segment_start = $scope.start_at;
+    $scope.last_segment_end = $scope.start_at;
+
     if(programme.watch_live || programme.watch_catchup) {
       StatsService.player_instance(programme.programme_id, programme.playback_url);
 
@@ -30,18 +31,19 @@ angular.module('vision')
       var player = document.getElementById('video-player');
       player.setAttribute("poster", ImageService.get_url($scope.programme.image, 720, 405));
 
-      // Set the video player video source
-      player.setAttribute("src", programme.playback_url);
-
       player = new MediaElementPlayer('#video-player', {
         type: ['video/mp4'],
         iPhoneUseNativeControls: true,
         success: function (mediaElement, domObject) {
+          mediaElement.setSrc(programme.playback_url);
+
           var resume_playback = function() {
             mediaElement.setCurrentTime($scope.start_at);
             mediaElement.play();
             mediaElement.removeEventListener("canplay", resume_playback);
           };
+
+          console.log(programme);
 
           // If resuming, once player has media metadata, we can shift the playhead position
           if($scope.start_at) {
@@ -105,4 +107,15 @@ angular.module('vision')
 
     WatchLaterService.store($scope.programme_id, current_time, $scope.programme.watch_live);
   };
+
+  $scope.play_second_screen = function() {
+    WebSocketService.init();
+
+    var player = document.getElementById('video-player');
+    if(player) {
+      var current_time = Math.floor(player.currentTime);
+    }
+
+    WebSocketService.play($scope.programme_id, current_time);
+  }
 });

@@ -1,0 +1,62 @@
+<div class="content_padding" id="playback">
+  <div ng-hide="programme || playback_error">
+    <h2>Waiting for programme to load</h2>
+    <img src="images/ajax-loader.gif" class="spinner" ng-hide="programme" />
+  </div>
+
+  <div ng-show="playback_error" class="error-message">
+    <p>Problem getting programme information</p>
+    <p>Ensure you're on the Lancaster network either via eduroam or by connecting over VPN.</p>
+  </div>
+
+  <div ng-show="programme" class="group">
+    <h2>{{ programme.programme_name }} <small ng-show="programme.sub_title">Episode {{ programme.sub_title }}</small></h2>
+    <article>
+      <div id="video_wrapper" ng-show="programme.watch_live || programme.watch_catchup">
+        <video id="video-player" src="" height="100%" controls="controls" preload='auto'>
+          <p>Sorry, your device is not capable of playing our videos</p>
+        </video>
+      </div>
+      <div class="message" ng-show="programme.available_soon">
+        <p>This programme is currently being recorded and processed.</p>
+        <p>It'll be available here soon.</p>
+      </div>
+      <div class="message" ng-show="programme.waiting_to_be_recorded">
+        <p>This programme has not been broadcast yet.</p>
+        <p>Come back here later to watch it live or on demand</p>
+      </div>
+      <div class="message" ng-show="programme.not_available && !programme.waiting_to_be_recorded">
+        <p>This programme is not available to watch.</p>
+      </div>
+      <button id="watch-later" ng-click="watch_later()">
+        <span class="glyphicons plus icon"></span> Add to my Watch Later list
+      </button>
+    </article>
+    <aside>
+      <dl>
+        <dt ng-show="programme.episode">Episode</dt>
+        <dd ng-show="programme.episode">{{ programme.episode }}</dd>
+
+        <dt ng-show="programme.synopsis">Synopsis</dt>
+        <dd ng-show="programme.synopsis">{{ programme.synopsis }}</dd>
+
+        <dt ng-show="programme.broadcast">Date</dt>
+        <dd ng-show="programme.broadcast">{{ programme.broadcast }}</dd>
+
+        <dt ng-show="programme.channel_image">Channel</dt>
+        <dd ng-show="programme.channel_image">
+         <channel-image path="programme.channel_image" width="100" height="56" />
+        </dd>
+
+        <dt ng-show="programme.director">Director</dt>
+        <dd ng-show="programme.director">{{ programme.director }}</dd>
+
+        <dt ng-show="programme.genre && programme.genre != 'Unclassified'">Genre</dt>
+        <dd ng-show="programme.genre && programme.genre != 'Unclassified'">{{ programme.genre }}</dd>
+
+        <dt>Duration</dt>
+        <dd>{{ programme.duration }}</dd>
+      </dl>
+    </aside>
+  </div>
+</div>

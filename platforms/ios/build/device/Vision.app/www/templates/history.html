@@ -1,0 +1,30 @@
+<div class="content_padding">
+  <h2>Your Viewing History</h2>
+  <p class="lead">See your viewing history from across all your devices and pickup from where you last were.</p>
+  <img src="images/ajax-loader.gif" class="spinner" ng-hide="history != null || history_error" />
+
+  <ul id="history" class="vertical-list">
+    <li class="table-view-cell" ng-repeat="programme in history">
+      <div class="progress_fill" style="width: {{ programme.percentage_watched }}%"></div>
+      <a class="group" ng-href="#/programmes/{{ programme.programme_id }}?start_at={{ programme.last_known_position }}">
+        <div class="left">
+          <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
+        </div>
+        <div class="right">
+          <p>{{ programme.programme_name }}</p>
+          <p class="metadata">{{ programme.channel_name }} &middot; {{ programme.duration_mins }} mins &middot; {{ programme.percentage_watched }}% watched</p>
+        </div>
+        <p class="small synopsis">{{ programme.synopsis | cut:true:160 }}</p>
+      </a>
+    </li>
+
+    <li class="table-view-cell empty-list-message" ng-show="history.length == 0">
+      <p>You have not watched anything yet</p>
+    </li>
+
+    <li class="table-view-cell empty-list-message error-message" ng-show="history_error">
+      <p>Problem getting your viewing history</p>
+      <p>Ensure you're on the Lancaster network either via eduroam or by connecting over VPN.</p>
+    </li>
+  </ul>
+</div>

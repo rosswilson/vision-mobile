@@ -262,29 +262,29 @@ dd {
   padding-bottom: 20px;
 }
 
-#watch-later {
+.large_button {
   padding: 14px;
   font-size: 13px;
   background-color: #428bca;
   color: white;
-  display: block;
+  display: inline-block;
 }
 
-#watch-later .glyphicons.plus {
+.large_button .glyphicons {
   height: 15px;
   width: 16px;
   margin-right: 5px;
   vertical-align: text-bottom;
 }
 
-#watch-later .glyphicons.plus:before {
+.large_button .glyphicons:before {
   font-size: 14px;
   color: white;
 }
 
 @media (max-width: 1024px) {
-  #watch-later {
-    margin: 0 auto 20px;
+  .large_button {
+    margin-bottom: 20px;
   }
 }
 

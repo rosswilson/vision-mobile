@@ -42,7 +42,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		iRHTkXG3CCfvu1BSvleNUR8WkSo=
+		yTjSO5P9s1ncZASqvP2/tsLJrxo=
 		</data>
 		<key>de.lproj/Localizable.strings</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		dPCgfYO4zrkU0ajOPjwgTZdNaes=
+		6hB8n6zOEvo2tS2y6vihxVYvHL4=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>www/css/styles.css</key>
 		<data>
-		/SVDGZ/cFLDS6C8JJiXTXqN/MCg=
+		R19rNzX8iGGSEMOeL6PkzRasScs=
 		</data>
 		<key>www/fonts/glyphicons-regular.eot</key>
 		<data>
@@ -174,39 +174,99 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		BW1/34iOShpX9rrgg+vmzoIIC6A=
+		7AhYB/ROW1dNZwIvHetbJ3Eqr3Y=
 		</data>
 		<key>www/js/app.js</key>
 		<data>
-		JtkL+5/7IkFyS9f6quvHgKlhp00=
+		jkzchW+Djsl+Z5TuoVdWUrn4Yw0=
 		</data>
 		<key>www/js/dashboard.js</key>
 		<data>
-		Hpn+S1yidRAtCvScOM/E130oy7c=
+		MDB39OHJllkzibDi3EU+9rNIdmw=
+		</data>
+		<key>www/js/directives/channel_image.js</key>
+		<data>
+		3QAmle+QSR6MvcmqOY0srgOCFfk=
 		</data>
 		<key>www/js/history.js</key>
 		<data>
-		4LeovM2AEwy2uE9O/dVsT16HiLI=
+		Eft2h7EaafjwqbW4Ctbmk0fwPqA=
 		</data>
 		<key>www/js/library.js</key>
 		<data>
-		Obn+zCN5f4nVJxnHK+i1pJj1iQE=
+		kIbS9M+tscjazq8Ao0MPxapinSQ=
 		</data>
 		<key>www/js/live.js</key>
 		<data>
-		G0kyPd9BslIcV8+08fxHoeGzj2U=
+		UaWZagN/X2r6XIauav9JySy+K8k=
 		</data>
 		<key>www/js/login.js</key>
 		<data>
-		5AaARCzR/hfShA/EyFvd3vPsquw=
+		NGRTaxt4hG8IzejmCLlOtUpX59k=
 		</data>
 		<key>www/js/playback.js</key>
 		<data>
-		QH2HiXVQryPvep2GtwW7qDoRkos=
+		OFOCgisluo1X0jq0k6KX/YBcE28=
 		</data>
 		<key>www/js/search.js</key>
 		<data>
-		ReB4yH+xmvg8LSYnSMLTlDe97Sw=
+		BBjT25WB0v4VzW+qhx5vj1yNFmY=
+		</data>
+		<key>www/js/services/auth_service.js</key>
+		<data>
+		+QFckJgLS3FJC4B5JLMhdh8ehMY=
+		</data>
+		<key>www/js/services/balance_service.js</key>
+		<data>
+		XP6Af6XNBJ3h+vEsbWs56FiZLNE=
+		</data>
+		<key>www/js/services/currently_airing.js</key>
+		<data>
+		wM+9I0nA+MrvbMMZ6mcwrtr5x9I=
+		</data>
+		<key>www/js/services/duration_service.js</key>
+		<data>
+		DRG2CUZVrsGwigZ3wj/1FWn65NE=
+		</data>
+		<key>www/js/services/history_service.js</key>
+		<data>
+		ToXApIMyKeaC+/5xoG9XIx4VWoY=
+		</data>
+		<key>www/js/services/image_service.js</key>
+		<data>
+		X1OeZm16efnbZltv3PlcbxHlP+4=
+		</data>
+		<key>www/js/services/programme_service.js</key>
+		<data>
+		/YH4z34yMc9df97F5LhCUrBst1Q=
+		</data>
+		<key>www/js/services/progress_service.js</key>
+		<data>
+		AJlAa4/TEhGEiNa1vwaccI8HviE=
+		</data>
+		<key>www/js/services/recommendation_service.js</key>
+		<data>
+		jY1gX/y2wpvp2J/lDwDo3AEv0VA=
+		</data>
+		<key>www/js/services/search_service.js</key>
+		<data>
+		Ft25L0kGNuW/PmP5oomIpMA5+Uc=
+		</data>
+		<key>www/js/services/stats_service.js</key>
+		<data>
+		04MHKMzaRBMf/koKNfESICU9tm4=
+		</data>
+		<key>www/js/services/trending_service.js</key>
+		<data>
+		DyJFIAEfuCd6jFueVk87JnpCk9s=
+		</data>
+		<key>www/js/services/watch_later_service.js</key>
+		<data>
+		Rzrg4QgkIy2jJeHjQ0GVet2/b1s=
+		</data>
+		<key>www/js/services/web_socket_service.js</key>
+		<data>
+		QPNYIRSTa7Ld8eKjmLUp8bEh9EI=
 		</data>
 		<key>www/lib/angular/angular-resource.min.js</key>
 		<data>
@@ -336,6 +396,10 @@
 		<data>
 		VUdXkOX9IOgdAI3VP+/BpF8w9UQ=
 		</data>
+		<key>www/lib/socketio.js</key>
+		<data>
+		PLGkdMuGXnMYk1AnyWmij//Bcso=
+		</data>
 		<key>www/plugins/org.apache.cordova.console/www/console-via-logger.js</key>
 		<data>
 		hF7sjNGZlrdzVnwHE+ljLRMXY0A=
@@ -355,6 +419,34 @@
 		<key>www/plugins/org.apache.cordova.splashscreen/www/splashscreen.js</key>
 		<data>
 		+/CN5vTcEhArRc2SA5VugBiE7YM=
+		</data>
+		<key>www/templates/dashboard.html</key>
+		<data>
+		RL19NXXftmWFG/JhgMPWfoneVTQ=
+		</data>
+		<key>www/templates/history.html</key>
+		<data>
+		7Da5gOC1zDkVkAi51Xi92vI+RCc=
+		</data>
+		<key>www/templates/library.html</key>
+		<data>
+		gpTnXrU7yrl9gdphLDCrA/sJUWE=
+		</data>
+		<key>www/templates/live.html</key>
+		<data>
+		7f6Af5dp8FW97GI/O+7pSTMJu7A=
+		</data>
+		<key>www/templates/login.html</key>
+		<data>
+		/qek4AHh43xGgS1tckTeGaBxVTE=
+		</data>
+		<key>www/templates/playback.html</key>
+		<data>
+		PcpZjr2Q8h7BDNd5W6tPk3Vet4A=
+		</data>
+		<key>www/templates/search.html</key>
+		<data>
+		7Vaiu4eDEglJ5N8y6ICbIhsASmY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -397,7 +489,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		iRHTkXG3CCfvu1BSvleNUR8WkSo=
+		yTjSO5P9s1ncZASqvP2/tsLJrxo=
 		</data>
 		<key>de.lproj/Localizable.strings</key>
 		<data>
@@ -405,7 +497,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		dPCgfYO4zrkU0ajOPjwgTZdNaes=
+		6hB8n6zOEvo2tS2y6vihxVYvHL4=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<data>
@@ -497,7 +589,7 @@
 		</data>
 		<key>www/css/styles.css</key>
 		<data>
-		/SVDGZ/cFLDS6C8JJiXTXqN/MCg=
+		R19rNzX8iGGSEMOeL6PkzRasScs=
 		</data>
 		<key>www/fonts/glyphicons-regular.eot</key>
 		<data>
@@ -529,39 +621,99 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		BW1/34iOShpX9rrgg+vmzoIIC6A=
+		7AhYB/ROW1dNZwIvHetbJ3Eqr3Y=
 		</data>
 		<key>www/js/app.js</key>
 		<data>
-		JtkL+5/7IkFyS9f6quvHgKlhp00=
+		jkzchW+Djsl+Z5TuoVdWUrn4Yw0=
 		</data>
 		<key>www/js/dashboard.js</key>
 		<data>
-		Hpn+S1yidRAtCvScOM/E130oy7c=
+		MDB39OHJllkzibDi3EU+9rNIdmw=
+		</data>
+		<key>www/js/directives/channel_image.js</key>
+		<data>
+		3QAmle+QSR6MvcmqOY0srgOCFfk=
 		</data>
 		<key>www/js/history.js</key>
 		<data>
-		4LeovM2AEwy2uE9O/dVsT16HiLI=
+		Eft2h7EaafjwqbW4Ctbmk0fwPqA=
 		</data>
 		<key>www/js/library.js</key>
 		<data>
-		Obn+zCN5f4nVJxnHK+i1pJj1iQE=
+		kIbS9M+tscjazq8Ao0MPxapinSQ=
 		</data>
 		<key>www/js/live.js</key>
 		<data>
-		G0kyPd9BslIcV8+08fxHoeGzj2U=
+		UaWZagN/X2r6XIauav9JySy+K8k=
 		</data>
 		<key>www/js/login.js</key>
 		<data>
-		5AaARCzR/hfShA/EyFvd3vPsquw=
+		NGRTaxt4hG8IzejmCLlOtUpX59k=
 		</data>
 		<key>www/js/playback.js</key>
 		<data>
-		QH2HiXVQryPvep2GtwW7qDoRkos=
+		OFOCgisluo1X0jq0k6KX/YBcE28=
 		</data>
 		<key>www/js/search.js</key>
 		<data>
-		ReB4yH+xmvg8LSYnSMLTlDe97Sw=
+		BBjT25WB0v4VzW+qhx5vj1yNFmY=
+		</data>
+		<key>www/js/services/auth_service.js</key>
+		<data>
+		+QFckJgLS3FJC4B5JLMhdh8ehMY=
+		</data>
+		<key>www/js/services/balance_service.js</key>
+		<data>
+		XP6Af6XNBJ3h+vEsbWs56FiZLNE=
+		</data>
+		<key>www/js/services/currently_airing.js</key>
+		<data>
+		wM+9I0nA+MrvbMMZ6mcwrtr5x9I=
+		</data>
+		<key>www/js/services/duration_service.js</key>
+		<data>
+		DRG2CUZVrsGwigZ3wj/1FWn65NE=
+		</data>
+		<key>www/js/services/history_service.js</key>
+		<data>
+		ToXApIMyKeaC+/5xoG9XIx4VWoY=
+		</data>
+		<key>www/js/services/image_service.js</key>
+		<data>
+		X1OeZm16efnbZltv3PlcbxHlP+4=
+		</data>
+		<key>www/js/services/programme_service.js</key>
+		<data>
+		/YH4z34yMc9df97F5LhCUrBst1Q=
+		</data>
+		<key>www/js/services/progress_service.js</key>
+		<data>
+		AJlAa4/TEhGEiNa1vwaccI8HviE=
+		</data>
+		<key>www/js/services/recommendation_service.js</key>
+		<data>
+		jY1gX/y2wpvp2J/lDwDo3AEv0VA=
+		</data>
+		<key>www/js/services/search_service.js</key>
+		<data>
+		Ft25L0kGNuW/PmP5oomIpMA5+Uc=
+		</data>
+		<key>www/js/services/stats_service.js</key>
+		<data>
+		04MHKMzaRBMf/koKNfESICU9tm4=
+		</data>
+		<key>www/js/services/trending_service.js</key>
+		<data>
+		DyJFIAEfuCd6jFueVk87JnpCk9s=
+		</data>
+		<key>www/js/services/watch_later_service.js</key>
+		<data>
+		Rzrg4QgkIy2jJeHjQ0GVet2/b1s=
+		</data>
+		<key>www/js/services/web_socket_service.js</key>
+		<data>
+		QPNYIRSTa7Ld8eKjmLUp8bEh9EI=
 		</data>
 		<key>www/lib/angular/angular-resource.min.js</key>
 		<data>
@@ -691,6 +843,10 @@
 		<data>
 		VUdXkOX9IOgdAI3VP+/BpF8w9UQ=
 		</data>
+		<key>www/lib/socketio.js</key>
+		<data>
+		PLGkdMuGXnMYk1AnyWmij//Bcso=
+		</data>
 		<key>www/plugins/org.apache.cordova.console/www/console-via-logger.js</key>
 		<data>
 		hF7sjNGZlrdzVnwHE+ljLRMXY0A=
@@ -710,6 +866,34 @@
 		<key>www/plugins/org.apache.cordova.splashscreen/www/splashscreen.js</key>
 		<data>
 		+/CN5vTcEhArRc2SA5VugBiE7YM=
+		</data>
+		<key>www/templates/dashboard.html</key>
+		<data>
+		RL19NXXftmWFG/JhgMPWfoneVTQ=
+		</data>
+		<key>www/templates/history.html</key>
+		<data>
+		7Da5gOC1zDkVkAi51Xi92vI+RCc=
+		</data>
+		<key>www/templates/library.html</key>
+		<data>
+		gpTnXrU7yrl9gdphLDCrA/sJUWE=
+		</data>
+		<key>www/templates/live.html</key>
+		<data>
+		7f6Af5dp8FW97GI/O+7pSTMJu7A=
+		</data>
+		<key>www/templates/login.html</key>
+		<data>
+		/qek4AHh43xGgS1tckTeGaBxVTE=
+		</data>
+		<key>www/templates/playback.html</key>
+		<data>
+		PcpZjr2Q8h7BDNd5W6tPk3Vet4A=
+		</data>
+		<key>www/templates/search.html</key>
+		<data>
+		7Vaiu4eDEglJ5N8y6ICbIhsASmY=
 		</data>
 	</dict>
 	<key>rules</key>
