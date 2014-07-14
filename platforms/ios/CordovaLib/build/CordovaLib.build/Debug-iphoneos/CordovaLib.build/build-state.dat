@@ -1,1203 +1,0 @@
-TCordovaLib
-v6
-r1
-cCheck dependencies
-cCpHeader Classes/NSDictionary+Extensions.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSDictionary+Extensions.h
-cCpHeader Classes/CDVInvokedUrlCommand.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
-cCpHeader Classes/NSData+Base64.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSData+Base64.h
-cCpHeader Classes/CDVPluginResult.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
-cCpHeader Classes/CDVPlugin.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPlugin.h
-cCpHeader Classes/CDVDebug.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVDebug.h
-cCpHeader Classes/NSMutableArray+QueueAdditions.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
-cCpHeader Classes/CDVWhitelist.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWhitelist.h
-cCpHeader Classes/CDVURLProtocol.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVURLProtocol.h
-cCpHeader Classes/CDVViewController.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVViewController.h
-cCpHeader Classes/CDVCommandDelegate.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
-cCpHeader Classes/CDV.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDV.h
-cCpHeader Classes/CDVAvailability.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVAvailability.h
-cCpHeader Classes/CDVLocalStorage.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVLocalStorage.h
-cCpHeader Classes/UIDevice+Extensions.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/UIDevice+Extensions.h
-cCpHeader Classes/NSArray+Comparisons.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSArray+Comparisons.h
-cCpHeader Classes/CDVCommandQueue.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h
-cCpHeader Classes/CDVCommandDelegateImpl.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h
-cCpHeader Classes/CDVShared.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVShared.h
-cCpHeader Classes/CDVScreenOrientationDelegate.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h
-cCpHeader Classes/CDVConfigParser.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVConfigParser.h
-cCpHeader Classes/CDVJSON.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVJSON.h
-cCpHeader Classes/CDVWebViewDelegate.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWebViewDelegate.h
-cCpHeader Classes/CDVUserAgentUtil.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVUserAgentUtil.h
-cCpHeader Classes/CDVTimer.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVTimer.h
-cProcessPCH /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSDictionary+Extensions.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVInvokedUrlCommand.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSData+Base64.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPluginResult.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPlugin.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSMutableArray+QueueAdditions.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWhitelist.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVURLProtocol.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVViewController.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVLocalStorage.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/UIDevice+Extensions.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSArray+Comparisons.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandQueue.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandDelegateImpl.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVConfigParser.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVJSON.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVUserAgentUtil.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWebViewDelegate.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVTimer.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVShared.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVShared.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLibtool /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/libCordova.a normal armv7
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
-c00000000534739EB0000000000000132
-t1397176811
-s306
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
-c00000000532035EB000000000000036B
-t1394619883
-s875
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
-c00000000532035EC000000000000019E
-t1394619884
-s414
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDV.h
-c000000005370A5DA0000000000000516
-t1399891418
-s1302
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-c000000005370A5DA0000000000000CFB
-t1399891418
-s3323
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
-c000000005370A5DA00000000000008BA
-t1399891418
-s2234
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
-c000000005370A5DA00000000000004E2
-t1399891418
-s1250
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m
-c000000005370A5DA000000000000183A
-t1399891418
-s6202
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
-c000000005370A5DA0000000000000503
-t1399891418
-s1283
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m
-c000000005370A5DA0000000000001ED0
-t1399891418
-s7888
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.h
-c000000005370A5DA00000000000004CB
-t1399891418
-s1227
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m
-c000000005370A5DA0000000000000EBF
-t1399891418
-s3775
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h
-c000000005370A5DA0000000000000401
-t1399891418
-s1025
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-c000000005370A5DA00000000000007E6
-t1399891418
-s2022
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m
-c000000005370A5DA0000000000000DDE
-t1399891418
-s3550
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
-c000000005370A5DA00000000000003DA
-t1399891418
-s986
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m
-c000000005370A5DA00000000000009A1
-t1399891418
-s2465
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
-c000000005370A5DA00000000000006CF
-t1399891418
-s1743
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m
-c000000005370A5DA0000000000004C7E
-t1399891418
-s19582
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h
-c000000005370A5DA0000000000000892
-t1399891418
-s2194
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m
-c000000005370A5DA00000000000016AE
-t1399891418
-s5806
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-c000000005370A5DA0000000000000C13
-t1399891418
-s3091
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m
-c000000005370A5DA0000000000001B29
-t1399891418
-s6953
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
-c000000005370A5DA0000000000000408
-t1399891418
-s1032
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVShared.h
-c000000005370A5DA00000000000003E6
-t1399891418
-s998
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVShared.m
-c000000005370A5DA00000000000006BD
-t1399891418
-s1725
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h
-c000000005370A5DA000000000000038D
-t1399891418
-s909
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m
-c000000005370A5DA0000000000000AA2
-t1399891418
-s2722
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
-c000000005370A5DA000000000000041C
-t1399891418
-s1052
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m
-c000000005370A5DA000000000000259E
-t1399891418
-s9630
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h
-c000000005370A5DA0000000000000421
-t1399891418
-s1057
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m
-c000000005370A5DA0000000000001361
-t1399891418
-s4961
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h
-c000000005370A5DA0000000000000ACC
-t1399891418
-s2764
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m
-c000000005370A5DA0000000000008FD2
-t1399891418
-s36818
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h
-c000000005370A5DA00000000000005A2
-t1399891418
-s1442
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m
-c000000005370A5DA0000000000003795
-t1399891418
-s14229
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
-c000000005370A5DA00000000000004B4
-t1399891418
-s1204
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m
-c000000005370A5DA0000000000002814
-t1399891418
-s10260
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
-c000000005370A5DA0000000000000392
-t1399891418
-s914
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m
-c000000005370A5DA00000000000004D8
-t1399891418
-s1240
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h
-c000000005370A5DA000000000000037D
-t1399891418
-s893
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m
-c000000005370A5DA00000000000022CC
-t1399891418
-s8908
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
-c000000005370A5DA00000000000005DA
-t1399891418
-s1498
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m
-c000000005370A5DA0000000000001059
-t1399891418
-s4185
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-c000000005370A5DA00000000000003A0
-t1399891418
-s928
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m
-c000000005370A5DA0000000000000584
-t1399891418
-s1412
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
-c000000005370A5DA0000000000000476
-t1399891418
-s1142
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m
-c000000005370A5DA0000000000000620
-t1399891418
-s1568
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/CordovaLib_Prefix.pch
-c000000005370A5DA0000000000000346
-t1399891418
-s838
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandDelegateImpl.o
-t1400767761
-s65892
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandQueue.o
-t1400767761
-s62072
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVConfigParser.o
-t1400767761
-s29096
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVInvokedUrlCommand.o
-t1400767759
-s18260
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVJSON.o
-t1400767761
-s10896
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVLocalStorage.o
-t1400767760
-s109300
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPlugin.o
-t1400767760
-s56764
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPluginResult.o
-t1400767759
-s36540
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVShared.o
-t1400767761
-s9120
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVTimer.o
-t1400767761
-s22876
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVURLProtocol.o
-t1400767760
-s70696
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVUserAgentUtil.o
-t1400767761
-s52540
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVViewController.o
-t1400767760
-s178656
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWebViewDelegate.o
-t1400767761
-s70316
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWhitelist.o
-t1400767760
-s44876
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/Cordova.LinkFileList
-c000000005370A6450000000000000C7B
-t1399891525
-s3195
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSArray+Comparisons.o
-t1400767760
-s7348
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSData+Base64.o
-t1400767759
-s10492
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSDictionary+Extensions.o
-t1400767759
-s17112
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSMutableArray+QueueAdditions.o
-t1400767759
-s6908
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/UIDevice+Extensions.o
-t1400767760
-s9384
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDV.h
-t1399891525
-s1302
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVAvailability.h
-t1399891525
-s3323
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
-t1399891525
-s2234
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h
-t1399891525
-s1250
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h
-t1399891525
-s1283
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVConfigParser.h
-t1399891525
-s1227
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVDebug.h
-t1399891525
-s1025
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
-t1399891525
-s2022
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVJSON.h
-t1399891525
-s986
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVLocalStorage.h
-t1399891525
-s1743
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPlugin.h
-t1399891525
-s2194
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
-t1399891525
-s3091
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h
-t1399891525
-s1032
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVShared.h
-t1399891525
-s998
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVTimer.h
-t1399891525
-s909
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVURLProtocol.h
-t1399891525
-s1052
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVUserAgentUtil.h
-t1399891525
-s1057
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVViewController.h
-t1399891525
-s2764
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWebViewDelegate.h
-t1399891525
-s1442
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWhitelist.h
-t1399891525
-s1204
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSArray+Comparisons.h
-t1399891525
-s914
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSData+Base64.h
-t1399891525
-s893
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSDictionary+Extensions.h
-t1399891525
-s1498
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
-t1399891525
-s928
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/UIDevice+Extensions.h
-t1399891525
-s1142
-
-N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/libCordova.a
-t1400767761
-s896928
-
-N/var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-axwcbawxpmasptgfbwnqjjpfcqfw/CordovaLib_Prefix.pch.pch
-t1399891526
-s3182936
-
-N/var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch.pch
-t1400767759
-s3182936
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciese738ffa53636b941^0d714ca63636b941^---0#1#1#--18"Check dependencies36"542C7136-6F36-4FC3-A6D8-B23833623517-
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandDelegateImpl.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460560.836334
-e422460561.057342
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandDelegateImpl.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m227"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandDelegateImpl.o [1mClasses/CDVCommandDelegateImpl.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler003cd6903c2eb941^11c30e913c2eb941^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m0000000000000000^3906"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandDelegateImpl.o [1mClasses/CDVCommandDelegateImpl.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandDelegateImpl.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandDelegateImpl.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandDelegateImpl.o36"EAF25CDD-17FE-4746-AC36-D77A51BB6E44-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandQueue.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460560.797286
-e422460561.057884
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandQueue.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDV.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m213"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandQueue.o [1mClasses/CDVCommandQueue.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerde39cc903c2eb941^9ad20e913c2eb941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m0000000000000000^3864"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandQueue.o [1mClasses/CDVCommandQueue.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandQueue.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandQueue.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandQueue.o36"F7D900B0-53CB-47D0-9C2A-B3AD3CDDDC22-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVConfigParser.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460561.058064
-e422460561.123434
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVConfigParser.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m213"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVConfigParser.o [1mClasses/CDVConfigParser.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerbe170f913c2eb941^75e51f913c2eb941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m0000000000000000^3864"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVConfigParser.o [1mClasses/CDVConfigParser.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVConfigParser.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVConfigParser.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVConfigParser.o36"FB4F3012-136F-47ED-8F7E-ABEBE42393C1-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVInvokedUrlCommand.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460559.668242
-e422460559.792763
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVInvokedUrlCommand.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m223"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVInvokedUrlCommand.o [1mClasses/CDVInvokedUrlCommand.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler662fab8f3c2eb941^1500cb8f3c2eb941^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m0000000000000000^3894"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVInvokedUrlCommand.o [1mClasses/CDVInvokedUrlCommand.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVInvokedUrlCommand.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVInvokedUrlCommand.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVInvokedUrlCommand.o36"491A91FF-762B-43D2-992C-C208DAD38489-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVJSON.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460561.059306
-e422460561.098113
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVJSON.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m197"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVJSON.o [1mClasses/CDVJSON.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler514f0f913c2eb941^d86419913c2eb941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m0000000000000000^3816"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVJSON.o [1mClasses/CDVJSON.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVJSON.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVJSON.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVJSON.o36"3E5FB27C-212C-4BD1-A410-0298351A231D-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVLocalStorage.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460560.335692
-e422460560.622683
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVLocalStorage.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDV.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m213"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVLocalStorage.o [1mClasses/CDVLocalStorage.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler771156903c2eb941^3c6b9f903c2eb941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m0000000000000000^3864"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVLocalStorage.o [1mClasses/CDVLocalStorage.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVLocalStorage.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVLocalStorage.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVLocalStorage.o36"34A1E7A6-5E79-44E7-86C2-60963AACAFF9-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPlugin.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460559.846414
-e422460560.142650
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPlugin.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m201"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPlugin.o [1mClasses/CDVPlugin.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compileref1dd98f3c2eb941^254124903c2eb941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m0000000000000000^3828"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPlugin.o [1mClasses/CDVPlugin.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPlugin.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPlugin.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPlugin.o36"E7FEF395-5614-4F33-8CE2-E8E9FA41E632-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPluginResult.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460559.793808
-e422460559.884448
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPluginResult.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m213"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPluginResult.o [1mClasses/CDVPluginResult.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler8a55cb8f3c2eb941^29aee28f3c2eb941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m0000000000000000^3864"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPluginResult.o [1mClasses/CDVPluginResult.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPluginResult.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPluginResult.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVPluginResult.o36"1224BF67-16C1-48F6-B6B2-C51B2AB33903-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVShared.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVShared.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460561.347090
-e422460561.395442
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVShared.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVShared.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVShared.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVShared.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVShared.m201"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVShared.o [1mClasses/CDVShared.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerd6fc58913c2eb941^753d65913c2eb941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVShared.m0000000000000000^3828"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVShared.o [1mClasses/CDVShared.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVShared.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVShared.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVShared.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVShared.o36"CDD217FC-0E9D-46BC-9183-13CA7F937682-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVTimer.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460561.319442
-e422460561.371675
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVTimer.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m199"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVTimer.o [1mClasses/CDVTimer.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler92e851913c2eb941^f33d5f913c2eb941^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m0000000000000000^3822"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVTimer.o [1mClasses/CDVTimer.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVTimer.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVTimer.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVTimer.o36"2D65C493-2C03-42C1-9DC4-698E9CBA1B0B-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVURLProtocol.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460560.011021
-e422460560.334890
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVURLProtocol.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m211"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVURLProtocol.o [1mClasses/CDVURLProtocol.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler2efe02903c2eb941^c9ad55903c2eb941^---0#0#1#-19%DVTDocumentLocation2@96"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m0000000000000000^3858"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVURLProtocol.o [1mClasses/CDVURLProtocol.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVURLProtocol.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVURLProtocol.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVURLProtocol.o36"D25373EE-892F-4251-8F88-5229570F4441-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVUserAgentUtil.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460561.098473
-e422460561.318060
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVUserAgentUtil.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m215"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVUserAgentUtil.o [1mClasses/CDVUserAgentUtil.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler315c19913c2eb941^992951913c2eb941^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m0000000000000000^3870"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVUserAgentUtil.o [1mClasses/CDVUserAgentUtil.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVUserAgentUtil.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVUserAgentUtil.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVUserAgentUtil.o36"50B7695E-FD32-4953-894D-107DFF04EF46-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVViewController.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460560.143079
-e422460560.790697
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVViewController.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDV.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m217"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVViewController.o [1mClasses/CDVViewController.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerd2c324903c2eb941^e86bca903c2eb941^---0#0#1#-19%DVTDocumentLocation2@99"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m0000000000000000^3876"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVViewController.o [1mClasses/CDVViewController.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVViewController.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVViewController.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVViewController.o36"1F7F5B1E-7BEC-44BD-A9A0-D46C6ABE7F7A-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWebViewDelegate.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460561.123894
-e422460561.346723
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWebViewDelegate.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m219"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWebViewDelegate.o [1mClasses/CDVWebViewDelegate.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler27d81f913c2eb941^c00559913c2eb941^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m0000000000000000^3882"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWebViewDelegate.o [1mClasses/CDVWebViewDelegate.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWebViewDelegate.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWebViewDelegate.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWebViewDelegate.o36"742F4962-C622-4981-AB35-192DF466B73E-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWhitelist.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460559.924716
-e422460560.009082
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWhitelist.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m207"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWhitelist.o [1mClasses/CDVWhitelist.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler01f7ec8f3c2eb941^3b5102903c2eb941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m0000000000000000^3846"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWhitelist.o [1mClasses/CDVWhitelist.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWhitelist.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWhitelist.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVWhitelist.o36"028B8E0E-9399-4254-BB35-4CD636B458DD-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSArray+Comparisons.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460560.792132
-e422460560.835961
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSArray+Comparisons.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m221"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSArray+Comparisons.o [1mClasses/NSArray+Comparisons.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler28f0ca903c2eb941^2e03d6903c2eb941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m0000000000000000^3888"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSArray+Comparisons.o [1mClasses/NSArray+Comparisons.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSArray+Comparisons.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSArray+Comparisons.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSArray+Comparisons.o36"7948B986-69CC-4181-A866-BE80AE55E51D-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSData+Base64.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460559.791904
-e422460559.845967
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSData+Base64.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m209"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSData+Base64.o [1mClasses/NSData+Base64.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler446dcb8f3c2eb941^9f01d98f3c2eb941^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m0000000000000000^3852"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSData+Base64.o [1mClasses/NSData+Base64.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSData+Base64.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSData+Base64.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSData+Base64.o36"BFD8BEF8-A56B-4229-86C0-F79EEB4480C7-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSDictionary+Extensions.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460559.667575
-e422460559.791506
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSDictionary+Extensions.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m229"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSDictionary+Extensions.o [1mClasses/NSDictionary+Extensions.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerd506ab8f3c2eb941^4cc5ca8f3c2eb941^---0#0#1#-19%DVTDocumentLocation2@105"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m0000000000000000^3912"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSDictionary+Extensions.o [1mClasses/NSDictionary+Extensions.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSDictionary+Extensions.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSDictionary+Extensions.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSDictionary+Extensions.o36"2793F3B0-EE3B-4140-8E8A-D260823EB6E4-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSMutableArray+QueueAdditions.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460559.884821
-e422460559.920223
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSMutableArray+QueueAdditions.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m241"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSMutableArray+QueueAdditions.o [1mClasses/NSMutableArray+QueueAdditions.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler72a5e28f3c2eb941^240aed8f3c2eb941^---0#0#1#-19%DVTDocumentLocation2@111"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m0000000000000000^3948"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSMutableArray+QueueAdditions.o [1mClasses/NSMutableArray+QueueAdditions.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSMutableArray+QueueAdditions.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSMutableArray+QueueAdditions.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/NSMutableArray+QueueAdditions.o36"314943A9-382C-44C3-83B2-188A35FC9B80-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/UIDevice+Extensions.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460560.623095
-e422460560.796946
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/UIDevice+Extensions.o
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m221"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/UIDevice+Extensions.o [1mClasses/UIDevice+Extensions.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerf8a49f903c2eb941^3541cc903c2eb941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m0000000000000000^3888"[1mCompileC[0m build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/UIDevice+Extensions.o [1mClasses/UIDevice+Extensions.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG -include /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/UIDevice+Extensions.d --serialize-diagnostics /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/UIDevice+Extensions.dia -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/UIDevice+Extensions.o36"EFD4A3D7-5147-4BD6-B98A-7AEF618C6420-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CCpHeader Classes/CDV.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDV.h
-s421584325.702419
-e421584325.707284
-r1
-xCpHeader
-xClasses/CDV.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDV.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDV.h127"[1mCpHeader[0m Classes/CDV.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDV.h[0m8eebb3c5dd20b941^28bacac5dd20b941^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDV.h0034e0a4deffdf42^921"[1mCpHeader[0m Classes/CDV.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDV.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDV.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"DBC4E8F1-BCC6-4705-A11D-7FD410462B24-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVAvailability.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVAvailability.h
-s421584325.708958
-e421584325.715335
-r1
-xCpHeader
-xClasses/CDVAvailability.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVAvailability.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVAvailability.h151"[1mCpHeader[0m Classes/CDVAvailability.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVAvailability.h[0ma796b5c5dd20b941^e31acbc5dd20b941^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVAvailability.h0034e0a4deffdf42^957"[1mCpHeader[0m Classes/CDVAvailability.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVAvailability.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVAvailability.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"6A6AC5F9-A01F-4E72-BFDD-7ECD07A04139-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVCommandDelegate.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
-s421584325.697995
-e421584325.700086
-r1
-xCpHeader
-xClasses/CDVCommandDelegate.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h157"[1mCpHeader[0m Classes/CDVCommandDelegate.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h[0m22c7b2c5dd20b941^8a94cac5dd20b941^---0#0#1#-19%DVTDocumentLocation2@110"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h0034e0a4deffdf42^966"[1mCpHeader[0m Classes/CDVCommandDelegate.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"27E4202B-8802-4B69-983E-D890A7AA4EE4-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVCommandDelegateImpl.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h
-s421584325.735912
-e421584325.739314
-r1
-xCpHeader
-xClasses/CDVCommandDelegateImpl.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h165"[1mCpHeader[0m Classes/CDVCommandDelegateImpl.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h[0mfe7bbcc5dd20b941^4833e2c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h0034e0a4deffdf42^978"[1mCpHeader[0m Classes/CDVCommandDelegateImpl.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"43286248-B859-4D1A-A0ED-D75F1249D2D0-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVCommandQueue.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h
-s421584325.736555
-e421584325.742767
-r1
-xCpHeader
-xClasses/CDVCommandQueue.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h151"[1mCpHeader[0m Classes/CDVCommandQueue.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h[0m5c3bbdc5dd20b941^2d5ae4c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h0034e0a4deffdf42^957"[1mCpHeader[0m Classes/CDVCommandQueue.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"F6F23A8B-63FB-4A70-9DE2-1E590B927A42-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVConfigParser.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVConfigParser.h
-s421584325.743649
-e421584325.747241
-r1
-xCpHeader
-xClasses/CDVConfigParser.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVConfigParser.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVConfigParser.h151"[1mCpHeader[0m Classes/CDVConfigParser.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVConfigParser.h[0m8e74bec5dd20b941^9df2e4c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVConfigParser.h0034e0a4deffdf42^957"[1mCpHeader[0m Classes/CDVConfigParser.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVConfigParser.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVConfigParser.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"8677C9FC-A347-48DD-B46B-A1CBAE744144-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVDebug.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVDebug.h
-s421584325.673683
-e421584325.678303
-r1
-xCpHeader
-xClasses/CDVDebug.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVDebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVDebug.h137"[1mCpHeader[0m Classes/CDVDebug.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVDebug.h[0m478eacc5dd20b941^b5fbc1c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVDebug.h0034e0a4deffdf42^936"[1mCpHeader[0m Classes/CDVDebug.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVDebug.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVDebug.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"4C333EC7-401A-4E95-A491-FF76C8ECBC67-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVInvokedUrlCommand.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
-s421584325.650861
-e421584325.658674
-r1
-xCpHeader
-xClasses/CDVInvokedUrlCommand.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h161"[1mCpHeader[0m Classes/CDVInvokedUrlCommand.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h[0m89b3a6c5dd20b941^3331b5c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@112"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h0034e0a4deffdf42^972"[1mCpHeader[0m Classes/CDVInvokedUrlCommand.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"DFA5A2EA-547F-4C22-8EF4-F822B8FF4453-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVJSON.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVJSON.h
-s421584325.744077
-e421584325.746481
-r1
-xCpHeader
-xClasses/CDVJSON.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVJSON.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVJSON.h135"[1mCpHeader[0m Classes/CDVJSON.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVJSON.h[0m0490bec5dd20b941^74ece4c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@99"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVJSON.h0034e0a4deffdf42^933"[1mCpHeader[0m Classes/CDVJSON.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVJSON.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVJSON.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"E3AE26FD-61B3-4B43-9E85-53723DFF7993-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVLocalStorage.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVLocalStorage.h
-s421584325.711469
-e421584325.712800
-r1
-xCpHeader
-xClasses/CDVLocalStorage.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVLocalStorage.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVLocalStorage.h151"[1mCpHeader[0m Classes/CDVLocalStorage.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVLocalStorage.h[0m793bb6c5dd20b941^d40ecbc5dd20b941^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVLocalStorage.h0034e0a4deffdf42^957"[1mCpHeader[0m Classes/CDVLocalStorage.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVLocalStorage.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"A2F22CE4-40FC-4492-BF7B-38C325F9D65A-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVPlugin.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPlugin.h
-s421584325.661110
-e421584325.664723
-r1
-xCpHeader
-xClasses/CDVPlugin.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPlugin.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPlugin.h139"[1mCpHeader[0m Classes/CDVPlugin.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPlugin.h[0m6e52a9c5dd20b941^1d8ebec5dd20b941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPlugin.h0034e0a4deffdf42^939"[1mCpHeader[0m Classes/CDVPlugin.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPlugin.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPlugin.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"56E7B6EE-73B9-435B-8BFD-A2B1E5F73624-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVPluginResult.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
-s421584325.659800
-e421584325.664210
-r1
-xCpHeader
-xClasses/CDVPluginResult.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPluginResult.h151"[1mCpHeader[0m Classes/CDVPluginResult.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPluginResult.h[0m1afda8c5dd20b941^3256b7c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPluginResult.h0034e0a4deffdf42^957"[1mCpHeader[0m Classes/CDVPluginResult.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPluginResult.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVPluginResult.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"88FB05C2-17CE-4F31-BEAA-3EC54C5D3E28-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVScreenOrientationDelegate.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h
-s421584325.741821
-e421584325.742629
-r1
-xCpHeader
-xClasses/CDVScreenOrientationDelegate.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h177"[1mCpHeader[0m Classes/CDVScreenOrientationDelegate.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h[0m01fabdc5dd20b941^9e40e4c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@120"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h0034e0a4deffdf42^996"[1mCpHeader[0m Classes/CDVScreenOrientationDelegate.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"2BED88AE-A547-44D8-9178-E8283F1D838E-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVShared.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVShared.h
-s421584325.740791
-e421584325.741681
-r1
-xCpHeader
-xClasses/CDVShared.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVShared.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVShared.h139"[1mCpHeader[0m Classes/CDVShared.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVShared.h[0m1fb9bdc5dd20b941^753ce2c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVShared.h0034e0a4deffdf42^939"[1mCpHeader[0m Classes/CDVShared.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVShared.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVShared.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"FDCD228C-4E0F-4043-BEB4-246A8269F529-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVTimer.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVTimer.h
-s421584325.756912
-e421584325.782317
-r1
-xCpHeader
-xClasses/CDVTimer.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVTimer.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVTimer.h137"[1mCpHeader[0m Classes/CDVTimer.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVTimer.h[0m93e0c1c5dd20b941^0267e5c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVTimer.h0034e0a4deffdf42^936"[1mCpHeader[0m Classes/CDVTimer.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVTimer.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVTimer.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"4B45EFAF-38BF-4F37-8E4A-9C8A299F68B7-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVURLProtocol.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVURLProtocol.h
-s421584325.680925
-e421584325.683896
-r1
-xCpHeader
-xClasses/CDVURLProtocol.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVURLProtocol.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVURLProtocol.h149"[1mCpHeader[0m Classes/CDVURLProtocol.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVURLProtocol.h[0mdaacaec5dd20b941^ce88cac5dd20b941^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVURLProtocol.h0034e0a4deffdf42^954"[1mCpHeader[0m Classes/CDVURLProtocol.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVURLProtocol.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"CF06F81E-49B1-4E6C-806A-B7D00229A0D9-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVUserAgentUtil.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVUserAgentUtil.h
-s421584325.750393
-e421584325.757508
-r1
-xCpHeader
-xClasses/CDVUserAgentUtil.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVUserAgentUtil.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVUserAgentUtil.h153"[1mCpHeader[0m Classes/CDVUserAgentUtil.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVUserAgentUtil.h[0mf12dc0c5dd20b941^3540e5c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVUserAgentUtil.h0034e0a4deffdf42^960"[1mCpHeader[0m Classes/CDVUserAgentUtil.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVUserAgentUtil.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"8D19D587-F211-4C9F-8618-571A15AB69D8-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVViewController.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVViewController.h
-s421584325.684137
-e421584325.695325
-r1
-xCpHeader
-xClasses/CDVViewController.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVViewController.h155"[1mCpHeader[0m Classes/CDVViewController.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVViewController.h[0ma33cafc5dd20b941^338dcac5dd20b941^---0#0#1#-19%DVTDocumentLocation2@109"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVViewController.h0034e0a4deffdf42^963"[1mCpHeader[0m Classes/CDVViewController.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVViewController.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVViewController.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"199B3DD9-8537-47A0-8A89-68E79DA0B2B2-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVWebViewDelegate.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWebViewDelegate.h
-s421584325.746672
-e421584325.749954
-r1
-xCpHeader
-xClasses/CDVWebViewDelegate.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWebViewDelegate.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWebViewDelegate.h157"[1mCpHeader[0m Classes/CDVWebViewDelegate.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWebViewDelegate.h[0mef3abfc5dd20b941^bc02e5c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@110"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWebViewDelegate.h0034e0a4deffdf42^966"[1mCpHeader[0m Classes/CDVWebViewDelegate.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWebViewDelegate.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"87513F7E-932C-4480-A906-EF10F42E092C-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/CDVWhitelist.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWhitelist.h
-s421584325.678548
-e421584325.702002
-r1
-xCpHeader
-xClasses/CDVWhitelist.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWhitelist.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWhitelist.h145"[1mCpHeader[0m Classes/CDVWhitelist.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWhitelist.h[0me754aec5dd20b941^0797cac5dd20b941^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWhitelist.h0034e0a4deffdf42^948"[1mCpHeader[0m Classes/CDVWhitelist.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWhitelist.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVWhitelist.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"C594B720-9733-4D17-8C6C-6D1B811FE591-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/NSArray+Comparisons.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSArray+Comparisons.h
-s421584325.716733
-e421584325.735674
-r1
-xCpHeader
-xClasses/NSArray+Comparisons.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSArray+Comparisons.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSArray+Comparisons.h159"[1mCpHeader[0m Classes/NSArray+Comparisons.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSArray+Comparisons.h[0mbc93b7c5dd20b941^7216e2c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@111"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSArray+Comparisons.h0034e0a4deffdf42^969"[1mCpHeader[0m Classes/NSArray+Comparisons.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSArray+Comparisons.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"D171095B-AB92-4B6C-B844-676ED650A8DA-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/NSData+Base64.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSData+Base64.h
-s421584325.657152
-e421584325.658859
-r1
-xCpHeader
-xClasses/NSData+Base64.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSData+Base64.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSData+Base64.h147"[1mCpHeader[0m Classes/NSData+Base64.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSData+Base64.h[0m4758a8c5dd20b941^3e42b5c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@105"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSData+Base64.h0034e0a4deffdf42^951"[1mCpHeader[0m Classes/NSData+Base64.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSData+Base64.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSData+Base64.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"3C5CE7CC-D243-4A58-9D1E-4EDAE91F9E18-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/NSDictionary+Extensions.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSDictionary+Extensions.h
-s421584325.649512
-e421584325.656201
-r1
-xCpHeader
-xClasses/NSDictionary+Extensions.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSDictionary+Extensions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSDictionary+Extensions.h167"[1mCpHeader[0m Classes/NSDictionary+Extensions.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSDictionary+Extensions.h[0m1c7ba6c5dd20b941^4b20b5c5dd20b941^---0#0#1#-19%DVTDocumentLocation2@115"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSDictionary+Extensions.h0034e0a4deffdf42^981"[1mCpHeader[0m Classes/NSDictionary+Extensions.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSDictionary+Extensions.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"E1EFCD39-7EB5-4CF3-B82B-78DE3309E2A6-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/NSMutableArray+QueueAdditions.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
-s421584325.675306
-e421584325.678614
-r1
-xCpHeader
-xClasses/NSMutableArray+QueueAdditions.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h179"[1mCpHeader[0m Classes/NSMutableArray+QueueAdditions.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h[0m87fbacc5dd20b941^1475cac5dd20b941^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h0034e0a4deffdf42^999"[1mCpHeader[0m Classes/NSMutableArray+QueueAdditions.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"47814717-975F-4352-A858-9C1CEE4B7D11-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CCpHeader Classes/UIDevice+Extensions.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/UIDevice+Extensions.h
-s421584325.713042
-e421584325.714266
-r1
-xCpHeader
-xClasses/UIDevice+Extensions.h
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/UIDevice+Extensions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Copy /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/UIDevice+Extensions.h159"[1mCpHeader[0m Classes/UIDevice+Extensions.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/UIDevice+Extensions.h[0m40a1b6c5dd20b941^7a17cbc5dd20b941^---0#0#1#-19%DVTDocumentLocation2@111"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/UIDevice+Extensions.h0034e0a4deffdf42^969"[1mCpHeader[0m Classes/UIDevice+Extensions.h [1m/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/UIDevice+Extensions.h[0m    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova36"93B0F3F3-6601-4557-8F44-A6D0FC4F9234-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CLibtool /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/libCordova.a normal armv7
-s422460561.397236
-e422460561.417639
-r1
-xLibtool
-x/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/libCordova.a
-xnormal
-xarmv7
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"[1mLibtool[0m /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/libCordova.a normal armv7108"[1mLibtool[0m /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/libCordova.a normal armv7c5c965913c2eb941^12f96a913c2eb941^---0#0#1#--1232"[1mLibtool[0m /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/libCordova.a normal armv7    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -filelist /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/Cordova.LinkFileList -o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/libCordova.a36"4DC26C08-3A18-4069-BB98-60CA79C5B283-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-
-CProcessPCH /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-axwcbawxpmasptgfbwnqjjpfcqfw/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s421584325.789926
-e421584326.480112
-r1
-xProcessPCH
-x/var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-axwcbawxpmasptgfbwnqjjpfcqfw/CordovaLib_Prefix.pch.pch
-xCordovaLib_Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/CordovaLib_Prefix.pch
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection32"Precompile CordovaLib_Prefix.pch300"[1mProcessPCH[0m /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-axwcbawxpmasptgfbwnqjjpfcqfw/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler8bc6cac5dd20b941^74ea7ac6dd20b941^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/CordovaLib_Prefix.pch0000000000000000^3850"[1mProcessPCH[0m /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-axwcbawxpmasptgfbwnqjjpfcqfw/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG --serialize-diagnostics /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-axwcbawxpmasptgfbwnqjjpfcqfw/CordovaLib_Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-axwcbawxpmasptgfbwnqjjpfcqfw/CordovaLib_Prefix.pch.d -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/CordovaLib_Prefix.pch -o /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-axwcbawxpmasptgfbwnqjjpfcqfw/CordovaLib_Prefix.pch.pch36"847793AC-43E0-4E71-8C27-89C1B28CA4A4-
-bCE03744C-8FA2-486C-8252-0A5C28C1E7F2
-
-CProcessPCH /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422460559.106321
-e422460559.666542
-r1
-xProcessPCH
-x/var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch.pch
-xCordovaLib_Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/CordovaLib_Prefix.pch
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection32"Precompile CordovaLib_Prefix.pch300"[1mProcessPCH[0m /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler5b9a1b8f3c2eb941^d7a1aa8f3c2eb941^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/CordovaLib_Prefix.pch0000000000000000^3850"[1mProcessPCH[0m /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/platform-tools:/Users/rosswilson/Downloads/Browser/adt-bundle-mac-x86_64-20140321/sdk/tools:/usr/local/heroku/bin:/Users/rosswilson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=135 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-generated-files.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Cordova-project-headers.hmap -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources/armv7 -I/Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/DerivedSources -F/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device -DDEBUG --serialize-diagnostics /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch.d -c /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/CordovaLib_Prefix.pch -o /var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-hegunolzznusvgfqqizelcludevc/CordovaLib_Prefix.pch.pch36"649C9741-C150-4429-B96C-D9854A08F841-
-b28D6C0D0-46EC-4546-974C-C347783A1075
-

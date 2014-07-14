@@ -2,7 +2,7 @@ angular.module('vision')
 
 .service("BalanceService", function($q, $http) {
   var _vod_url = 'http://10.42.32.199:2000/balance/vod';
-  var _live_url = 'http://10.42.32.199:2000/balance/vod';
+  var _live_url = 'http://10.42.32.199:2000/balance/live';
 
   return {
     get_vod_server: function() {

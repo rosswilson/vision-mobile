@@ -1,7 +1,7 @@
 angular.module('vision')
 
 // Get programme data for a given programme ID from SOLR backend service
-.service('ProgrammeService', function ($http, $q, QueryStringBuilder, BalanceService) {
+.service('ProgrammeService', function ($http, $q, QueryStringBuilder, BalanceService, AuthService) {
   var _url = 'http://10.42.32.184/search2.php';
 
   return {
@@ -16,7 +16,8 @@ angular.module('vision')
         wt: 'json',
         send_filters: false,
         sort: 'score+desc',
-        raw_duration: true
+        raw_duration: true,
+        user_id: AuthService.user_id()
       }
 
       // Fire the SOLR search query and store the promise

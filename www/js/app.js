@@ -1,10 +1,12 @@
 // Declare the app level module which loads all it's dependencies
 angular.module('vision', ['ngRoute', 'ngResource'])
 
-.run(function($rootScope, AuthService, StatsService, $location) {
+.run(function($rootScope, AuthService, StatsService, $location, WebSocketService) {
   FastClick.attach(document.body);
 
   $rootScope.logged_in = AuthService.is_logged_in();
+
+  WebSocketService.init();
 
   $rootScope.$on('LOGGED_IN', function() {
     $rootScope.logged_in = true;
@@ -23,31 +25,31 @@ angular.module('vision', ['ngRoute', 'ngResource'])
 .config(function($routeProvider) {
   $routeProvider.
   when('/dashboard', {
-    templateUrl: 'dashboard.html',
+    templateUrl: 'templates/dashboard.html',
     controller: 'DashboardCtrl'
   }).
   when('/library', {
-    templateUrl: 'library.html',
+    templateUrl: 'templates/library.html',
     controller: 'LibraryCtrl'
   }).
   when('/history', {
-    templateUrl: 'history.html',
+    templateUrl: 'templates/history.html',
     controller: 'HistoryCtrl'
   }).
   when('/search', {
-    templateUrl: 'search.html',
+    templateUrl: 'templates/search.html',
     controller: 'SearchCtrl'
   }).
   when('/live', {
-    templateUrl: 'live.html',
+    templateUrl: 'templates/live.html',
     controller: 'LiveCtrl'
   }).
   when('/programmes/:programme_id', {
-    templateUrl: 'playback.html',
+    templateUrl: 'templates/playback.html',
     controller: 'PlaybackCtrl'
   }).
   when('/login', {
-    templateUrl: 'login.html',
+    templateUrl: 'templates/login.html',
     controller: 'LoginCtrl'
   }).
   otherwise({
