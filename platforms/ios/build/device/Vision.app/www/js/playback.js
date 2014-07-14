@@ -1,7 +1,7 @@
 angular.module('vision')
 
 .controller('PlaybackCtrl', function ($scope, SetTitle, $routeParams, ProgrammeService,
-  StatsService, WatchLaterService, StatsService, ImageService, WebSocketService) {
+  StatsService, WatchLaterService, StatsService, ImageService, WebSocketService, $rootScope) {
 
   var self = this;
 
@@ -38,12 +38,10 @@ angular.module('vision')
           mediaElement.setSrc(programme.playback_url);
 
           var resume_playback = function() {
-            mediaElement.setCurrentTime($scope.start_at);
-            mediaElement.play();
             mediaElement.removeEventListener("canplay", resume_playback);
+            mediaElement.setCurrentTime($scope.start_at);
+            // mediaElement.play();
           };
-
-          console.log(programme);
 
           // If resuming, once player has media metadata, we can shift the playhead position
           if($scope.start_at) {
@@ -109,8 +107,6 @@ angular.module('vision')
   };
 
   $scope.play_second_screen = function() {
-    WebSocketService.init();
-
     var player = document.getElementById('video-player');
     if(player) {
       var current_time = Math.floor(player.currentTime);
@@ -118,4 +114,46 @@ angular.module('vision')
 
     WebSocketService.play($scope.programme_id, current_time);
   }
+
+  $scope.tab_selection = 'watch_here';
+
+  $scope.switch_tabs = function(mode) {
+    if(mode == 'second_screen') {
+      document.getElementById('video-player').stop();
+    }
+
+    $scope.tab_selection = mode;
+  }
+
+  $scope.connected_devices = WebSocketService.get_connected_devices();
+  $rootScope.$on('connected_devices', function(event, data) {
+    console.log("Refreshing connected devices list");
+    $scope.$apply(function() {
+      $scope.connected_devices = data;
+    });
+  });
+
+  $scope.play_remote = function(socket_id, should_resume) {
+    if(should_resume) {
+      console.log("Sending play: resume");
+      WebSocketService.play($scope.programme_id, $scope.start_at, socket_id);
+    } else {
+      console.log("Sending play: start from 0");
+      WebSocketService.play($scope.programme_id, 0, socket_id);
+    }
+  };
+
+  $scope.pause_remote = function(socket_id) {
+    WebSocketService.pause(socket_id);
+  };
+
+  $scope.is_playstation_3 = function(str) {
+    var reg = /PlayStation 3/g;
+    return reg.test(str);
+  };
+
+  $scope.is_chrome = function(str) {
+    var reg = /Chrome/g;
+    return reg.test(str);
+  };
 });

@@ -1,10 +1,12 @@
 // Declare the app level module which loads all it's dependencies
 angular.module('vision', ['ngRoute', 'ngResource'])
 
-.run(function($rootScope, AuthService, StatsService, $location) {
+.run(function($rootScope, AuthService, StatsService, $location, WebSocketService) {
   FastClick.attach(document.body);
 
   $rootScope.logged_in = AuthService.is_logged_in();
+
+  WebSocketService.init();
 
   $rootScope.$on('LOGGED_IN', function() {
     $rootScope.logged_in = true;
