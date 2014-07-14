@@ -1,4 +1,7 @@
-/platforms/ios
+/platforms/ios/build
+/platforms/ios/www
+/platforms/ios/CordovaLib/build
+
 /platforms/android
 
 /.idea
