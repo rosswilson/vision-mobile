@@ -7,15 +7,9 @@ angular.module('vision', ['ngRoute', 'ngResource'])
   $rootScope.logged_in = AuthService.is_logged_in();
 
   WebSocketService.init();
+  $rootScope.sockets = WebSocketService;
 
-  $rootScope.devices = WebSocketService.get_connected_devices();
-  $rootScope.$on('connected_devices', function(event, data) {
-    console.log("Refreshing connected devices list");
-    $rootScope.$apply(function() {
-      console.log(data);
-      $rootScope.devices = data;
-    });
-  });
+  $rootScope.local_user_agent = navigator.userAgent;
 
   $rootScope.$on('LOGGED_OUT', function() {
     $rootScope.logged_in = false;

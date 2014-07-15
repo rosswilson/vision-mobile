@@ -13,36 +13,29 @@
     <h2>{{ programme.programme_name }} <small ng-show="programme.sub_title">Episode {{ programme.sub_title }}</small></h2>
     <article>
       <div id="video_wrapper" ng-show="programme.watch_live || programme.watch_catchup">
-        <ul class="tabs group">
-          <li ng-class="{ active: tab_selection == 'watch_here' }"><a ng-click="switch_tabs('watch_here')">This Device</a></li>
-          <li ng-class="{ active: tab_selection == 'second_screen' }"><a ng-click="switch_tabs('second_screen')">Other Devices</a></li>
-        </ul>
+        <div>
+          <video id="video-player" src="" height="100%" controls="controls" preload='auto'>
+            <p>Sorry, your device is not capable of playing our videos</p>
+          </video>
+        </div>
 
-        <div class="tabs_content">
-          <div ng-show="tab_selection == 'watch_here'">
-            <video id="video-player" src="" height="100%" controls="controls" preload='auto'>
-              <p>Sorry, your device is not capable of playing our videos</p>
-            </video>
-          </div>
+        <div ng-show="tab_selection == 'second_screen'">
+          <ul class="devices_list">
+            <li ng-repeat="device in (filtered_devices = (connected_devices | filter: { can_playback: true }))" data-device-id="{{ device.socket_id }}" class="group">
+              <span ng-show="is_chrome(device.user_agent)">Chrome</span>
+              <span ng-show="is_playstation_3(device.user_agent)">PlayStation 3</span>
 
-          <div ng-show="tab_selection == 'second_screen'">
-            <ul class="devices_list">
-              <li ng-repeat="device in (filtered_devices = (connected_devices | filter: { can_playback: true }))" data-device-id="{{ device.socket_id }}" class="group">
-                <span ng-show="is_chrome(device.user_agent)">Chrome</span>
-                <span ng-show="is_playstation_3(device.user_agent)">PlayStation 3</span>
+              <div class="controls group">
+                <a ng-click="play_remote(device.socket_id, false)">Play From Beginning</a>
+                <a ng-click="play_remote(device.socket_id, true)">Resume</a>
+                <a ng-click="pause_remote(device.socket_id)">Pause</a>
+              </div>
+            </li>
 
-                <div class="controls group">
-                  <a ng-click="play_remote(device.socket_id, false)">Play From Beginning</a>
-                  <a ng-click="play_remote(device.socket_id, true)">Resume</a>
-                  <a ng-click="pause_remote(device.socket_id)">Pause</a>
-                </div>
-              </li>
-
-              <li ng-show="filtered_devices.length == 0">
-                <span>There are no second screen devices currently available</span>
-              </li>
-            </ul>
-          </div>
+            <li ng-show="filtered_devices.length == 0">
+              <span>There are no second screen devices currently available</span>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="message" ng-show="programme.available_soon">

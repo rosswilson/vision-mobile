@@ -134,7 +134,7 @@
 		</data>
 		<key>www/css/nav-bars.css</key>
 		<data>
-		vOYBbvwpx4mpNvdJ+AetySOghuc=
+		d7Qxru5xnVUX9xOBx7GoD+lfcc4=
 		</data>
 		<key>www/css/reset.css</key>
 		<data>
@@ -174,11 +174,11 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		DrnnOqtHEDkw2j7Vr3tfiB7izZQ=
+		am71cgbZfqor9xigQ+Py/QHrw5Y=
 		</data>
 		<key>www/js/app.js</key>
 		<data>
-		WJM7k7jGz99P3QSC4wlzcgUQCIg=
+		FI0wwa6iK6Y+D7E2AcT/ZM8dris=
 		</data>
 		<key>www/js/dashboard.js</key>
 		<data>
@@ -187,6 +187,10 @@
 		<key>www/js/directives/channel_image.js</key>
 		<data>
 		3QAmle+QSR6MvcmqOY0srgOCFfk=
+		</data>
+		<key>www/js/filters/user_agent_parser.js</key>
+		<data>
+		cTlZLpOfagLm5tUqZEiMDNnox3s=
 		</data>
 		<key>www/js/history.js</key>
 		<data>
@@ -266,7 +270,7 @@
 		</data>
 		<key>www/js/services/web_socket_service.js</key>
 		<data>
-		vOoUkz9SZKHzuwsRDrUjWfdSV/A=
+		o2FGYMn8t4Uu2jw62lPCM6N2s4E=
 		</data>
 		<key>www/lib/angular/angular-resource.min.js</key>
 		<data>
@@ -400,6 +404,10 @@
 		<data>
 		PLGkdMuGXnMYk1AnyWmij//Bcso=
 		</data>
+		<key>www/lib/underscore.js</key>
+		<data>
+		gKw8Eix8vgRHIBAw0En5Ln37jlA=
+		</data>
 		<key>www/plugins/org.apache.cordova.console/www/console-via-logger.js</key>
 		<data>
 		hF7sjNGZlrdzVnwHE+ljLRMXY0A=
@@ -442,7 +450,7 @@
 		</data>
 		<key>www/templates/playback.html</key>
 		<data>
-		3UgnX2bCrMLDNimMnh71y0cczEw=
+		flvlRe5msQdGPXYDNIRE5s+TyQ8=
 		</data>
 		<key>www/templates/search.html</key>
 		<data>
@@ -581,7 +589,7 @@
 		</data>
 		<key>www/css/nav-bars.css</key>
 		<data>
-		vOYBbvwpx4mpNvdJ+AetySOghuc=
+		d7Qxru5xnVUX9xOBx7GoD+lfcc4=
 		</data>
 		<key>www/css/reset.css</key>
 		<data>
@@ -621,11 +629,11 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		DrnnOqtHEDkw2j7Vr3tfiB7izZQ=
+		am71cgbZfqor9xigQ+Py/QHrw5Y=
 		</data>
 		<key>www/js/app.js</key>
 		<data>
-		WJM7k7jGz99P3QSC4wlzcgUQCIg=
+		FI0wwa6iK6Y+D7E2AcT/ZM8dris=
 		</data>
 		<key>www/js/dashboard.js</key>
 		<data>
@@ -634,6 +642,10 @@
 		<key>www/js/directives/channel_image.js</key>
 		<data>
 		3QAmle+QSR6MvcmqOY0srgOCFfk=
+		</data>
+		<key>www/js/filters/user_agent_parser.js</key>
+		<data>
+		cTlZLpOfagLm5tUqZEiMDNnox3s=
 		</data>
 		<key>www/js/history.js</key>
 		<data>
@@ -713,7 +725,7 @@
 		</data>
 		<key>www/js/services/web_socket_service.js</key>
 		<data>
-		vOoUkz9SZKHzuwsRDrUjWfdSV/A=
+		o2FGYMn8t4Uu2jw62lPCM6N2s4E=
 		</data>
 		<key>www/lib/angular/angular-resource.min.js</key>
 		<data>
@@ -847,6 +859,10 @@
 		<data>
 		PLGkdMuGXnMYk1AnyWmij//Bcso=
 		</data>
+		<key>www/lib/underscore.js</key>
+		<data>
+		gKw8Eix8vgRHIBAw0En5Ln37jlA=
+		</data>
 		<key>www/plugins/org.apache.cordova.console/www/console-via-logger.js</key>
 		<data>
 		hF7sjNGZlrdzVnwHE+ljLRMXY0A=
@@ -889,7 +905,7 @@
 		</data>
 		<key>www/templates/playback.html</key>
 		<data>
-		3UgnX2bCrMLDNimMnh71y0cczEw=
+		flvlRe5msQdGPXYDNIRE5s+TyQ8=
 		</data>
 		<key>www/templates/search.html</key>
 		<data>
