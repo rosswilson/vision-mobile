@@ -44,6 +44,10 @@ body {
     background: radial-gradient(circle, #46A1FC, #012D59);
 }
 
+.hidden {
+    display: none !important;
+}
+
 a {
     color: #428bca;
     text-decoration: none;
@@ -212,6 +216,23 @@ h2 small {
     background-color: #fff;
     -webkit-user-select: none;
     text-align: center;
+
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    vertical-align: middle;
+
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
 }
 
 button:active, button.active, .btn:active, .btn.active {

@@ -25,8 +25,17 @@
 
 <body ng-cloak>
   <header class="bar bar-nav">
-    <h1 id="page-title">{{ title ? title : "Vision Mobile" }}</h1>
     <a href="#/"><img src="images/vision_logo.png" /></a>
+
+    <!--<h1 id="page-title">{{ title ? title : "Vision Mobile" }}</h1>-->
+
+    <a id="devices_link" data-toggle="dropdown">My Devices</a>
+    <ul class="dropdown" id="devices_dropdown">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+    </ul>
   </header>
 
   <nav class="bar bar-tab" ng-show="logged_in" ng-class="{ visible: logged_in }">
@@ -98,5 +107,15 @@
   <script src="js/playback.js"></script>
   <script src="js/live.js"></script>
   <script src="js/login.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $("#devices_link").click(function(e) {
+        console.log("CLicked");
+        $("#devices_dropdown").toggleClass("hidden");
+        e.preventDefault();
+      });
+    });
+  </script>
 </body>
 </html>
