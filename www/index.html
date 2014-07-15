@@ -34,14 +34,14 @@
       <label>Local</label>
       <ul>
         <li>
-          <a href="#"><span class="glyphicons ok_2"></span>iPad</a>
+          <a ng-click="sockets.select_local()"><span class="glyphicons ok_2" ng-show="sockets.local_selected()"></span>{{ local_user_agent | userAgentParser }}</a>
         </li>
       </ul>
 
       <label>Remote</label>
       <ul>
-        <li ng-repeat="device in devices">
-          <a href="#">{{ device.device_name }}</a>
+        <li ng-repeat="device in (filtered_devices = (sockets.get_connected_devices() | filter: { can_playback: true }))">
+          <a ng-click="sockets.select_device(device.socket_id)"><span class="glyphicons ok_2" ng-show="device.selected"></span>{{ device.user_agent | userAgentParser }}</a>
         </li>
       </ul>
     </div>
@@ -79,6 +79,7 @@
 
   <!-- Load libs -->
   <script src="lib/jquery.js"></script>
+  <script src="lib/underscore.js"></script>
   <script src="lib/fastclick.js"></script>
   <script src="lib/sha1.js"></script>
   <script src="lib/mediaelement/mediaelement-and-player.min.js"></script>
@@ -107,6 +108,9 @@
 
   <!-- Load directives -->
   <script src="js/directives/channel_image.js"></script>
+
+  <!-- Load filters -->
+  <script src="js/filters/user_agent_parser.js"></script>
 
   <!-- Load controllers -->
   <script src="js/dashboard.js"></script>

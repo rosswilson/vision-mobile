@@ -2,7 +2,8 @@ angular.module('vision')
 
   .service('WebSocketService', function(AuthService, $rootScope) {
     var conn;
-    var connected_devices = [];
+    var devices = [];
+    var local_selected = true;
 
     return {
       init: function() {
@@ -20,8 +21,10 @@ angular.module('vision')
         });
 
         conn.on('connected_devices', function(msg) {
-          connected_devices = msg;
-          $rootScope.$broadcast('connected_devices', msg);
+          $rootScope.$apply(function() {
+            devices = msg;
+            $rootScope.$broadcast('connected_devices', msg);
+          });
         });
       },
       set_room: function() {
@@ -32,6 +35,29 @@ angular.module('vision')
           can_playback: false,
           user_agent: navigator.userAgent
         });
+      },
+      select_device: function(socket_id) {
+        _.each(devices, function(device) {
+          device.selected = false;
+        });
+
+        var device = _.find(devices, function(device) {
+          return device.socket_id == socket_id;
+        });
+
+        if(device) {
+          local_selected = false;
+          device.selected = true;
+        } else {
+          local_selected = true;
+        }
+      },
+      select_local: function() {
+        _.each(devices, function(device) {
+          device.selected = false;
+        });
+
+        local_selected = true;
       },
       play: function(programme_id, start_at, socket_id) {
         console.log("Play command sending over WS");
@@ -48,7 +74,10 @@ angular.module('vision')
         conn.emit('resume', { socket_id: socket_id });
       },
       get_connected_devices: function() {
-        return connected_devices;
+        return devices;
+      },
+      local_selected: function() {
+        return local_selected;
       }
     }
   });
