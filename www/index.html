@@ -30,12 +30,21 @@
     <!--<h1 id="page-title">{{ title ? title : "Vision Mobile" }}</h1>-->
 
     <a id="devices_link" data-toggle="dropdown">My Devices</a>
-    <ul class="dropdown" id="devices_dropdown">
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-    </ul>
+    <div class="dropdown hidden" id="devices_dropdown">
+      <label>Local</label>
+      <ul>
+        <li>
+          <a href="#"><span class="glyphicons ok_2"></span>iPad</a>
+        </li>
+      </ul>
+
+      <label>Remote</label>
+      <ul>
+        <li ng-repeat="device in devices">
+          <a href="#">{{ device.device_name }}</a>
+        </li>
+      </ul>
+    </div>
   </header>
 
   <nav class="bar bar-tab" ng-show="logged_in" ng-class="{ visible: logged_in }">
@@ -111,7 +120,6 @@
   <script>
     $(document).ready(function() {
       $("#devices_link").click(function(e) {
-        console.log("CLicked");
         $("#devices_dropdown").toggleClass("hidden");
         e.preventDefault();
       });

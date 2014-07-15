@@ -29,7 +29,7 @@
 }
 
 .bar #devices_link:hover, .bar #devices_link:active {
-    background-color: #eee;
+    background-color: #f2f2f2;
 }
 
 .bar #devices_dropdown {
@@ -37,15 +37,41 @@
     position: absolute;
     right: 0px;
     top: 44px;
-    background-color: white;
+    background-color: #fafafa;
     border-left: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    padding: 6px 0;
+    min-width: 200px;
+    padding: 12px 0;
+}
+
+.bar #devices_dropdown label {
+    margin: 15px 20px 10px;
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.bar #devices_dropdown label:first-child {
+    margin-top: 10px;
 }
 
 .bar #devices_dropdown li a {
-    padding: 6px 16px;
+    padding: 5px 20px;
+    padding-left: 47px;
     display: block;
+}
+
+.bar #devices_dropdown .glyphicons:before {
+    font-size: 13px;
+}
+
+.bar #devices_dropdown .glyphicons {
+    left: -25px;
+    top: -9px;
+}
+
+.bar #devices_dropdown li a:hover {
+    background-color: #f2f2f2;
 }
 
 .bar img {

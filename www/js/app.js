@@ -8,8 +8,13 @@ angular.module('vision', ['ngRoute', 'ngResource'])
 
   WebSocketService.init();
 
-  $rootScope.$on('LOGGED_IN', function() {
-    $rootScope.logged_in = true;
+  // Make remote devices available to all views and controllers
+  $rootScope.devices = WebSocketService.get_connected_devices();
+  $rootScope.$on('connected_devices', function(event, data) {
+    console.log("Refreshing connected devices list");
+    $rootScope.$apply(function() {
+      $rootScope.devices = data;
+    });
   });
 
   $rootScope.$on('LOGGED_OUT', function() {
