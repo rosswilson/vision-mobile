@@ -106,54 +106,27 @@ angular.module('vision')
     WatchLaterService.store($scope.programme_id, current_time, $scope.programme.watch_live);
   };
 
-  $scope.play_second_screen = function() {
-    var player = document.getElementById('video-player');
-    if(player) {
-      var current_time = Math.floor(player.currentTime);
-    }
+  $scope.play = function() {
+    var device = WebSocketService.remote_selected();
 
-    WebSocketService.play($scope.programme_id, current_time);
-  }
-
-  $scope.tab_selection = 'watch_here';
-
-  $scope.switch_tabs = function(mode) {
-    if(mode == 'second_screen') {
-      document.getElementById('video-player').stop();
-    }
-
-    $scope.tab_selection = mode;
-  }
-
-  $scope.connected_devices = WebSocketService.get_connected_devices();
-  $rootScope.$on('connected_devices', function(event, data) {
-    console.log("Refreshing connected devices list");
-    $scope.$apply(function() {
-      $scope.connected_devices = data;
-    });
-  });
-
-  $scope.play_remote = function(socket_id, should_resume) {
-    if(should_resume) {
-      console.log("Sending play: resume");
-      WebSocketService.play($scope.programme_id, $scope.start_at, socket_id);
+    if(device) {
+      console.log("Calling WebSocketService.play for remote device");
+      WebSocketService.play($scope.programme_id, 0, device.socket_id);
     } else {
-      console.log("Sending play: start from 0");
-      WebSocketService.play($scope.programme_id, 0, socket_id);
+      console.log("Playing locally");
+      document.getElementById('video-player').play();
     }
   };
 
-  $scope.pause_remote = function(socket_id) {
-    WebSocketService.pause(socket_id);
-  };
+  $scope.pause = function() {
+    var device = WebSocketService.remote_selected();
 
-  $scope.is_playstation_3 = function(str) {
-    var reg = /PlayStation 3/g;
-    return reg.test(str);
-  };
-
-  $scope.is_chrome = function(str) {
-    var reg = /Chrome/g;
-    return reg.test(str);
+    if(device) {
+      console.log("Calling WebSocketService.pause for remote device");
+      WebSocketService.pause(device.socket_id);
+    } else {
+      console.log("Pausing locally");
+      document.getElementById('video-player').pause();
+    }
   };
 });

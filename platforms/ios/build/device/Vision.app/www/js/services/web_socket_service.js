@@ -2,8 +2,10 @@ angular.module('vision')
 
   .service('WebSocketService', function(AuthService, $rootScope) {
     var conn;
+
     var devices = [];
     var local_selected = true;
+    var current_selected = null;
 
     return {
       init: function() {
@@ -13,17 +15,29 @@ angular.module('vision')
         conn = io("http://10.32.112.73:80/");
 
         conn.on('connect', function() {
+          console.log("connected");
           self.set_room();
         });
 
-        conn.on('reconnect', function() {
-          console.log("WS reconnected");
-        });
-
-        conn.on('connected_devices', function(msg) {
+        conn.on('connected_devices', function(new_devices) {
           $rootScope.$apply(function() {
-            devices = msg;
-            $rootScope.$broadcast('connected_devices', msg);
+            devices = new_devices;
+
+            if(current_selected) {
+              var previous_selected = _.find(devices, function(device) {
+                return current_selected.socket_id == device.socket_id;
+              });
+
+              if(previous_selected) {
+                current_selected = previous_selected;
+                current_selected.selected = true;
+                local_selected = false;
+              } else {
+                local_selected = true;
+              }
+            }
+
+            $rootScope.$broadcast('connected_devices', devices);
           });
         });
       },
@@ -37,18 +51,25 @@ angular.module('vision')
         });
       },
       select_device: function(socket_id) {
-        _.each(devices, function(device) {
-          device.selected = false;
-        });
 
+        // Unselect the currently selected device
+        if(current_selected) {
+          current_selected.selected = false;
+        }
+
+        // Find the device with the passed socket ID
         var device = _.find(devices, function(device) {
           return device.socket_id == socket_id;
         });
 
+        // If we found the device, select it, else select local
         if(device) {
-          local_selected = false;
           device.selected = true;
+          current_selected = device;
+
+          local_selected = false;
         } else {
+          current_selected = null;
           local_selected = true;
         }
       },
@@ -58,6 +79,7 @@ angular.module('vision')
         });
 
         local_selected = true;
+        current_selected = null;
       },
       play: function(programme_id, start_at, socket_id) {
         console.log("Play command sending over WS");
@@ -78,6 +100,9 @@ angular.module('vision')
       },
       local_selected: function() {
         return local_selected;
+      },
+      remote_selected: function() {
+        return current_selected;
       }
     }
   });
