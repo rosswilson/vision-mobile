@@ -183,44 +183,6 @@ li.table-view-cell .synopsis {
 }
 
 .tabs_content {
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ddd;
-}
-
-/* Second screen devices list */
-.devices_list li {
-    background-color: #fafafa;
-    border: 1px solid #eee;
-    margin-top: 10px;
-    font-size: 0.9em;
-}
-
-.devices_list span, .devices_list a {
-    padding: 10px 15px;
-    display: inline-block;
-}
-
-.devices_list a {
-    border-left: 1px solid #eee;
-    float: left;
-}
-
-.devices_list a:hover {
-    background-color: #eee;
-}
-
-.devices_list .controls {
-    float: right;
-}
-
-.devices_list .can_playback_false {
-    color: #777;
-}
-
-.devices_list div {
-    display: inline-block;
-}
-
-.devices_list li:first-child {
-    margin-top: 0;
 }

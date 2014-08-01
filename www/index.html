@@ -29,7 +29,11 @@
 
     <!--<h1 id="page-title">{{ title ? title : "Vision Mobile" }}</h1>-->
 
-    <a id="devices_link" data-toggle="dropdown">My Devices</a>
+    <div id="right_nav_container">
+      <!-- <a id="show_remote_device"><span class="glyphicons display"></span> Now Playing</a> -->
+      <a id="devices_link" data-toggle="dropdown">My Devices</a>
+    </div>
+
     <div class="dropdown hidden" id="devices_dropdown">
       <label>Local</label>
       <ul>
@@ -42,6 +46,10 @@
       <ul>
         <li ng-repeat="device in (filtered_devices = (sockets.get_connected_devices() | filter: { can_playback: true }))">
           <a ng-click="sockets.select_device(device.socket_id)"><span class="glyphicons ok_2" ng-show="device.selected"></span>{{ device.user_agent | userAgentParser }}</a>
+        </li>
+
+        <li class="empty-list" ng-show="filtered_devices.length == 0">
+          <span>No remote devices found</span>
         </li>
       </ul>
     </div>
@@ -126,6 +134,11 @@
       $("#devices_link").click(function(e) {
         $("#devices_dropdown").toggleClass("hidden");
         e.preventDefault();
+      });
+
+      $("#devices_dropdown").on('click', 'a', function(e) {
+        console.log("Link CLiked");
+        $("#devices_dropdown").addClass("hidden");
       });
     });
   </script>

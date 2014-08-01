@@ -29,7 +29,9 @@ angular.module('vision')
       // Set the video player poster image
       // TODO: Make this a directive
       var player = document.getElementById('video-player');
-      player.setAttribute("poster", ImageService.get_url($scope.programme.image, 720, 405));
+
+      $scope.poster_image = ImageService.get_url($scope.programme.image, 720, 405);
+      player.setAttribute("poster", $scope.poster_image);
 
       player = new MediaElementPlayer('#video-player', {
         type: ['video/mp4'],
@@ -129,4 +131,10 @@ angular.module('vision')
       document.getElementById('video-player').pause();
     }
   };
+
+  $scope.tab_selection = 'metadata';
+
+  $scope.switch_tabs = function(mode) {
+    $scope.tab_selection = mode;
+  }
 });
