@@ -29,7 +29,9 @@ angular.module('vision')
       // Set the video player poster image
       // TODO: Make this a directive
       var player = document.getElementById('video-player');
-      player.setAttribute("poster", ImageService.get_url($scope.programme.image, 720, 405));
+
+      $scope.poster_image = ImageService.get_url($scope.programme.image, 720, 405);
+      player.setAttribute("poster", $scope.poster_image);
 
       player = new MediaElementPlayer('#video-player', {
         type: ['video/mp4'],

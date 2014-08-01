@@ -396,3 +396,24 @@ form#search-form button {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+
+/* Remote playback CSS styles */
+.remote_image_wrapper {
+  position: relative;
+}
+
+.remote_image_wrapper img {
+  width: 100%;
+}
+
+.remote_image_wrapper .inner {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 20px 30px;
+  background-color: rgba(255,255,255,0.85);
+  width: 100%;
+}
+
+.remote_image_wrapper .inner p {
+  margin-bottom: 20px;
+}

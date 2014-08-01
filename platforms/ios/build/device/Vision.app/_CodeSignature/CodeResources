@@ -38,7 +38,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		eYUPLJCsZS1+xviMAwj4RTv9Hlk=
+		isAX+qFUWXPcylUvZMRAmqh8Gxo=
 		</data>
 		<key>config.xml</key>
 		<data>
@@ -112,10 +112,6 @@
 		<data>
 		VrRqsojQesSdp0DffGTNVrBbTzQ=
 		</data>
-		<key>scannerOverlay.nib</key>
-		<data>
-		kpxR06P2CWsaPnI4KqXipnVrse4=
-		</data>
 		<key>www/cordova.js</key>
 		<data>
 		PdEhp1BvY4tJpLMiRKZUaiQlNg8=
@@ -130,11 +126,11 @@
 		</data>
 		<key>www/css/lists.css</key>
 		<data>
-		tZMaT56Squ0wuoyqkptURWyPlKY=
+		ExHWkQqWFByJ0Ov4RYZ2WO6pGNM=
 		</data>
 		<key>www/css/nav-bars.css</key>
 		<data>
-		d7Qxru5xnVUX9xOBx7GoD+lfcc4=
+		JiCG6c9tuJ4IZEinq6hjr9ntpyo=
 		</data>
 		<key>www/css/reset.css</key>
 		<data>
@@ -142,7 +138,7 @@
 		</data>
 		<key>www/css/styles.css</key>
 		<data>
-		ptTqJwioM2yPxZYWyeYLzeHaLLs=
+		on9GIOQwn6fovpTySZM5U5gr7gQ=
 		</data>
 		<key>www/fonts/glyphicons-regular.eot</key>
 		<data>
@@ -174,7 +170,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		am71cgbZfqor9xigQ+Py/QHrw5Y=
+		Be78pgeZzwUqXp3atpBrtAzYhGI=
 		</data>
 		<key>www/js/app.js</key>
 		<data>
@@ -210,7 +206,7 @@
 		</data>
 		<key>www/js/playback.js</key>
 		<data>
-		tWjyCWnFTx1Bdec4hKQzh2xvryg=
+		l2OXxlG6/szXtd9n2xQU/nRuYes=
 		</data>
 		<key>www/js/search.js</key>
 		<data>
@@ -270,7 +266,7 @@
 		</data>
 		<key>www/js/services/web_socket_service.js</key>
 		<data>
-		cTscNcWX9D4uBcjsOmJYWglhuHU=
+		CDlscjF+qiWzqFzQGTwhPpEh9O0=
 		</data>
 		<key>www/lib/angular/angular-resource.min.js</key>
 		<data>
@@ -450,7 +446,7 @@
 		</data>
 		<key>www/templates/playback.html</key>
 		<data>
-		uc3GV/qqjFMtS/mP9gi0HAr79Uo=
+		95Cnt1vInb3mkYG4g5o7+1/YWhU=
 		</data>
 		<key>www/templates/search.html</key>
 		<data>
@@ -493,7 +489,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		eYUPLJCsZS1+xviMAwj4RTv9Hlk=
+		isAX+qFUWXPcylUvZMRAmqh8Gxo=
 		</data>
 		<key>config.xml</key>
 		<data>
@@ -567,10 +563,6 @@
 		<data>
 		VrRqsojQesSdp0DffGTNVrBbTzQ=
 		</data>
-		<key>scannerOverlay.nib</key>
-		<data>
-		kpxR06P2CWsaPnI4KqXipnVrse4=
-		</data>
 		<key>www/cordova.js</key>
 		<data>
 		PdEhp1BvY4tJpLMiRKZUaiQlNg8=
@@ -585,11 +577,11 @@
 		</data>
 		<key>www/css/lists.css</key>
 		<data>
-		tZMaT56Squ0wuoyqkptURWyPlKY=
+		ExHWkQqWFByJ0Ov4RYZ2WO6pGNM=
 		</data>
 		<key>www/css/nav-bars.css</key>
 		<data>
-		d7Qxru5xnVUX9xOBx7GoD+lfcc4=
+		JiCG6c9tuJ4IZEinq6hjr9ntpyo=
 		</data>
 		<key>www/css/reset.css</key>
 		<data>
@@ -597,7 +589,7 @@
 		</data>
 		<key>www/css/styles.css</key>
 		<data>
-		ptTqJwioM2yPxZYWyeYLzeHaLLs=
+		on9GIOQwn6fovpTySZM5U5gr7gQ=
 		</data>
 		<key>www/fonts/glyphicons-regular.eot</key>
 		<data>
@@ -629,7 +621,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		am71cgbZfqor9xigQ+Py/QHrw5Y=
+		Be78pgeZzwUqXp3atpBrtAzYhGI=
 		</data>
 		<key>www/js/app.js</key>
 		<data>
@@ -665,7 +657,7 @@
 		</data>
 		<key>www/js/playback.js</key>
 		<data>
-		tWjyCWnFTx1Bdec4hKQzh2xvryg=
+		l2OXxlG6/szXtd9n2xQU/nRuYes=
 		</data>
 		<key>www/js/search.js</key>
 		<data>
@@ -725,7 +717,7 @@
 		</data>
 		<key>www/js/services/web_socket_service.js</key>
 		<data>
-		cTscNcWX9D4uBcjsOmJYWglhuHU=
+		CDlscjF+qiWzqFzQGTwhPpEh9O0=
 		</data>
 		<key>www/lib/angular/angular-resource.min.js</key>
 		<data>
@@ -905,7 +897,7 @@
 		</data>
 		<key>www/templates/playback.html</key>
 		<data>
-		uc3GV/qqjFMtS/mP9gi0HAr79Uo=
+		95Cnt1vInb3mkYG4g5o7+1/YWhU=
 		</data>
 		<key>www/templates/search.html</key>
 		<data>

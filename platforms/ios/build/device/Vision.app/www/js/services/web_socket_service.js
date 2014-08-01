@@ -12,10 +12,13 @@ angular.module('vision')
         var self = this;
 
         console.log("WS connecting");
-        conn = io("http://10.32.112.73:80/");
+
+        // Important to force port 80, since in dev it'll try to use the same port
+        // as requested the Vision Mobile page (usually port 81)
+        conn = io("http://148.88.227.217:80/");
 
         conn.on('connect', function() {
-          console.log("connected");
+          console.log("WS connected");
           self.set_room();
         });
 
@@ -38,7 +41,12 @@ angular.module('vision')
             }
 
             $rootScope.$broadcast('connected_devices', devices);
+            console.log(devices);
           });
+        });
+
+        conn.on('progress_update', function(data) {
+          console.log(data);
         });
       },
       set_room: function() {
