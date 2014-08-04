@@ -131,4 +131,10 @@ angular.module('vision')
       document.getElementById('video-player').pause();
     }
   };
+
+  $scope.tab_selection = 'metadata';
+
+  $scope.switch_tabs = function(mode) {
+    $scope.tab_selection = mode;
+  }
 });

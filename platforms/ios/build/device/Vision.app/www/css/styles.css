@@ -338,6 +338,10 @@ dd {
     width: 70px;
 }
 
+#playback dl {
+  margin-bottom: -20px;
+}
+
 @media (min-width: 1024px) {
     #playback article {
         width: 50%;

@@ -44,37 +44,42 @@
       <button id="watch_later" class="large_button" ng-click="watch_later()">
         <span class="glyphicons plus icon"></span> Add to my Watch Later list
       </button>
-
-      <!--<button class="large_button" ng-click="play_second_screen()">-->
-        <!--<span class="glyphicons play icon"></span> Play on my Second Screen device-->
-      <!--</button>-->
-
     </article>
     <aside>
-      <dl>
-        <dt ng-show="programme.episode">Episode</dt>
-        <dd ng-show="programme.episode">{{ programme.episode }}</dd>
+      <ul class="tabs group">
+        <li ng-class="{ active: tab_selection == 'metadata' }"><a ng-click="switch_tabs('metadata')">Metadata</a></li>
+        <li ng-class="{ active: tab_selection == 'enrichment' }"><a ng-click="switch_tabs('enrichment')">Enrichment</a></li>
+      </ul>
+      <div class="tabs_content">
+        <dl ng-show="tab_selection == 'metadata'">
+          <dt ng-show="programme.episode">Episode</dt>
+          <dd ng-show="programme.episode">{{ programme.episode }}</dd>
 
-        <dt ng-show="programme.synopsis">Synopsis</dt>
-        <dd ng-show="programme.synopsis">{{ programme.synopsis }}</dd>
+          <dt ng-show="programme.synopsis">Synopsis</dt>
+          <dd ng-show="programme.synopsis">{{ programme.synopsis }}</dd>
 
-        <dt ng-show="programme.broadcast">Date</dt>
-        <dd ng-show="programme.broadcast">{{ programme.broadcast }}</dd>
+          <dt ng-show="programme.broadcast">Date</dt>
+          <dd ng-show="programme.broadcast">{{ programme.broadcast }}</dd>
 
-        <dt ng-show="programme.channel_image">Channel</dt>
-        <dd ng-show="programme.channel_image">
-         <channel-image path="programme.channel_image" width="100" height="56" />
-        </dd>
+          <dt ng-show="programme.channel_image">Channel</dt>
+          <dd ng-show="programme.channel_image">
+           <channel-image path="programme.channel_image" width="100" height="56" />
+          </dd>
 
-        <dt ng-show="programme.director">Director</dt>
-        <dd ng-show="programme.director">{{ programme.director }}</dd>
+          <dt ng-show="programme.director">Director</dt>
+          <dd ng-show="programme.director">{{ programme.director }}</dd>
 
-        <dt ng-show="programme.genre && programme.genre != 'Unclassified'">Genre</dt>
-        <dd ng-show="programme.genre && programme.genre != 'Unclassified'">{{ programme.genre }}</dd>
+          <dt ng-show="programme.genre && programme.genre != 'Unclassified'">Genre</dt>
+          <dd ng-show="programme.genre && programme.genre != 'Unclassified'">{{ programme.genre }}</dd>
 
-        <dt>Duration</dt>
-        <dd>{{ programme.duration }}</dd>
-      </dl>
+          <dt>Duration</dt>
+          <dd>{{ programme.duration }}</dd>
+        </dl>
+
+        <div ng-show="tab_selection == 'enrichment'">
+          <p>Enrichment is not available.</p>
+        </div>
+      </div>
     </aside>
   </div>
 </div>

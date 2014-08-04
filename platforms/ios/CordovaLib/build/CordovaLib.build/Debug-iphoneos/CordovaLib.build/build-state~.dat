@@ -381,108 +381,108 @@ t1406906894
 s9384
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDV.h
-t1406906892
-s1302
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVAvailability.h
-t1406906892
-s3323
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
-t1406906892
-s2234
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h
-t1406906892
-s1250
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h
-t1406906892
-s1283
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVConfigParser.h
-t1406906892
-s1227
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVDebug.h
-t1406906892
-s1025
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
-t1406906892
-s2022
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVJSON.h
-t1406906892
-s986
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVLocalStorage.h
-t1406906892
-s1743
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPlugin.h
-t1406906892
-s2194
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
-t1406906892
-s3091
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h
-t1406906892
-s1032
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVShared.h
-t1406906892
-s998
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVTimer.h
-t1406906892
-s909
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVURLProtocol.h
-t1406906892
-s1052
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVUserAgentUtil.h
-t1406906892
-s1057
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVViewController.h
-t1406906892
-s2764
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWebViewDelegate.h
-t1406906892
-s1442
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/CDVWhitelist.h
-t1406906892
-s1204
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSArray+Comparisons.h
-t1406906892
-s914
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSData+Base64.h
-t1406906892
-s893
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSDictionary+Extensions.h
-t1406906892
-s1498
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
-t1406906892
-s928
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/include/Cordova/UIDevice+Extensions.h
-t1406906892
-s1142
+t2
+s0
 
 N/Users/rosswilson/Desktop/vision-mobile/platforms/ios/build/device/libCordova.a
-t1406906894
-s896928
+t2
+s0
 
 N/var/folders/fg/6sgrwj5554sfs91z_b33qzxr0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-fqcynvzagyohmnhgdunxpcwypqwn/CordovaLib_Prefix.pch.pch
 t1406906892
@@ -490,7 +490,7 @@ s3182936
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies9a97d354ee8bb941^7ffb2655ee8bb941^---0#1#1#--18"Check dependencies36"2CCC4DE8-7F87-430D-97D4-F364213E7323-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies0118ef8be98bb941^e7df3a8ce98bb941^---0#1#1#--18"Check dependencies36"A6DCB3C8-2CCE-40AF-A35F-B9C23C9B573E-
 
 CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandDelegateImpl.o /Users/rosswilson/Desktop/vision-mobile/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s428599694.199489
