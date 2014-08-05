@@ -48,7 +48,9 @@
     <aside>
       <ul class="tabs group">
         <li ng-class="{ active: tab_selection == 'metadata' }"><a ng-click="switch_tabs('metadata')">Metadata</a></li>
-        <li ng-class="{ active: tab_selection == 'enrichment' }"><a ng-click="switch_tabs('enrichment')">Enrichment</a></li>
+
+        <li ng-class="{ active: tab_selection == 'enrichment' }" ng-hide="!enrichment_enabled"><a ng-click="switch_tabs('enrichment')">Enrichment</a></li>
+        <li class="disabled" ng-show="!enrichment_enabled"><a>Enrichment</a></li>
       </ul>
       <div class="tabs_content">
         <dl ng-show="tab_selection == 'metadata'">
@@ -77,7 +79,7 @@
         </dl>
 
         <div ng-show="tab_selection == 'enrichment'">
-          <p>Enrichment is not available.</p>
+          <p ng-repeat="element in enrichment_nodes">{{ element.raw }}</p>
         </div>
       </div>
     </aside>

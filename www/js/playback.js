@@ -1,9 +1,12 @@
 angular.module('vision')
 
 .controller('PlaybackCtrl', function ($scope, SetTitle, $routeParams, ProgrammeService,
-  StatsService, WatchLaterService, StatsService, ImageService, WebSocketService, $rootScope) {
+  StatsService, WatchLaterService, StatsService, ImageService, WebSocketService, $rootScope,
+  EnrichmentService) {
 
   var self = this;
+
+  $scope.enrichment_nodes = [];
 
   SetTitle("Playback");
 
@@ -28,7 +31,7 @@ angular.module('vision')
 
       // Set the video player poster image
       // TODO: Make this a directive
-      var player = document.getElementById('video-player');
+      var player = $scope.player = document.getElementById('video-player');
 
       $scope.poster_image = ImageService.get_url($scope.programme.image, 720, 405);
       player.setAttribute("poster", $scope.poster_image);
@@ -65,6 +68,25 @@ angular.module('vision')
               $scope.last_segment_end = currentSeconds;
             }
           }
+
+          // Get the enrichment JSON file
+          EnrichmentService.get_json($scope.programme_id).then(function(data) {
+            $scope.enrichment_enabled = true;
+
+            mediaElement.addEventListener('timeupdate', function() {
+              var currentSeconds = Math.floor(mediaElement.currentTime);
+              var element = EnrichmentService.get_subtitles(currentSeconds);
+
+              if(element) {
+                $rootScope.$apply(function() {
+                  $scope.enrichment_nodes.unshift(element);
+                });
+              }
+            });
+          }, function(error) {
+            $scope.enrichment_enabled = false;
+            console.log(error);
+          });
 
           mediaElement.addEventListener('timeupdate', function() {
             calculate_segment();
@@ -137,4 +159,5 @@ angular.module('vision')
   $scope.switch_tabs = function(mode) {
     $scope.tab_selection = mode;
   }
+
 });

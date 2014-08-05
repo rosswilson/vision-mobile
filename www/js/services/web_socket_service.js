@@ -41,7 +41,6 @@ angular.module('vision')
             }
 
             $rootScope.$broadcast('connected_devices', devices);
-            console.log(devices);
           });
         });
 
