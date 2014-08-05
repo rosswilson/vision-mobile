@@ -162,8 +162,13 @@ li.table-view-cell .synopsis {
     background-color: #fff;
 }
 
-.tabs li:not(.active):hover {
+.tabs li:not(.active):not(.disabled):hover {
     background-color: #eee;
+}
+
+.tabs li.disabled a {
+  color: #888;
+  cursor: not-allowed;
 }
 
 .tabs li.active {

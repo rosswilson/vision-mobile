@@ -126,7 +126,7 @@
 		</data>
 		<key>www/css/lists.css</key>
 		<data>
-		E3aaoJFLoGJu6VeweuAxfZO//G8=
+		fxngqVN5S4zyH+MvWbJ5PfEAsnk=
 		</data>
 		<key>www/css/nav-bars.css</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		Be78pgeZzwUqXp3atpBrtAzYhGI=
+		LGG5dfE94DDNIJA4IXrjW/xIDM4=
 		</data>
 		<key>www/js/app.js</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>www/js/playback.js</key>
 		<data>
-		Cj5aiukaC90UBzt5hmal57F+cp0=
+		0XmFF1lU/4X9yDq+OBGdGPX4Bh0=
 		</data>
 		<key>www/js/search.js</key>
 		<data>
@@ -227,6 +227,10 @@
 		<key>www/js/services/duration_service.js</key>
 		<data>
 		DRG2CUZVrsGwigZ3wj/1FWn65NE=
+		</data>
+		<key>www/js/services/enrichment_service.js</key>
+		<data>
+		Y2WVuv9MeLOoB7ZY4suc6hye8x4=
 		</data>
 		<key>www/js/services/history_service.js</key>
 		<data>
@@ -266,7 +270,7 @@
 		</data>
 		<key>www/js/services/web_socket_service.js</key>
 		<data>
-		CDlscjF+qiWzqFzQGTwhPpEh9O0=
+		tofBvgZKlKLbDfvVBPFFt+HDwcM=
 		</data>
 		<key>www/lib/angular/angular-resource.min.js</key>
 		<data>
@@ -446,7 +450,7 @@
 		</data>
 		<key>www/templates/playback.html</key>
 		<data>
-		eutSf52ogLat/w04bl8UrEc0Ha0=
+		TpSUvyb1qu1Z5x+loUvAM45sopw=
 		</data>
 		<key>www/templates/search.html</key>
 		<data>
@@ -577,7 +581,7 @@
 		</data>
 		<key>www/css/lists.css</key>
 		<data>
-		E3aaoJFLoGJu6VeweuAxfZO//G8=
+		fxngqVN5S4zyH+MvWbJ5PfEAsnk=
 		</data>
 		<key>www/css/nav-bars.css</key>
 		<data>
@@ -621,7 +625,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		Be78pgeZzwUqXp3atpBrtAzYhGI=
+		LGG5dfE94DDNIJA4IXrjW/xIDM4=
 		</data>
 		<key>www/js/app.js</key>
 		<data>
@@ -657,7 +661,7 @@
 		</data>
 		<key>www/js/playback.js</key>
 		<data>
-		Cj5aiukaC90UBzt5hmal57F+cp0=
+		0XmFF1lU/4X9yDq+OBGdGPX4Bh0=
 		</data>
 		<key>www/js/search.js</key>
 		<data>
@@ -678,6 +682,10 @@
 		<key>www/js/services/duration_service.js</key>
 		<data>
 		DRG2CUZVrsGwigZ3wj/1FWn65NE=
+		</data>
+		<key>www/js/services/enrichment_service.js</key>
+		<data>
+		Y2WVuv9MeLOoB7ZY4suc6hye8x4=
 		</data>
 		<key>www/js/services/history_service.js</key>
 		<data>
@@ -717,7 +725,7 @@
 		</data>
 		<key>www/js/services/web_socket_service.js</key>
 		<data>
-		CDlscjF+qiWzqFzQGTwhPpEh9O0=
+		tofBvgZKlKLbDfvVBPFFt+HDwcM=
 		</data>
 		<key>www/lib/angular/angular-resource.min.js</key>
 		<data>
@@ -897,7 +905,7 @@
 		</data>
 		<key>www/templates/playback.html</key>
 		<data>
-		eutSf52ogLat/w04bl8UrEc0Ha0=
+		TpSUvyb1qu1Z5x+loUvAM45sopw=
 		</data>
 		<key>www/templates/search.html</key>
 		<data>
