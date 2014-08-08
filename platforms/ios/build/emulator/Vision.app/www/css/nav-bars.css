@@ -1,0 +1,156 @@
+
+.bar {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    height: 44px;
+    background-color: rgba(247,247,247,.88);
+    border-bottom: 1px solid #ddd;
+}
+
+.bar h1 {
+    line-height: 1em;
+    right: 15px;
+    top: 14px;
+    position: absolute;
+    font-size: 17px;
+    font-weight: 500;
+    color: #757575;
+}
+
+.bar #right_nav_container {
+    right: 0;
+    top: 0;
+    position: absolute;
+    display: inline-block;
+}
+
+.bar #right_nav_container a {
+    float: left;
+    line-height: 1em;
+    padding: 14px 15px 13px;
+    border-left: 1px solid #ddd;
+}
+
+.bar #right_nav_container a:hover {
+    background-color: #f2f2f2;
+}
+
+.bar #devices_dropdown {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 44px;
+    background-color: #fafafa;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    min-width: 300px;
+    padding: 12px 0;
+}
+
+.bar #devices_dropdown label {
+    margin: 15px 20px 10px;
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.bar #devices_dropdown label:first-child {
+    margin-top: 10px;
+}
+
+.bar #devices_dropdown li a,
+.bar #devices_dropdown li.empty-list span {
+    padding: 5px 20px;
+    padding-left: 47px;
+    display: block;
+}
+
+.bar #devices_dropdown li.empty-list span {
+  color: #444;
+  padding-left: 20px;
+}
+
+.bar #right_nav_container .glyphicons:before,
+.bar #devices_dropdown .glyphicons:before {
+    font-size: 13px;
+}
+
+.bar #right_nav_container .glyphicons,
+.bar #devices_dropdown .glyphicons {
+    left: -25px;
+    top: -9px;
+}
+
+.bar #devices_dropdown li a:hover {
+    background-color: #f2f2f2;
+}
+
+.bar #right_nav_container #show_remote_device {
+  padding-left: 45px;
+}
+
+.bar img {
+    height: 31px;
+    width: 101px;
+    top: 7px;
+    left: 15px;
+    position: absolute;
+}
+
+.bar-tab {
+    bottom: 0;
+    display: table;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    table-layout: fixed;
+    border-top: 1px solid #ddd;
+    border-bottom: 0;
+}
+
+.bar-tab .tab-item {
+    font-size: 13px;
+    display: table-cell;
+    height: 60px;
+    color: #757575;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bar-tab .tab-item .icon {
+    width: 20px;
+    height: 21px;
+    padding-left: 0;
+    margin-bottom: 7px;
+    margin-top: 2px;
+}
+
+.bar-tab .tab-item .icon:before {
+    font-size: 20px;
+    color: #757575;
+    margin: 0;
+}
+
+.bar-tab .tab-item .tab-label {
+    display: block;
+    line-height: 1em;
+}
+
+.bar-tab .tab-item.active, .bar-tab .tab-item.active .icon:before {
+    color: #428bca;
+}
+
+.bar-tab .tab-item:hover, .bar-tab .tab-item:hover .icon:before {
+    color: #428bca;
+}
+
+.bar-nav ~ .content {
+    padding-top: 44px;
+}
+
+/* Dont add .content padding if not visible */
+.bar-tab.visible ~ .content {
+    padding-bottom: 60px;
+}

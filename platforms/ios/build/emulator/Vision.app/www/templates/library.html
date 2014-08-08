@@ -1,0 +1,34 @@
+<div class="content_padding">
+  <h2>Watch Later</h2>
+  <p class="lead">Click the Watch Later button when watching a programme to bookmark it here.</p>
+  <img src="images/ajax-loader.gif" class="spinner" ng-hide="watch_later != null || library_error" />
+
+  <ul id="channel-list" class="flex-container">
+    <li class="table-view-cell group" ng-repeat="programme in watch_later">
+      <div class="progress_fill" style="width: {{ programme.percentage_watched }}%"></div>
+      <a href="#/programmes/{{ programme.programme_id }}?start_at={{ programme.position }}">
+        <div class="left">
+          <img src="http://148.88.32.64/cache/170x100-2/programmes{{ programme.image }}" style="width: 85px; height: 50px;" />
+        </div>
+        <div class="right">
+          <p>{{ programme.programme_name }}</p>
+          <p class="metadata">
+            <span ng-show="programme.percentage_watched">{{ programme.percentage_watched}}% Watched &middot; </span>
+            {{ programme.channel_name }} &middot; {{ programme.duration_mins }} minutes
+          </p>
+          <span class="glyphicons chevron-right"></span>
+        </div>
+        <p class="small synopsis">{{ programme.synopsis | cut:true:160 }}</p>
+      </a>
+    </li>
+
+    <li class="table-view-cell empty-list-message" ng-show="watch_later.length == 0">
+      <p>Your Watch Later list is empty</p>
+    </li>
+
+    <li class="table-view-cell empty-list-message error-message" ng-show="library_error">
+      <p>Problem getting your programme library</p>
+      <p>Ensure you're on the Lancaster network either via eduroam or by connecting over VPN.</p>
+    </li>
+  </ul>
+</div>
